@@ -671,6 +671,21 @@ Requires: 3 Strength
 
 Weight: 1~
 
+@10330 = ~Angel Wings~
+@10331 = ~Used to upgrade Golden Gale~
+
+@10340 = ~Magical Ribbon~
+@10341 = ~Used to upgrade Jade Spindel~
+
+@10350 = ~Branch from the Tree of Life~
+@10351 = ~Used to upgrade Astral Crossbow of Speed~
+
+@10360 = ~Dracolich Fang~
+@10361 = ~Used to upgrade Umbral Fang~
+
+@10370 = ~Unique Skull~
+@10371 = ~Used to upgrade Blood of Orcus.~
+
 
 // Imported BG1 Items
 @11000 = ~BG Imported Items~

@@ -139,7 +139,7 @@ COPY_EXISTING ~zbdlfa0.itm~ ~override~
     SAY NAME2 @10360
     SAY IDENTIFIED_DESC @10361
 
-	//////// Magical Ribbon \\\\\\\\
+	//////// Unique Skull \\\\\\\\
 COPY ~%MOD_FOLDER%/items/uniqueskull~ ~override~
 COPY_EXISTING ~zbuskull.itm~ ~override~
     SAY NAME2 @10370
