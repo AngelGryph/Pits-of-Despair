@@ -115,8 +115,37 @@ COPY_EXISTING ~zbcelest.itm~ ~override~
 
 APPEND "itemdial.2da" "zbcelest        5689   zbcelest"
 
+//////// Angel Wings \\\\\\\\
+COPY ~%MOD_FOLDER%/items/angelwings~ ~override~
+COPY_EXISTING ~zbangwi0.itm~ ~override~
+    SAY NAME2 @10330
+    SAY IDENTIFIED_DESC @10331
+	
+	//////// Magical Ribbon \\\\\\\\
+COPY ~%MOD_FOLDER%/items/magicalribbon~ ~override~
+COPY_EXISTING ~zbribbo.itm~ ~override~
+    SAY NAME2 @10340
+    SAY IDENTIFIED_DESC @10341
 
-//////// Nephy's dagger (Phantasmal Fang +4) \\\\\\\\
+//////// Branch of the Tree of Life \\\\\\\\
+COPY ~%MOD_FOLDER%/items/treeoflife~ ~override~
+COPY_EXISTING ~zbtolb.itm~ ~override~
+    SAY NAME2 @10350
+    SAY IDENTIFIED_DESC @10351
+
+	//////// Dracolich Fang \\\\\\\\
+COPY ~%MOD_FOLDER%/items/dracolichfang~ ~override~
+COPY_EXISTING ~zbdlfa0.itm~ ~override~
+    SAY NAME2 @10360
+    SAY IDENTIFIED_DESC @10361
+
+	//////// Magical Ribbon \\\\\\\\
+COPY ~%MOD_FOLDER%/items/uniqueskull~ ~override~
+COPY_EXISTING ~zbuskull.itm~ ~override~
+    SAY NAME2 @10370
+    SAY IDENTIFIED_DESC @10371
+
+//////// Nephy's dagger (Umbral Fang +4) \\\\\\\\
 COPY ~%MOD_FOLDER%/items/nephy_umbral_fang~ ~override~
 COPY_EXISTING ~zbpddaga.itm~ ~override~
     SAY NAME2 @10050
@@ -150,7 +179,7 @@ COPY_EXISTING ~zbpdxbob.itm~ ~override~
 COPY_EXISTING ~zbpdxb01.spl~ ~override~
     LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@10062) END
 
-//////// Nephy's supple gloves \\\\\\\\
+//////// Nephy's Supple Gloves \\\\\\\\
 COPY ~%MOD_FOLDER%/items/nephy_gloves~ ~override~
 COPY_EXISTING ~zbpdbrca.itm~ ~override~
     SAY NAME2 @10090
@@ -158,13 +187,13 @@ COPY_EXISTING ~zbpdbrca.itm~ ~override~
     SET nephetel = RESOLVE_STR_REF(@15001)
     LPF ALTER_EFFECT INT_VAR match_opcode = 319 parameter1 = nephetel special = nephetel END
 
-//////// Nephy's Rogue's luck +1 \\\\\\\\
+//////// Nephy's Strange Silver Ring \\\\\\\\
 COPY ~%MOD_FOLDER%/items/nephy_ring~ ~override~
 COPY_EXISTING ~zbpdrnga.itm~ ~override~
     SAY NAME2 @10100
     SAY IDENTIFIED_DESC @10101
 
-//////// Improved Rogue's luck +2 \\\\\\\\
+//////// Nephy's Strange Silver Ring \\\\\\\\
 COPY_EXISTING ~zbpdrngb.itm~ ~override~
     SAY NAME2 @10102
     SAY IDENTIFIED_DESC @10103
