@@ -794,6 +794,7 @@ THEN
 		AddStoreItem("OHBIMIM","BRAC15",1,1)  // Bracers of Defense AC 3
 		AddStoreItem("OHBIMIM","RING31",1,1)  // Ring of Regeneration
 		AddStoreItem("OHBIMIM","RODS03",5,1)  // Rod of Resurrection
+		AddStoreItem("OHBIMIM","zbruin01",1,1)  // Belt of Ruinous Rage (NEW)
 		AddStoreItem("OHBIMIM","zbdarkk0",1,1)  // Dark Knight Belt (NEW)
 		AddStoreItem("OHBCONCO","POTN55",0,1)  // Potion of Superior Healing
 		AddStoreItem("OHBSDWM","AROW06",5,1)  // Arrow of Detonation
