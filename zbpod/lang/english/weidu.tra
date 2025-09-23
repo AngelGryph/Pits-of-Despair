@@ -619,14 +619,24 @@ Weight: 3~
 STATISTICS:
 
 Equipped abilities:
-- Armor Class: +1 vs. crushing, slashing & piercing attacks
-- Physical Resistances: +10%
+– Armor Class: +1 vs. crushing, slashing, and piercing attacks
+– Physical Resistances: +10%
 
 Charged Abilities:
-- Dragon Fist (1/day)
-  For two rounds, your physical attacks will stun enemies in addition to their normal effects.
+– Dragon Fist once per day
+  Special: Your physical attacks will stun enemies in addition to their normal effects.
+  Duration: 2 rounds
 
 Weight: 4~
+
+@10300 = ~Belt of Ruinous Rage~
+@10301 = ~Placeholder description
+
+Equipped abilities:
+– Armor Class: +3 vs. piercing and missile
+– Ruinous Rage: While under the effects of Barbarian Rage, the barbarian's attacks deal an additional 1d8+3 slashing damage to the primary target and nearby enemies. This effect can only trigger once per second on the same target. During this time, the barbarian also takes 1d4 slashing damage at the start of each round.
+
+Weight: 2~
 
 
 // Imported BG1 Items
