@@ -632,11 +632,44 @@ Weight: 4~
 @10300 = ~Belt of Ruinous Rage~
 @10301 = ~Placeholder description
 
+STATISTICS:
+
 Equipped abilities:
 – Armor Class: +3 vs. piercing and missile
 – Ruinous Rage: While under the effects of Barbarian Rage, the barbarian's attacks deal an additional 1d8+3 slashing damage to the primary target and nearby enemies. This effect can only trigger once per second on the same target. During this time, the barbarian also takes 1d4 slashing damage at the start of each round.
 
 Weight: 2~
+
+@10310 = ~Scarlet Ninja Tabi~
+@10311 = ~Placeholder description
+
+STATISTICS:
+
+Equipped abilities:
+– 1 extra attack per round
+– Doubles movement rate
+
+Weight: 4~
+
+@10320 = ~Celeste +4~
+@10321 = ~Placeholder description
+
+STATISTICS:
+
+Charge abilities:
+– Mordenkainen's Lucubration (1/day)
+  Restores up to three previously cast spells of 5th, 4th and 3rd level respectively.
+– Ruby Ray of Reversal (1/day)
+  Dispels one spell protection of any level on the target.
+
+THAC0: +4
+Damage: 1d4+4 (missile)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires: 3 Strength
+
+Weight: 1~
 
 
 // Imported BG1 Items

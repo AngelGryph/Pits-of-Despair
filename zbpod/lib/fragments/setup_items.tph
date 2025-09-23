@@ -101,6 +101,21 @@ COPY_EXISTING ~zbruin01.itm~ ~override~
     SAY NAME2 @10300
     SAY IDENTIFIED_DESC @10301
 
+//////// Scarlet Ninja Tabi \\\\\\\\
+COPY ~%MOD_FOLDER%/items/scarletninjatabi~ ~override~
+COPY_EXISTING ~zbsntabi.itm~ ~override~
+    SAY NAME2 @10310
+    SAY IDENTIFIED_DESC @10311
+
+//////// Celeste +4 \\\\\\\\
+COPY ~%MOD_FOLDER%/items/celeste~ ~override~
+COPY_EXISTING ~zbcelest.itm~ ~override~
+    SAY NAME2 @10320
+    SAY IDENTIFIED_DESC @10321
+
+APPEND "itemdial.2da" "zbcelest        5689   zbcelest"
+
+
 //////// Nephy's dagger (Phantasmal Fang +4) \\\\\\\\
 COPY ~%MOD_FOLDER%/items/nephy_umbral_fang~ ~override~
 COPY_EXISTING ~zbpddaga.itm~ ~override~
