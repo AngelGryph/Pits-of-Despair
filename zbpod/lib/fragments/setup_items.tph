@@ -129,9 +129,9 @@ COPY_EXISTING ~zbribbo.itm~ ~override~
 
 //////// Branch of the Tree of Life \\\\\\\\
 COPY ~%MOD_FOLDER%/items/treeoflife~ ~override~
-COPY_EXISTING ~zbtolb.itm~ ~override~
-    SAY NAME2 @10350
-    SAY IDENTIFIED_DESC @10351
+// COPY_EXISTING ~zbtolb.itm~ ~override~
+//     SAY NAME2 @10350
+//     SAY IDENTIFIED_DESC @10351
 
 	//////// Dracolich Fang \\\\\\\\
 COPY ~%MOD_FOLDER%/items/dracolichfang~ ~override~
