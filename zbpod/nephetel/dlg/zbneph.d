@@ -30,12 +30,12 @@ IF ~~ BEGIN zbneph2
   SAY @18 /* Before you whet your blade in the arena, you should consider fighting in the training matches. They’ll give you a…  taste for how things are done here. See Stirv in the kennel to get started. */
     =
   @19 /* …watch out for that crazy bastard. The man is a sadist. He performs all manner of experiments on his “puppies” with concoctions and cruel training. They manage to work together without ripping each other apart—Stirv will delight in setting them upon you instead. */
-  IF ~~ EXIT
+  IF ~~ DO ~SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",9)~ EXIT
 END
 
 IF ~~ BEGIN zbneph3
   SAY @20 /* Self sufficient, are we? You should heed my words nonetheless and seek out Stirv in the kennels for some practice before tackling your first real match. */
-  IF ~~ EXIT
+  IF ~~ DO ~SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",9)~ EXIT
 END
 
 // ----------------------------------------------------
@@ -43,22 +43,17 @@ END
 // ----------------------------------------------------
 
 /* main arena hub */
-IF ~~ THEN BEGIN zbnepharenahub01
-  SAY @21 /* Known as the Hero of Baldur's Gate? Hmm, and as far as Dennaton is concerned the main attraction in his three ring circus. You don't look as savage as I expected, I can see why he was interested in you. */
-  IF ~~ THEN DO ~SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",10)~ GOTO zbnepharenahub0
-END
-
-IF ~Global("ZB_NEPH_INTRO_RESPONSE","GLOBAL",10) Global("ZB_NEPH_INTRO_QUESTION","GLOBAL",0)~ THEN BEGIN zbnepharenahub0
+IF ~Global("ZB_NEPH_INTRO_RESPONSE","GLOBAL",9)~ THEN BEGIN zbnepharenahub0
   SAY @22 /* So, is there anything I can do for you? */
-  IF ~~ THEN REPLY @23 /* How is it that you came to this place? You don’t seem trapped here as the other fighters are. */ GOTO zbnepharena1
-  IF ~~ THEN REPLY @39 /* I only know your name, Could you tell me a bit about yourself? */ GOTO zbnepharena2
-  IF ~~ THEN REPLY @24 /* Do you have any idea how to escape this place? */ GOTO zbnepharena3
-  IF ~~ THEN REPLY @245 /* What can you tell me about the others here? */ GOTO zbnepharena4
-  IF ~~ THEN REPLY @25 /* You sound familiar. There was a messenger who got me into this mess and your voice is suspiciously similar… */ GOTO zbnepharena5
-  IF ~~ THEN REPLY @27 /* I'll let you get back to whatever you were doing. */ EXIT
+  IF ~~ THEN REPLY @23 /* How is it that you came to this place? You don’t seem trapped here as the other fighters are. */ DO ~SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",10)~ GOTO zbnepharena1
+  IF ~~ THEN REPLY @39 /* I only know your name, Could you tell me a bit about yourself? */ DO ~SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",10)~ GOTO zbnepharena2
+  IF ~~ THEN REPLY @24 /* Do you have any idea how to escape this place? */ DO ~SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",10)~ GOTO zbnepharena3
+  IF ~~ THEN REPLY @245 /* What can you tell me about the others here? */ DO ~SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",10)~ GOTO zbnepharena4
+  IF ~~ THEN REPLY @25 /* You sound familiar. There was a messenger who got me into this mess and your voice is suspiciously similar… */ DO ~SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",10)~ GOTO zbnepharena5
+  IF ~~ THEN REPLY @27 /* I'll let you get back to whatever you were doing. */ DO ~SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",10)~ EXIT
 END
 
-IF ~Global("ZB_NEPH_INTRO_RESPONSE","GLOBAL",10) Global("ZB_NEPH_INTRO_QUESTION","GLOBAL",0)~ THEN BEGIN zbnepharenahub
+IF ~Global("ZB_NEPH_INTRO_RESPONSE","GLOBAL",10)~ THEN BEGIN zbnepharenahub
   SAY @33 /* Anything else I can clear up for you? */
   IF ~~ THEN REPLY @23 /* How is it that you came to this place? You don’t seem trapped here as the other fighters are. */ GOTO zbnepharena1
   IF ~~ THEN REPLY @39 /* I only know your name, Could you tell me a bit about yourself? */ GOTO zbnepharena2
@@ -357,7 +352,7 @@ IF ~~ ZBNEPHCOPPERCORONET
     ~ EXIT
 END
 
-IF ~Global("ZB_NEPH_JOINS","GLOBAL",0)~ ZBNEPHIWOULDBEHAPPY
+IF ~Global("ZB_NEPH_ESCAPE_1","GLOBAL",3) Global("ZB_NEPH_JOINS","GLOBAL",0)~ ZBNEPHIWOULDBEHAPPY
   SAY @99 /* I would be happy to, however I need to inform you that I have a mission to find a tome for my employer. If in our travels we come across it I must deliver it to him. */
   IF ~~ DO ~SetGlobal("ZB_NEPH_ESCAPE_1","GLOBAL",4) SetGlobal("ZB_NEPH_JOINS","GLOBAL",1) JoinParty()~ EXIT
 END

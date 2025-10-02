@@ -120,8 +120,8 @@ COPY ~%MOD_FOLDER%/items/angelwings~ ~override~
 COPY_EXISTING ~zbangwi0.itm~ ~override~
     SAY NAME2 @10330
     SAY IDENTIFIED_DESC @10331
-	
-	//////// Magical Ribbon \\\\\\\\
+
+    //////// Magical Ribbon \\\\\\\\
 COPY ~%MOD_FOLDER%/items/magicalribbon~ ~override~
 COPY_EXISTING ~zbribbo.itm~ ~override~
     SAY NAME2 @10340
@@ -130,16 +130,16 @@ COPY_EXISTING ~zbribbo.itm~ ~override~
 //////// Branch of the Tree of Life \\\\\\\\
 COPY ~%MOD_FOLDER%/items/treeoflife~ ~override~
 COPY_EXISTING ~zbtolb.itm~ ~override~
-	SAY NAME2 @10350
-	SAY IDENTIFIED_DESC @10351
+    SAY NAME2 @10350
+    SAY IDENTIFIED_DESC @10351
 
-	//////// Dracolich Fang \\\\\\\\
+    //////// Dracolich Fang \\\\\\\\
 COPY ~%MOD_FOLDER%/items/dracolichfang~ ~override~
 COPY_EXISTING ~zbdlfa0.itm~ ~override~
     SAY NAME2 @10360
     SAY IDENTIFIED_DESC @10361
 
-	//////// Unique Skull \\\\\\\\
+    //////// Unique Skull \\\\\\\\
 COPY ~%MOD_FOLDER%/items/uniqueskull~ ~override~
 COPY_EXISTING ~zbuskull.itm~ ~override~
     SAY NAME2 @10370
