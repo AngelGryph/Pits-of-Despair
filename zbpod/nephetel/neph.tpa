@@ -1,12 +1,10 @@
 // Nephetel
 
-
 /// Portrait ///
 COPY ~%MOD_FOLDER%/nephetel/portrait~ ~override~
 
 /// Sounds ///
 COPY ~%MOD_FOLDER%/nephetel/wav/selection~ ~override~
-
 
 /// Creature files ///
 // SoA
