@@ -3,7 +3,6 @@
  */
 
 INCLUDE ~zbpod/lib/kaelyn/zs_cdfunctions.tpa~ // CamDawg's functions that I will use for the items
-INCLUDE ~zbpod/lib/kaelyn/zs_kaelynfunctions.tpa~
 
 //////// Angelfist +5 \\\\\\\\
 
