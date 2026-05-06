@@ -14,9 +14,9 @@ Timeline Notes: The Fall of Netheril in 339 DR was the creation and initial iso
 
 See [https://baldursgate.fandom.com/wiki/Forgotten_Realms_Franchise_Timeline](https://www.google.com/url?q=https://baldursgate.fandom.com/wiki/Forgotten_Realms_Franchise_Timeline&sa=D&source=editors&ust=1776533459554733&usg=AOvVaw0RUBACJ6zBf7RpDqPW6Req) for more information.
 
-Credits:                 zenblack - administrator, design, writing, art, voice
+Credits:                zenblack - administrator, design, writing, art, voice
 
-                        RoyalProtector - collaborator, design, coding, organization, github
+                        Kaelyn - collaborator, design, coding, organization, github
 
                         Angel - collaborator, script senpai, mr. fixit
 

@@ -1183,7 +1183,7 @@ WARNING! Will break the default the Black Pits 2 standalone campaign. We are not
 
 //added subcomponents
 @30000 = "This component requires the installation of Pits of Despair"
-@30001 = "This component requires the installation of Royal Protector's weapon oils"
+@30001 = "This component requires the installation of Kaelyn's Consumables Mod"
 
 @60000 = ~Sir Basil~
 @60001 = ~Eratos~
