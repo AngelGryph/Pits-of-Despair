@@ -2,8 +2,8 @@
  * This code fragment will contain all of the code necessary to set up the items in the mod, including where to place them.
  */
 
-INCLUDE ~zbpod/lib/royalprotector/zs_cdfunctions.tpa~ // CamDawg's functions that I will use for the items
-INCLUDE ~zbpod/lib/royalprotector/zs_royalfunctions.tpa~
+INCLUDE ~zbpod/lib/kaelyn/zs_cdfunctions.tpa~ // CamDawg's functions that I will use for the items
+INCLUDE ~zbpod/lib/kaelyn/zs_kaelynfunctions.tpa~
 
 //////// Angelfist +5 \\\\\\\\
 
