@@ -267,6 +267,9 @@ COPY_EXISTING ~ar3027.are~ ~override~
 
 // Add areas and supporting files
 
+COPY ~%MOD_FOLDER%/area/bams/~ ~override~
+
+
 //zb0700
 //missing swamp ovl tiles for animation
 ACTION_BASH_FOR ~%MOD_FOLDER%/area/ovltis/~ ~.*\.tis$~ BEGIN
