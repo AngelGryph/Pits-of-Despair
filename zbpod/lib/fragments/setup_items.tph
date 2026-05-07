@@ -456,3 +456,8 @@ COPY_EXISTING ~zbcatcom.cre~ ~override~
   SAY NAME2 @11092
 
 
+/////// Spirit Dragon Helm \\\\\\\\
+COPY ~%MOD_FOLDER%/items/spiritdragonhelm~ ~override~
+COPY_EXISTING ~zbspdrg0.itm~ ~override~
+    SAY NAME2 @11093
+    SAY IDENTIFIED_DESC @11094
