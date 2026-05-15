@@ -303,7 +303,7 @@ COPY ~%MOD_FOLDER%/area/zb0701/~ ~override~
 // ZB0702 //
 // ------ //
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/area/zb0702/~ ~.*\.\(pvrz|are|tis|wed|bmp\)$~ BEGIN
+ACTION_BASH_FOR ~%MOD_FOLDER%/area/zb0702/~ ~.*\.\(pvrz\|are\|tis\|wed\|bmp\)$~ BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
 END
 // COPY ~%MOD_FOLDER%/area/zb0702/*.pvrz~ ~override~
