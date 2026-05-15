@@ -61,8 +61,6 @@ COPY ~%MOD_FOLDER%/nephetel/cre/zbneph.cre~ ~override~
   SAY BIO @241 /* When asked about her past, NEPHETEL becomes evasive, reminding you that she has an appearance of mystery to uphold. After a moment, she relents and offers up a few rehearsed platitudes: she was born and raised in Thay—lovingly, despite her family's fiendish blood making itself known. Love, however, was apparently not enough, for Nephetel falls uncharacteristically silent when pressed further on her family. Instead, she steers the conversation towards her exploits as a rogue and her natural affinity for staying unseen, offhandedly telling stories of various escapades involving flawless infiltration and escape.
 
   Nephetel is quick to remind you that she has a mission of her own—an anonymous employer has bid her to find a powerful tome, and despite the lack of details she is willing to share, Nephetel seems wholly devoted to this task, as she claims she has been for many years. The source of that devotion, however, remains a mystery for now. */
-  ADD_CRE_ITEM ~ZBPDBRCA~ #0 #0 #0 ~identified~ ~gloves~ EQUIP
-  ADD_CRE_ITEM ~ZBPDRNGA~ #0 #0 #0 ~identified~ ~rring~ EQUIP
   WRITE_ASCII PORTRAIT_LARGE ~zbnephy~ #8
   WRITE_ASCII PORTRAIT_SMALL ~zbnephy~ #8
   WRITE_ASCII SCRIPT_OVERRIDE ~zbnephs~ #8
@@ -77,8 +75,6 @@ COPY ~%MOD_FOLDER%/nephetel/cre/zbneph.cre~ ~override/zbnepha.cre~
   ADD_CRE_ITEM ~POTN10~ #10 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~QITEM1~ EQUIP
   ADD_CRE_ITEM ~POTN41~ #2 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~QITEM2~ EQUIP
   ADD_CRE_ITEM ~POTN52~ #10 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~QITEM3~ EQUIP
-  ADD_CRE_ITEM ~ZBPDBRCA~ #0 #0 #0 ~identified~ ~gloves~ EQUIP
-  ADD_CRE_ITEM ~ZBPDRNGA~ #0 #0 #0 ~identified~ ~rring~ EQUIP
   WRITE_ASCII PORTRAIT_LARGE ~zbnephy~ #8
   WRITE_ASCII PORTRAIT_SMALL ~zbnephy~ #8
   WRITE_ASCII 0x260 ~motatk01~ #8 // General Script (theif attacks)
