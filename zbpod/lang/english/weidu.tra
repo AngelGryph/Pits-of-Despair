@@ -174,12 +174,11 @@ Weight: 10~
 STATISTICS:
 
 Equipped abilities:
-– Immunity to instant-death effects, paralysis, hold, and level drain
-– +60% resistance to cold
+– Immunity to level drain
+– Cold Resistance: +25%
 
 Combat abilities:
 – 10% chance per hit of inflicting Grave Chill on the target, causing 1d4 cold damage instantly, and again once per round in the next 3 rounds. If a save vs. Death is failed, the target is Held for 1 round, otherwise, they are only Slowed
-– Critical hits unleash a ray of necromantic magic into the body of the victim, forcing them to save vs. Death or die. If the target has 60 hit points or less, the save vs. Death is made at -4. Even if a save is made, they still suffer 2d6 magic damage from the shock
 – +5% chance to critically hit (this weapon only)
 
 Charge abilities:
@@ -208,8 +207,8 @@ Now empowered with a second fang of a dracolich, this dagger's dark power is tru
 STATISTICS:
 
 Equipped abilities:
-– Immunity to instant-death effects, paralysis, hold, and level drain
-– Immunity to cold damage
+– Immunity to instant-death effects and level drain
+– Cold Resistance: +50%
 
 Combat abilities:
 – 15% chance per hit of inflicting Grave Chill on the target, causing 2d4 cold damage instantly, and again once per round in the next 3 rounds. If a save vs. Death at -2 is failed, the target is Held for 1 round, otherwise, they are only Slowed
@@ -221,8 +220,8 @@ Charge abilities:
   Special: Protect against the effects of spell levels 1-5 for 1 turn
   Area of Effect: Self
 
-THAC0: +6
-Damage: 1d4+6, +1d3 cold and magic damage
+THAC0: +5
+Damage: 1d4+5, +1d3 cold and magic damage
 Damage type: Piercing
 Speed Factor: 0
 Proficiency Type: Dagger
