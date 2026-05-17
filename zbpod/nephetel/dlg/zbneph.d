@@ -457,3 +457,5 @@ IF ~~ ZBNEPHLEADEROFFEWWORDSJOIN
   SAY @369 /* After you, *leader*. */
   IF ~~ DO ~SetGlobal("ZB_NEPH_JOINS","GLOBAL",1) MakeGlobal() JoinParty()~ EXIT
 END
+
+// GOTO ZBNEPHJ from here on out

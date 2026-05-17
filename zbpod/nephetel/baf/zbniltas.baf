@@ -1,0 +1,20 @@
+IF
+    Global("ZBNEPHQUEST1CUT1", "GLOBAL", 0)
+    Global("ZBNEPHQUEST1","GLOBAL",11)
+    OR(2)
+      AreaCheck("AR1400")
+      AreaCheck("AR1404")
+    GlobalTimerExpired("ZBEPHQUESTTIMER1", "GLOBAL")
+    CombatCounter(0)
+    !StateCheck(Player1, CD_STATE_NOTVALID)
+    InParty("ZBNEPH")
+    InMyArea("ZBNEPH")
+    !StateCheck("ZBNEPH", CD_STATE_NOTVALID)
+    Range([PC], 30)
+THEN
+    RESPONSE #100
+        SetGlobal("ZBNEPHQUEST1CUT1", "GLOBAL", 1)
+        SetGlobal("ZBNEPHQUEST1","GLOBAL",12)
+        StartCutSceneMode()
+        StartCutScene("zbnephq1")
+END

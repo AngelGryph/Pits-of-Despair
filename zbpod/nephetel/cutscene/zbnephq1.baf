@@ -1,0 +1,28 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId("ZBNITLAS")
+        ClearAllActions()
+        CreateCreature("cutspy", [1200.2100], E)
+        SmallWait(25)
+        ActionOverride(Player1,MoveToPoint([1348.1914]))
+        ActionOverride(Player2,MoveToPoint([1348.1914]))
+        ActionOverride(Player3,MoveToPoint([1348.1914]))
+        ActionOverride(Player4,MoveToPoint([1348.1914]))
+        ActionOverride(Player5,MoveToPoint([1348.1914]))
+        ActionOverride(Player6,MoveToPoint([1348.1914]))
+        Wait(3)
+        MoveViewObject("ZBNITLAS", VERY_FAST)
+        ForceSpellPointRES("SPPR304", [1330.2103])
+        Wait(1)
+        DisplayStringHead("ZBNITLAS",@406)
+        Wait(2)
+        ForceSpellPointRES("SPPR304", [1330.2103])
+        Wait(1)
+        DisplayStringHead("ZBNITLAS",@407)
+        Wait(2)
+        ActionOverride("cutspy",DestroySelf())
+        SetGlobal("ZBNEPHQUEST1","GLOBAL",13)
+        StartDialog("ZBNITLAS", Player1)
+END

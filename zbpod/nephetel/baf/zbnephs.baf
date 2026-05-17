@@ -101,3 +101,54 @@ THEN
     StartDialogueNoSet([PC])
     SetInterrupt(TRUE)
 END
+
+// Quest 1
+IF
+    Global("ZBNEPHQUEST1","GLOBAL",4)
+    Global("ZBMADRICKBYE", "GLOBAL", 1)
+    InParty("ZBNEPH")
+    InMyArea("ZBNEPH")
+    !StateCheck("ZBNEPH", CD_STATE_NOTVALID)
+    CombatCounter(0)
+    !StateCheck(Player1, CD_STATE_NOTVALID)
+    See([PC])
+THEN
+    RESPONSE #100
+        SetGlobal("ZBNEPHQUEST1","GLOBAL",5)
+        ClearAllActions()
+        FaceObject([PC])
+        SmallWait(5)
+        StartDialogInterrupt("ZBNEPHJ", [PC])
+END
+
+IF
+    Global("ZBNEPHQUEST1","GLOBAL",0)
+    GlobalGT("Chapter", "GLOBAL", 1)
+    XPGT(Player1, 999999)
+    InParty("ZBNEPH")
+    InMyArea("ZBNEPH")
+    !StateCheck("ZBNEPH", CD_STATE_NOTVALID)
+    CombatCounter(0)
+    !StateCheck(Player1, CD_STATE_NOTVALID)
+    See([PC])
+THEN
+    RESPONSE #100
+        SetGlobalTimer("ZBNEPHQUEST1TIMER", "GLOBAL", EIGHT_HOURS)
+        SetGlobal("ZBNEPHQUEST1","GLOBAL",1)
+END
+
+IF
+    Global("ZBNEPHQUEST1","GLOBAL",1)
+    GlobalTimerExpired("ZBNEPHQUEST1TIMER", "GLOBAL")
+    InParty("ZBNEPH")
+    InMyArea("ZBNEPH")
+    !StateCheck("ZBNEPH", CD_STATE_NOTVALID)
+    CombatCounter(0)
+    !StateCheck(Player1, CD_STATE_NOTVALID)
+    See([PC])
+    AreaType(CITY)
+THEN
+    RESPONSE #100
+        SetGlobal("ZBNEPHQUEST1","GLOBAL",2)
+        CreateCreatureObject("zbmadck", Player1, 0, 0, 0)
+END

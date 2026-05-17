@@ -1,22 +1,21 @@
-Tab 1
 
 # Nephetel
 
 ## Legend:
 
-Yellow = Pre-alpha 1
+Yellow =
 
-Cyan = Pre-alpha 2
+Orange = Implemented into mod
 
-Green = Reviewed by Editor and Finalized
+Green = Reviewed by editor and finalized to be implemented
 
-COLOR = To be sent to Voice Actor
+Teal = To be sent to Voice Actor
 
 Special Note: Nephetel will have a Voice Artist that we will direct. Certain written actions (denoted by *action* example - *laughs*) will be offloaded once we do the voice acting. Use [direction] for such notation on dialog. Example - [dismissive, upset], [unfeeling], etc.
 
 ## Vanilla NPC Banter YOUTUBE LINK:
 
- [Party banter [Edwin] | Baldur's Gate 2](https://www.google.com/url?q=https://www.youtube.com/watch?v%3Dh05B2jBQVyE&sa=D&source=editors&ust=1776531929784439&usg=AOvVaw1BrnTDk0L4UpyICCgNMWxP)  
+ [Party banter [Edwin] | Baldur's Gate 2](https://www.google.com/url?q=https://www.youtube.com/watch?v%3Dh05B2jBQVyE&sa=D&source=editors&ust=1777318457965481&usg=AOvVaw2dklqIki95NGgbVIQXuBfa)  
 Search Youtube by [NPC NAME] BG2 banter
 
 ## Global Variance
@@ -953,16 +952,19 @@ NephyResponseto3: So it’s revenge you’re after. Or, maybe not. You strike me
 
 NephyResponseto4: If you so wish. I’ve no desire to pry if you intend to be antisocial about it. [EXIT]
 
-## PC Banter 2 - The Employer (On a Timer)
+## PC Banter 2 - The Employer
 
 Nephetel: [ALOOFLY] Just so you know, <CHARNAME>, since I am back in Athkatla, it is likely that a representative of my employer will turn up to brief me—sooner rather than later. I just want you to be ready, for it is something that I am bound to act on.
 
 PC Responses:
 
-1. Of course. We shall see to it that your job is done, Nephetel.
-2. I want to hear about your task if I’m going to be helping you.
-3. You should avoid keeping secrets from me, Nephetel. Tell me everything. -1 NEPHY_FRIEND
-4. This again? Stop bothering me with your personal life.
+Of course. We shall see to it that your job is done, Nephetel.
+
+I want to hear about your task if I’m going to be helping you.
+
+You should avoid keeping secrets from me, Nephetel. Tell me everything. -1 NEPHY_FRIEND
+
+This again? Stop bothering me with your personal life.
 
 NephyResponse to 1: I appreciate your trust, but you don’t know the first thing about my task nor my employer—it puts us on… uneven ground, and I dislike that. Especially with someone that I am to call an ally.
 
@@ -974,18 +976,21 @@ NephyResponse to 4: Fine. Just don’t expect me to catch you up when next you c
 
 [from 1, 2, and 3]
 
-Nephetel: I am seeking a magical tome, supposedly missing, that I have tracked to Amn. My relationship to this tome is complicated—I have never touched or seen it, and I have followed many a whispered rumor in order to get this far. A long time ago, someone that I failed got hurt. Badly. And as long as this tome exists, the people who are responsible remain beyond consequence.
+Nephetel: I am seeking a magical tome, supposedly missing, that I have tracked to Amn. My relationship to this tome is complicated—I have never touched or seen it, and I have followed many a whispered rumor in order to get this far. A long time ago, someone that I failed got hurt. Badly. And as long as this tome exists, the people who are responsible remain beyond consequence.
 
-Nephetel: I found resources to help me, and those resources came with expectations. My employer is not someone you would like—well-connected, insufferable, and very invested in seeing this tome found.
+- Nephetel: I found resources to help me, and those resources came with expectations. My employer is not someone you would like—well-connected, insufferable, and very invested in seeing this tome found.
 
-Nephetel: So I search, and I have to suffer the occasional drop-in from some less than pleasant bedfellows from time to time to check in with me or give me new information. And I am *overdue* for a visit.
+Nephetel: So I search, and I have to suffer the occasional drop-in from some less than pleasant bedfellows from time to time to check in with me or give me new information. And I am *overdue* for a visit.
 
-PC Responses:
+PC Responses: [loops back around]
 
-1. Who exactly is your employer?
-2. What happens if you don’t comply?
-3. How much will this endanger me?
-4. Thank you for telling me this, Nephetel. We’ll keep an eye out for anyone seeking you.
+Who exactly is your employer?
+
+What happens if you don’t comply?
+
+How much will this endanger me?
+
+Thank you for telling me this, Nephetel. We’ll keep an eye out for anyone seeking you.
 
 NephyResponse to 1: An ambitious political figure. In the process of seeking aid for my own task, I was quickly roped into their schemes—but they matter little for now, at least until we can get ahold of this tome.
 
@@ -993,18 +998,9 @@ NephyResponse to 2: I don’t really wish to find out. And I won’t—not yet. 
 
 NephyResponse to 3: Seeing how you work, probably not much more than you’re used to. I know that’s probably not very reassuring, but it’s the truth.
 
-NephyResponse to 4: Good. I am glad to have found an ally such as you, <CHARNAME>. *END DIALOGUE*
+- NephyResponse to 4: Good. I am glad to have found an ally such as you, <CHARNAME>. *END DIALOGUE*
 
-NephyResponses 1, 2, 3 lead to:
-
-Nephetel: I suspect you might have other questions.
-
-PC Responses:
-
-5. Who exactly is your employer?
-6. What happens if you don’t comply?
-7. How much will this endanger me?
-8. Thank you for telling me this, Nephetel. We’ll keep an eye out for anyone seeking you.
+—---
 
 ## Finding Eshpel P1 - The Necromancer
 
@@ -1108,9 +1104,9 @@ Dialogue after the cutscene:
 
 Niltash: Gah! Blast, they’re—you’re here. You’ve come here to take it from me! You’ll never take it! It’s MINE.
 
-Nephetel: I guess that’s him. Let’s be careful, <CHARNAME>. He seems not all there. *ahem* We’re not here to take anything from you, friend. What is it that you have?
+Nephetel: Let’s be careful, <CHARNAME>. He seems… not all there. *ahem* We’re not here to take anything from you, friend. What is it that you have?
 
-Niltash: You’re here for the shard, I know you are! They thought it was junk, but I knew it wasn’t. I just have to figure out these glyphs and no one will EVER be able to take from me again. Who are you? WHO ARE YOU?
+Niltash: You’re here for the shard, I know you are! They thought it was junk, but I knew it wasn’t. I just have to figure out these glyphs, then no one will EVER be able to take from me again. Who are you? WHO ARE YOU?
 
         PC responses
 
@@ -1164,6 +1160,8 @@ Nephetel: I don’t think we’ll get any useful information out of him, <CHARNA
 Niltash: No! NO! You will NOT take it from me! Turns hostile.
 
 After combat — when the player picks up the shard.
+
+## After the player picks up the shard
 
 ## PC Banter 3 Cult of Bhaal  (Before Spellhold)
 
@@ -2394,9 +2392,9 @@ VICONIA 4
 
 {*TRIGGERED AS SOON AS IMOEN IS RESCUED IN SPELLHOLD DUNGEON*}
 
-Nephetel: So, this is your foster sister Imoen? Hello Imoen.
+Nephetel: So, this is your foster sister Imoen? Hello, Imoen.
 
-Imoen: Hiya Nephy.
+Imoen: Hiya, Nephy.
 
 Nephetel: [SURPRISED THEN ACCEPTING] N-Nephy? Erm. Well, I'm glad we were able to rescue you. <CHARNAME> has told me a bit about you, but you know how they are, it’s better to go to the source.
 
@@ -2410,11 +2408,11 @@ PC Responses:
 
 2 You two can jabber all you like as long as we keep moving, this is serious. Let’s go.
 
-3 Hmph. Alright Nephy and Immy, as long as you don’t give me a nickname.
+3 Hmph. Alright, Nephy and Immy, as long as you don’t give me a nickname.
 
 Response to 1&2:
 
-Imoen: Oh you love it <CHARNAME>.
+Imoen: Oh, you love it, <CHARNAME>.
 
 Nephetel: [AGREEING] I think they really do.
 
@@ -2436,9 +2434,9 @@ Imoen: Yes it is, and you know it!
 
 Nephetel: [LAUGHING] I won’t tell anyone else our secret. Look at this though. I took it off of a High Priest of Tempus. Look at how shiny the gold is and how many jewels it has in it?
 
-Imoen: OOooo, you are going to be thunderstruck now. Anyways mines bigger!
+Imoen: OOooo, you are going to be thunderstruck now. Anyways, mine’s bigger!
 
-Nephetel: [TEASING] No it’s not.
+Nephetel: [TEASING] No, it’s not!
 
 ## IMOEN 3
 
@@ -2564,7 +2562,7 @@ Nephetel: If I am inherently evil, then how do angels who are inherently good fa
 
 Anomen: I shall have to think on it.
 
-Nephetel: I agree, we both should.
+Nephetel: I agree, we both should.
 
 ## ANOMEN 4
 
@@ -2578,7 +2576,7 @@ Nephetel: This is the question. If beings of pure goodness or evil can change th
 
 Anomen: Hmm. Honestly, this seems like a mind game, but I sense no deception from you. Do you not feel an inner urge to be evil because of your origins?
 
-Nephetel: No priest. My actions should have told you everything you need to know about me. Yes, I am a tiefling, but I decide my own fate. Yes, I am a thief but I choose what and who to steal from with care. Can you accept that my actions are me as much as your actions are you?
+Nephetel: No, priest. My actions should have told you everything you need to know about me. Yes, I am a tiefling, but I decide my own fate. Yes, I am a thief but I choose what and who to steal from with care. Can you accept that my actions are me as much as your actions are you?
 
                                                                                                                                                                         Anomen: Mayhaps this is Helm revealing a truth and… the reason I failed my test.
 
@@ -2592,7 +2590,7 @@ Nephetel: If I am inherently evil, then how do angels who are inherently good fa
 
 Anomen: Hmph. This sounds like a mind game you are attempting to play on me.
 
-Nephetel: Are you so close-minded you cannot even look at these real world examples?
+Nephetel: Are you so close-minded you cannot even look at these real-world examples?
 
 ## ANOMEN TOB 2
 
@@ -2646,7 +2644,7 @@ Nephetel: Then I question your judgement as well.
 
 Keldorn: Nephetel, you are an unrepentant thief, a traitor, and a hired killer. You’re a menace to every honest soul in these lands.
 
-Nephetel: [SARCASTIC AND INSULTING]I am all that and more. You are so trapped in your own despicable morality. [ Please, enlighten me how your squeaky‐clean rulebook makes sense of a world that isn’t black and white.
+Nephetel: [SARCASTIC AND INSULTING] I am all that and more. You are so trapped in your own despicable morality. Please, enlighten me how your squeaky‐clean rulebook makes sense of a world that isn’t black and white.
 
 Keldorn: You cannot know good when you do the evil deeds you have done. The gods will decide your  fate.
 
@@ -2658,7 +2656,7 @@ Keldorn: It’s precisely because of who we travel with that I put my faith in t
 
 {Questions his responsibility because he left his child and his family for the cause of being a paladin. Nephetel lost her family and she gives everything to find them. ONLY TRIGGERS WHEN BOTH KELDORN PERSONAL QUEST AND AFTER NEPHETEL ENEGAR REVEAL}
 
-Keldorn: You are one of the most dishonorable womenI have ever met. How many have you killed in the service of finding your brother? Five? Ten? A hundred? When will it be enough?
+Keldorn: You are one of the most dishonorable women I have ever met. How many have you killed in the service of finding your brother? Five? Ten? A hundred? When will it be enough?
 
 Nephetel: I am the one who would sacrifice anything for my family and yours. You leave them to rot without you, without taking responsibility, and without love.
 
@@ -2720,21 +2718,21 @@ Mazzy: Nephetel, It’s clear you have been through quite a lot. I know myself t
 
 Nephetel: I appreciate you saying so. If it came from anyone else, I would think it would be tinged with pity, not the strength of being different.
 
-Mazzy: Your welcome. As you would say, we are thick as thieves now, are we not?
+Mazzy: You're welcome. As you would say, we are thick as thieves now, are we not?
 
-Nephetel: You behave like a true warrior, Mazzy. It would be an honor to call you friend.
+Nephetel: You behave like a true warrior[[c]](#cmnt3), Mazzy. It would be an honor to call you friend.
 
 Mazzy: And I, you. Let us continue on.
 
 ## MAZZY 2
 
-{Conversation about the difficulty of being a valiant knight of Avoreen, or halfling. Good Natured.}
+{Conversation about the difficulty of being a valiant knight of Arvoreen, or halfling. Good Natured.}
 
-Nephetel: Hey Mazzy, what’s the view like down there. See any good boots lately.
+Nephetel: Hey, Mazzy, what’s the view like down there? See any good boots lately?
 
 Mazzy: I’m glad you piped up, I have this can of rations that needs to be opened, lend me your horns a moment?
 
-Nephetel: I don’t think I can bend over that far, but your welcome to try if you reach.
+Nephetel: I don’t think I can bend over that far, but you're welcome to try if you can reach them...
 
 Mazzy: Oh, I know how to bring anyone low, don’t you worry about that.
 
@@ -2811,7 +2809,7 @@ Nephetel: Arrogant nobles looking down on everything from your ivory tower.
 
 Nalia: Are all tieflings this rude?
 
-Nephetel: Your lack of insight about your own behavior is remarkable.
+Nephetel: Your lack of insight about your own behavior[[d]](#cmnt4) is remarkable.
 
 ## NALIA 2
 
@@ -2873,7 +2871,6 @@ Nephetel: And, for a bard, your words prove rather blunt and clumsy. Must you st
 Haer'Dalis: If I trespass, it is only because the stage beckons so invitingly.
 
 ##   
-  
   
 HAER’DALIS 2  
 
@@ -2967,6 +2964,16 @@ Nephetel: You are such a sweet bear, just like the honey you so love. Thank you.
 
 ## DORN 1
 
+Dorn: So they have let you off your leash. Now out into the world like an abandoned dog.
+
+Nephetel: Only one of us has ever been on a leash and it was not I.
+
+Dorn: Lie all you want, but I can see the hunger for freedom in your eyes.
+
+Nephetel: All you see is a reflection of your own disgusting choices. Down, dog. Back to your master.
+
+Dorn: Careful, this dog bites.
+
 ## DORN 2
 
 **MUST NOT BE PATRONLESS CHECK VARIABLE**
@@ -2983,15 +2990,82 @@ Dorn: There are always those who take power, and those who have it seized from t
 
 ## DORN 3
 
-{{ Just an idea, but there could be a banter that happens only if Dorn lost all his powers, where Nephetel either mocks him, leading to a fight, or congratulates him for becoming unchained, but with disappointment at his attitude and evil remaining unchanged }}
+{{ Just an idea, but there could be a banter that happens only if Dorn lost all his powers, where Nephetel either mocks him, leading to a fight (maybe), or congratulates him for becoming unchained, but with disappointment at his attitude and evil remaining unchanged }}
+
+{{ I’ll add stuff off the top of my head crap, feel free to change anything – Kaelyn }}
+
+Version 1 – Nephetel Mocks Dorny
+
+Nephetel: So, Dorn, how does it feel now that you’re not bound by the fetid fiends? Feeling powerless?
+
+Dorn: Keep talking, fiendling, and I’ll give you a taste of my power… Patrons or not.
+
+Nephetel: You are so incredibly boring, Dorn. Take a joke once upon a time, will you?
+
+Dorn: I EAT JOKERS FOR LUNCH!! {{ Just kidding, but something along the lines of Dorn’s classic horrid personality }}
+
+Version 2 – Nephetel Cautiously Congratulates Evil-Man
+
+Nephetel:  I didn’t think you would be willing to give up on your powers to be free, Dorn. Good for you.
+
+Dorn: I don’t need your approval, thief.
+
+Nephetel: … which clearly didn’t change your sunny and pensive demeanor, I see.
+
+Dorn: Hrrm.
+
+Nephetel: Well, let’s just move on. At least you got a big fiery sword out of it.
 
 ## NEERA 1
 
 {Curiosity about why she is so odd, even beyond being a wild mage. Her speech, mannerisms. Maybe Nephetel knows about wild mages}
 
+  
+Neera: … and this one time I was a squirrel for an entire week! I used to be allergic to nuts, now presto! I’m cured.  
+  
+Nephetel: So, you’re saying wild magic has improved you? What if you were turned into a gremishka?  
+
+Neera: Well, things wouldn’t be so different, except maybe I’d smell funny, right?
+
+Nephetel: No hidden insight into wild magic because you were a being of pure chaotic magic?
+
+Neera: Ooo, maybe I could get a double wild surge, or maybe a triple. Who knows *what* would happen?!
+
+Nephetel: Well, I tried…
+
 ## NEERA 2
 
-{{ Idea: a banter that Neera starts, remarking Nephetel’s ability to dodge the unfortunate side effects of her wild surges, and Nephetel feeling slightly differently about it }}
+Neera: Wow, that last wild surge was strong. It almost felt like the ground was going to start shaking…
+
+Neera: Say, Neph, you’re really getting good at dodging those wild fireballs. I mean, I knew you were a shadowdancer and all, but you’re amazing at it! You dodged that last one like it was nothing!
+
+Nephetel: Eh, you know those ‘wild’ fireballs still can burn us to a crisp, right? I don’t know if you are tone-deaf or insanely optimistic…
+
+Neera: I mean, I’m a wild mage. If I live with the constant fear of what will happen… I mean, I won’t get anything done, y’know.
+
+Nephetel: In a way, that makes sense. Funny how the way you were born forced a certain wisdom on you, huh? I suppose that applies to me in its own way.
+
+Neera: Huh, it does? How?
+
+Nephetel: That is a good question for another time.
+
+## NEERA 3
+
+{{A follow-up to the last banter, Nephetel goes into her forced discipline in vague ways that Neera won’t let up about pinning her down on. Reveals more than she’d like about her “triple life”}}
+
+Neera: How about now, Neph? You were going to tell me about your “wisdom”.
+
+Nephetel: If it will stop your constant badgering, yes. I merely feel that your optimism is a state of your constant encounter with the effects of wild magic. My pessimism is my constant encounters with other people.
+
+Neera: People aren’t all that bad. You don’t think… you are bad, do you?
+
+Nephetel: [SCOFFING] Of course not, but out of those who we meet, how many are decent and worthwhile? Think about it.
+
+Neera: Not everyone is nice or honest or even decent but they chose to be that way. There are just as many that have chosen to be good.
+
+Nephetel: I guess it just matters how early in life you meet what kind of person. You must have had a happy childhood.[[e]](#cmnt5)
+
+## NEERA 4
 
 ## RASAAD 1
 
@@ -3023,6 +3097,20 @@ Rasaad:
 
 {{ Idea: Rasaad becomes less of a stick in the mud about using shadow to her advantage. Could also contain a reference to his abilities to hide in the shadows through his monastic training. Why doesn’t he feel bad about that, huh!? }}
 
+{{ I’ll add stuff off the top of my head crap, feel free to change anything – Kaelyn }}
+
+Rasaad: Nephetel, I’ve been thinking…
+
+Nephetel: Uh-oh.
+
+Rasaad: I think I was rather hasty in my judgments of both your usage of shadow to our advantage…
+
+Nephetel: I sense an apology…
+
+Rasaad: Yes, it’s an apology, indeed. I was… blah blah blah lolz [...]
+
+{...}
+
 ## HEXXAT 1
 
 Hexxat: ...
@@ -3053,196 +3141,139 @@ If Haer’Dalis is in the party
 
 If Haer’Dalis is not in the party.
 
-Tab 2
+~={green}Nephetel Act 2 Quest Dialog=~
 
-Nephetel Act 2 Quest Dialog
+~={green}##   QUEST INTRO=~
 
-##   
-QUEST INTRO
+~={green}A messenger arrives for Nephetel to kick off her mainline quest.=~
 
-A messenger arrives for Nephetel to kick off her mainline quest.
+~={green}Notes: Madrick is a rogue=~
 
-Notes: Madrick is a rogue
+~={green}[In Athkatla]=~
 
-[In Athkatla]
+~={green}Mardrick: Greetings, shadowdancer. It has been some time, has it not? I received word you were back in Amn—despite your profession, perhaps you are not as inconspicuous as you may think.=~
 
-Mardrick: Greetings, shadowdancer. It has been some time, has it not? I received word you were back in Amn—despite your profession, perhaps you are not as inconspicuous as you may think.
+~={green}Nephetel: The pleasure is all yours, I’m sure. I wish I could say I’m surprised you came looking for me so quickly, but I’m not. Speak freely, Mardrick. I don’t have all day.=~
 
-Nephetel: The pleasure is all yours, I’m sure. I wish I could say I’m surprised you came looking for me so quickly, but I’m not. Speak freely, Mardrick. I don’t have all day.
+~={green}Mardrick: Mm. Patience is a virtue, shadowdancer, and one that is particularly pertinent to your task. I have yet another lead for you.=~
 
-Mardrick: Mm. Patience is a virtue, shadowdancer, and one that is particularly pertinent to your task. I have yet another lead for you.
+~={green}Mardrick: In the Umar Hills, there is a little village named Imnesvale. There is an innkeep there that has been running his tongue about a rather disturbing visitor who spoke of things pertaining to your task. It would be pertinent for you to investigate.=~
 
-Mardrick: In the Umar Hills, there is a little village named Imnesvale. There is an innkeep there that has been running his tongue about a rather disturbing visitor who spoke of things pertaining to your task. It would be pertinent for you to investigate.
+~={green}Nephetel: That’s more information than I had before, but not by much. Do you have any *specifics* about this disturbing visitor?=~
 
-Nephetel: That’s more information than I had before, but not by much. Do you have any *specifics* about this disturbing visitor?
+~={green}Mardrick: No.=~
 
-Mardrick: No.
+~={green}Nephetel: Fantastic. Well, I know what to do now. No need to hang around!=~
 
-Nephetel: Fantastic. Well, I know what to do now. No need to hang around!
+~={green}Mardrick: As you wish. I expect that I will see you again.=~
 
-Mardrick: As you wish. I expect that I will see you again.
+~={green}[Conversation ends and Mardrick leaves]=~
 
-[Conversation ends and Mardrick leaves]
+~={green}—---=~
 
-—---
+~={green}[Nephetel begins a conversation once Mardrick has left]=~
 
-[Nephetel begins a conversation once Mardrick has left]
+~={green}Nephetel: I don’t enjoy being summoned like that, but I must act on this information—even if it turns out to be a dead end for my task. But I’m likely getting ahead of myself. I don’t want to keep you in the dark, and I’m sure you have questions.=~
 
-Nephetel: I don’t enjoy being summoned like that, but I must act on this information—even if it turns out to be a dead end for my task. But I’m likely getting ahead of myself. I don’t want to keep you in the dark, and I’m sure you have questions.
+~={green}PC Responses:=~
 
-PC Responses:
+~={green}I want to hear about your task if I’m going to be helping you.=~
 
-I want to hear about your task if I’m going to be helping you.
+~={green}You’re damn right I do. Who was that? What is it that you do?=~
 
-You’re damn right I do. Who was that? What is it that you do?
+~={green}I couldn’t care less about the specifics.  -1 NEPHY_FRIEND=~
 
-I couldn’t care less about the specifics.  -1 NEPHY_FRIEND
+~={green}NephyResponse to 1: Right, that’s completely reasonable. Though it’s not the easiest thing to talk about.=~
 
-NephyResponse to 1: Right, that’s completely reasonable. Though it’s not the easiest thing to talk about.
+~={green}NephyResponse to 2: I’ll tell you as much as I can, but it may not be as much as you want.=~
 
-NephyResponse to 2: I’ll tell you as much as I can, but it may not be as much as you want.
+~={green}NephyResponse to 3: That makes my life easier then. Let’s go to the Umar Hills soon. *EXIT DIALOGUE*=~
 
-NephyResponse to 3: That makes my life easier then. Let’s go to the Umar Hills soon. *EXIT DIALOGUE*
+~={green}[from 1 and 2]=~
 
-[from 1 and 2]
+~={green}Nephetel: I am seeking a magical tome, but not just because I was hired to do it. A long time ago, someone that I failed got… hurt. As long as this tome exists, the people who are responsible remain beyond consequence.=~
 
-Nephetel: I am seeking a magical tome, but not just because I was hired to do it. A long time ago, someone that I failed got… hurt. As long as this tome exists, the people who are responsible remain beyond consequence.
+~={green}Nephetel: I found resources to help me, and those resources came with expectations. My employer is not someone you would like—ambitious, well-connected, and very invested in seeing this finished. Mardrick, the man from before, serves the same interests.=~
 
-Nephetel: I found resources to help me, and those resources came with expectations. My employer is not someone you would like—ambitious, well-connected, and very invested in seeing this finished. Mardrick, the man from before, serves the same interests.
+~={green}Nephetel: So I search, and I have to suffer the occasional drop-in from my unlikeable bedfellows from time to time.=~
 
-Nephetel: So I search, and I have to suffer the occasional drop-in from my unlikeable bedfellows from time to time.
+~={green}—---=~
 
-—---
+~={green}## Speaking with Vincenzo=~
 
-## PC Banter 2 - The Employer
+~={green}[When the player approaches and speaks to Vincenzo, the innkeep in the Imnesvale Inn, Nephetel takes over the conversation – though ONLY after having spoken with Mardrick after PC banter 2.]=~
 
-Nephetel: [ALOOFLY] Just so you know, <CHARNAME>, since I am back in Athkatla, it is likely that a representative of my employer will turn up to brief me—sooner rather than later. I just want you to be ready, for it is something that I am bound to act on.
+~={green}Vincenzo the Innkeep: Well, that’s not a sight ye see wanderin’ in off th’ road every day. Welcome, me friends, and do be mindin’ yer horns on th’ beams, me lady. I’d hate t’ have the place collapse on us all!=~
 
-PC Responses:
+~={green}Nephetel: Keep your head about you, if you please. I’m here for information—I heard word that you had something of a disturbing customer visit your inn recently. Possibly mentioned something about a magic book.=~
 
-Of course. We shall see to it that your job is done, Nephetel.
+~={green}Willet the Stableboy: Aye, a right blatherer, that one!=~
 
-I want to hear about your task if I’m going to be helping you.
+~={green}Vincenzo the Innkeep: Quiet, boy! Ye’ve gone an’ told ‘er that he WAS here.=~
 
-You should avoid keeping secrets from me, Nephetel. Tell me everything. -1 NEPHY_FRIEND
+~={green}Vincenzo the Innkeep: Aye… no point tryin’ t’ play clever now. What is it ye want to know?=~
 
-This again? Stop bothering me with your personal life.
+~={green}Nephetel: Tell me what he looked like, what he was speaking of, and where he went. This is more important than you know.=~
 
-NephyResponse to 1: I appreciate your trust, but you don’t know the first thing about my task nor my employer—it puts us on… uneven ground, and I dislike that. Especially with someone that I am to call an ally.
+~={green}Vincenzo the Innkeep: As ye wish. He wore tattered black robes, looked like he hadn’t slept proper in days. I offered th’ fellow a room ’fore I realized he’d be bad for business, but he just kept mutterin’ on about some book, and a… shard?. Figured he got knocked on th' head.=~
 
-NephyResponse to 2: Of course. It is only reasonable, and you have been rather forthcoming with me so far—I ought to do the same with you.
+~={green}Vincenzo the Innkeep: Last I saw, he headed north. An’ if he’s wandered off toward th’ old forest… well. Them creepies out there’ve likely done their way with him by now.=~
 
-NephyResponse to 3: Everyone has their secrets, <CHARNAME>. Even you. And while I do not oft respond kindly to barely-veiled threats, I do think it best that you are aware of my task.
+~={green}Nephetel: Thank you. That will be all.=~
 
-NephyResponse to 4: Fine. Just don’t expect me to catch you up when next you come to me with questions. *END DIALOGUE*
+~={green}Willet the Stableboy: ‘Ey, that lady’s got a tail!=~
 
-[from 1, 2, and 3]
+~={green}—--  =~
 
-Nephetel: I am seeking a magical tome, supposedly missing, that I have tracked to Amn. My relationship to this tome is complicated—I have never touched or seen it, and I have followed many a whispered rumor in order to get this far. A long time ago, someone that I failed got hurt. Badly. And as long as this tome exists, the people who are responsible remain beyond consequence.
+~={green}## Enter Niltash=~
 
-- Nephetel: I found resources to help me, and those resources came with expectations. My employer is not someone you would like—well-connected, insufferable, and very invested in seeing this tome found.
+~={green}Note: Niltash is a gnome=~
 
-Nephetel: So I search, and I have to suffer the occasional drop-in from some less than pleasant bedfellows from time to time to check in with me or give me new information. And I am *overdue* for a visit.
+~={green}  =~
+~={green}[When the player enters the Ruined Temple area (regardless of whether or not it has been cleansed) Nephetel will soon chime up – maybe twenty seconds after arriving]=~
 
-PC Responses: [loops back around]
+~={green}Nephetel: Well, I can certainly see my quarry coming to a place like this, judging from his description. Let’s look around. Perhaps he’s still here.=~
 
-Who exactly is your employer?
+~={green}- Cutscene: [Niltash (human necromancer/cleric, is standing at ~x=4082, y=2164. When the player gets close enough, a cutscene begins: He is standing facing the rock at the location. He casts Glyph of Warding on it.=~
 
-What happens if you don’t comply?
+~={green}- Niltash: No, no! That’s… that’s not it.=~
 
-How much will this endanger me?
+~={green}- [He casts the spell on the rock again.]=~
 
-Thank you for telling me this, Nephetel. We’ll keep an eye out for anyone seeking you.
+~={green}- Niltash: Why can’t I… remember…=~
 
-NephyResponse to 1: An ambitious political figure. In the process of seeking aid for my own task, I was quickly roped into their schemes—but they matter little for now, at least until we can get ahold of this tome.
+~={green}- [He turns to the player, cutscene ends, and dialogue begins]=~
 
-NephyResponse to 2: I don’t really wish to find out. And I won’t—not yet. I need leverage first before I can even think of walking away from them.
+~={green}- Dialogue after the cutscene:=~
 
-NephyResponse to 3: Seeing how you work, probably not much more than you’re used to. I know that’s probably not very reassuring, but it’s the truth.
+~={green}- Niltash: Gah! Blast, they’re—you’re here. You’ve come here to take it from me! You’ll never take it! It’s MINE.=~
+~={green}- Nephetel: I guess that’s him. Let’s be careful, <CHARNAME>. He seems not all there. ahem We’re not here to take anything from you, friend. What is it that you have?=~
+~={green}- Niltash: You’re here for the shard, I know you are! They thought it was junk, but I knew it wasn’t. I just have to figure out these glyphs and no one will EVER be able to take from me again. Who are you? WHO ARE YOU?=~
+~={green}- PC responses=~
 
-- NephyResponse to 4: Good. I am glad to have found an ally such as you, <CHARNAME>. *END DIALOGUE*
+~={green}1. I’m <CHARNAME>, and this is a friend of mine. We’re adventurers—we just want to talk.=~
+~={green}2. Just people passing through. We’re not here to take anything from you.=~
+~={green}3. First, you had better tell us who you are and what you’re doing.=~
+~={green}4. That’s not your concern. Just hand over whatever it is you’re holding and there won’t be trouble.=~
 
-—---
+~={green}- Niltash response to 1: Talk? I—I… ungh. Niltash: Did you just call us adventurers? Diving into this hellhole hardly feels like an adventure. What I wouldn’t give for a… for a…=~
+~={green}- Niltash response to 2: Not here to take from me? I— Niltash: Why would we be “passing through”, Brevrick? That was never going to work. Next time, let me do the… the…=~
+~={green}- Niltash response to 3: Me? I’m… I’m… Niltash: I’m the best burglar this side of the Heartlands! Trust me, if there’s anyone who can get you in there, it’s… it’s…=~
+~={green}- Niltash response to 4: No, it’s mine! It’s— Niltash: No matter how many times you ask, Vilo, you’re not touching the shard! It’s here for—for—=~
+~={green}- Niltash (from all): Ngh! Get out of my head. OUT! Get away from me!=~
 
-## Speaking with Vincenzo
+~={green}NPC Interjections=~
 
-[When the player approaches and speaks to Vincenzo, the innkeep in the Imnesvale Inn, Nephetel takes over the conversation – though ONLY after having spoken with Mardrick after PC banter 2.]
+~={green}- Anomen: Must we engage with the insane on a regular basis? This wretched fool is too far gone already.=~
 
-Vincenzo the Innkeep: Well, that’s not a sight ye see wanderin’ in off th’ road every day. Welcome, me friends, and do be mindin’ yer horns on th’ beams, me lady. I’d hate t’ have the place collapse on us all!
+~={green}- Valygar: This man has clearly played with forces beyond him as all fools wont to do.=~
 
-Nephetel: Keep your head about you, if you please. I’m here for information—I heard word that you had something of a disturbing customer visit your inn recently. Possibly mentioned something about a magic book.
+~={green}- Edwin: The simpleton has driven himself mad with whatever power it is he possesses. We ought to remove it from his inept hands before he damages something.=~
 
-Willet the Stableboy: Aye, a right blatherer, that one!
+~={green}- Jan: Ahh he reminds me of Uncle Gerhardt. Rambling, thieving, worried about the demon ferrets eating his brain from the inside out. And people think my stories don’t make any sense.=~
 
-Vincenzo the Innkeep: Quiet, boy! Ye’ve gone an’ told ‘er that he WAS here.
+~={green}- Keldorn: There is a vile aura stemming from this man in a most unsettling fashion. Best that we cut it off at the source before it spreads.=~
 
-Vincenzo the Innkeep: Aye… no point tryin’ t’ play clever now. What is it ye want to know?
+~={green}Finish with Nephetel=~
 
-Nephetel: Tell me what he looked like, what he was speaking of, and where he went. This is more important than you know.
-
-Vincenzo the Innkeep: As ye wish. He wore tattered black robes, looked like he hadn’t slept proper in days. I offered th’ fellow a room ’fore I realized he’d be bad for business, but he just kept mutterin’ on about some book, and a… shard?. Figured he got knocked on th' head.
-
-Vincenzo the Innkeep: Last I saw, he headed north. An’ if he’s wandered off toward th’ old forest… well. Them creepies out there’ve likely done their way with him by now.
-
-Nephetel: Thank you. That will be all.
-
-Willet the Stableboy: ‘Ey, that lady’s got a tail!
-
-—--  
-
-## Enter Niltash
-
-Note: Niltash is a gnome
-
-  
-[When the player enters the Ruined Temple area (regardless of whether or not it has been cleansed) Nephetel will soon chime up – maybe twenty seconds after arriving]
-
-Nephetel: Well, I can certainly see my quarry coming to a place like this, judging from his description. Let’s look around. Perhaps he’s still here.
-
-- Cutscene: [Niltash (human necromancer/cleric, is standing at ~x=4082, y=2164. When the player gets close enough, a cutscene begins: He is standing facing the rock at the location. He casts Glyph of Warding on it.
-
-- Niltash: No, no! That’s… that’s not it.
-
-- [He casts the spell on the rock again.]
-
-- Niltash: Why can’t I… remember…
-
-- [He turns to the player, cutscene ends, and dialogue begins]
-
-- Dialogue after the cutscene:
-
-- Niltash: Gah! Blast, they’re—you’re here. You’ve come here to take it from me! You’ll never take it! It’s MINE.
-- Nephetel: I guess that’s him. Let’s be careful, <CHARNAME>. He seems not all there. ahem We’re not here to take anything from you, friend. What is it that you have?
-- Niltash: You’re here for the shard, I know you are! They thought it was junk, but I knew it wasn’t. I just have to figure out these glyphs and no one will EVER be able to take from me again. Who are you? WHO ARE YOU?
-- PC responses
-
-1. I’m <CHARNAME>, and this is a friend of mine. We’re adventurers—we just want to talk.
-2. Just people passing through. We’re not here to take anything from you.
-3. First, you had better tell us who you are and what you’re doing.
-4. That’s not your concern. Just hand over whatever it is you’re holding and there won’t be trouble.
-
-- Niltash response to 1: Talk? I—I… ungh. Niltash: Did you just call us adventurers? Diving into this hellhole hardly feels like an adventure. What I wouldn’t give for a… for a…
-- Niltash response to 2: Not here to take from me? I— Niltash: Why would we be “passing through”, Brevrick? That was never going to work. Next time, let me do the… the…
-- Niltash response to 3: Me? I’m… I’m… Niltash: I’m the best burglar this side of the Heartlands! Trust me, if there’s anyone who can get you in there, it’s… it’s…
-- Niltash response to 4: No, it’s mine! It’s— Niltash: No matter how many times you ask, Vilo, you’re not touching the shard! It’s here for—for—
-- Niltash (from all): Ngh! Get out of my head. OUT! Get away from me!
-
-NPC Interjections
-
-- Anomen: Must we engage with the insane on a regular basis? This wretched fool is too far gone already.
-
-- Valygar: This man has clearly played with forces beyond him as all fools wont to do.
-
-- Edwin: The simpleton has driven himself mad with whatever power it is he possesses. We ought to remove it from his inept hands before he damages something.
-
-- Jan: Ahh he reminds me of Uncle Gerhardt. Rambling, thieving, worried about the demon ferrets eating his brain from the inside out. And people think my stories don’t make any sense.
-
-- Keldorn: There is a vile aura stemming from this man in a most unsettling fashion. Best that we cut it off at the source before it spreads.
-
-Finish with Nephetel
-
-- Nephetel: I don’t think we’ll get any useful information out of him, <CHARNAME>. Whatever caused him to become this way could be useful, though.
-
-[[a]](#cmnt_ref1)Personal To-Do
-
-[[b]](#cmnt_ref2)FILE: HAERDA.DLG
+~={green}- Nephetel: I don’t think we’ll get any useful information out of him, <CHARNAME>. Whatever caused him to become this way could be useful, though.=~

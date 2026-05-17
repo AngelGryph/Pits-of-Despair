@@ -4,149 +4,147 @@
 // ZB0777 //
 // ------ //
 COPY_EXISTING ~AR0701.ARE~ ~override/ZB0799.ARE~
-READ_LONG   0x54 actor_off
-READ_SHORT  0x58 actor_num
-PATCH_IF (~%actor_num%~ > 0) BEGIN
-  WRITE_SHORT 0x58 0
-  READ_LONG   0x5c triggers_off
-  PATCH_IF (~%triggers_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x5c ~%triggers_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x60 spawn_off
-  PATCH_IF (~%spawn_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x60 ~%spawn_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x68 entrance_off
-  PATCH_IF (~%entrance_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x68 ~%entrance_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x70 contain_off
-  PATCH_IF (~%contain_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x70 ~%contain_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x78 item_off
-  PATCH_IF (~%item_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x78 ~%item_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x7c vert_off
-  PATCH_IF (~%vert_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x7c ~%vert_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x84 ambi_off
-  PATCH_IF (~%ambi_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x84 ~%ambi_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x88 var_off
-  PATCH_IF (~%var_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x88 ~%var_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xa0 explore_off
-  PATCH_IF (~%explore_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xa0 ~%explore_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xa8 door_off
-  PATCH_IF (~%door_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xa8 ~%door_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xb0 anim_off
-  PATCH_IF (~%anim_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xb0 ~%anim_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xb8 tiled_off
-  PATCH_IF (~%tiled_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xb8 ~%tiled_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xbc song_off
-  PATCH_IF (~%song_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xbc ~%song_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xc0 rest_enc_off
-  PATCH_IF (~%rest_enc_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xc0 ~%rest_enc_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xc4 auto_map_off
-  PATCH_IF (~%auto_map_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xc4 ~%auto_map_off%~ - ~%actor_num%~ * 0x110
-  END
-  DELETE_BYTES ~%actor_off%~ ~%actor_num%~ * 0x110
-END
+    READ_LONG 0x54 actor_off
+    READ_SHORT 0x58 actor_num
+    PATCH_IF (~%actor_num%~ > 0) BEGIN
+        WRITE_SHORT 0x58 0
+        READ_LONG 0x5c triggers_off
+        PATCH_IF (~%triggers_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x5c ~%triggers_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x60 spawn_off
+        PATCH_IF (~%spawn_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x60 ~%spawn_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x68 entrance_off
+        PATCH_IF (~%entrance_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x68 ~%entrance_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x70 contain_off
+        PATCH_IF (~%contain_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x70 ~%contain_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x78 item_off
+        PATCH_IF (~%item_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x78 ~%item_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x7c vert_off
+        PATCH_IF (~%vert_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x7c ~%vert_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x84 ambi_off
+        PATCH_IF (~%ambi_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x84 ~%ambi_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x88 var_off
+        PATCH_IF (~%var_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x88 ~%var_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xa0 explore_off
+        PATCH_IF (~%explore_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xa0 ~%explore_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xa8 door_off
+        PATCH_IF (~%door_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xa8 ~%door_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xb0 anim_off
+        PATCH_IF (~%anim_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xb0 ~%anim_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xb8 tiled_off
+        PATCH_IF (~%tiled_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xb8 ~%tiled_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xbc song_off
+        PATCH_IF (~%song_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xbc ~%song_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xc0 rest_enc_off
+        PATCH_IF (~%rest_enc_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xc0 ~%rest_enc_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xc4 auto_map_off
+        PATCH_IF (~%auto_map_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xc4 ~%auto_map_off%~ - ~%actor_num%~ * 0x110
+        END
+        DELETE_BYTES ~%actor_off%~ ~%actor_num%~ * 0x110
+    END
 
-APPEND ~MASTAREA.2da~ ~ZB0799     value      ~
-UNLESS ~ZB0799~
+APPEND ~MASTAREA.2da~ ~ZB0799     value      ~ UNLESS ~ZB0799~
 
 // ------ //
 // ZB0042 //
 // ------ //
 COPY_EXISTING ~AR0042.ARE~ ~override/ZB0042.ARE~
-READ_LONG   0x54 actor_off
-READ_SHORT  0x58 actor_num
-PATCH_IF (~%actor_num%~ > 0) BEGIN
-  WRITE_SHORT 0x58 0
-  READ_LONG   0x5c triggers_off
-  PATCH_IF (~%triggers_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x5c ~%triggers_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x60 spawn_off
-  PATCH_IF (~%spawn_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x60 ~%spawn_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x68 entrance_off
-  PATCH_IF (~%entrance_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x68 ~%entrance_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x70 contain_off
-  PATCH_IF (~%contain_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x70 ~%contain_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x78 item_off
-  PATCH_IF (~%item_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x78 ~%item_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x7c vert_off
-  PATCH_IF (~%vert_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x7c ~%vert_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x84 ambi_off
-  PATCH_IF (~%ambi_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x84 ~%ambi_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x88 var_off
-  PATCH_IF (~%var_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x88 ~%var_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xa0 explore_off
-  PATCH_IF (~%explore_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xa0 ~%explore_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xa8 door_off
-  PATCH_IF (~%door_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xa8 ~%door_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xb0 anim_off
-  PATCH_IF (~%anim_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xb0 ~%anim_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xb8 tiled_off
-  PATCH_IF (~%tiled_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xb8 ~%tiled_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xbc song_off
-  PATCH_IF (~%song_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xbc ~%song_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xc0 rest_enc_off
-  PATCH_IF (~%rest_enc_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xc0 ~%rest_enc_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xc4 auto_map_off
-  PATCH_IF (~%auto_map_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xc4 ~%auto_map_off%~ - ~%actor_num%~ * 0x110
-  END
-  DELETE_BYTES ~%actor_off%~ ~%actor_num%~ * 0x110
-END
+    READ_LONG 0x54 actor_off
+    READ_SHORT 0x58 actor_num
+    PATCH_IF (~%actor_num%~ > 0) BEGIN
+        WRITE_SHORT 0x58 0
+        READ_LONG 0x5c triggers_off
+        PATCH_IF (~%triggers_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x5c ~%triggers_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x60 spawn_off
+        PATCH_IF (~%spawn_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x60 ~%spawn_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x68 entrance_off
+        PATCH_IF (~%entrance_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x68 ~%entrance_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x70 contain_off
+        PATCH_IF (~%contain_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x70 ~%contain_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x78 item_off
+        PATCH_IF (~%item_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x78 ~%item_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x7c vert_off
+        PATCH_IF (~%vert_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x7c ~%vert_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x84 ambi_off
+        PATCH_IF (~%ambi_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x84 ~%ambi_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x88 var_off
+        PATCH_IF (~%var_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x88 ~%var_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xa0 explore_off
+        PATCH_IF (~%explore_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xa0 ~%explore_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xa8 door_off
+        PATCH_IF (~%door_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xa8 ~%door_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xb0 anim_off
+        PATCH_IF (~%anim_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xb0 ~%anim_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xb8 tiled_off
+        PATCH_IF (~%tiled_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xb8 ~%tiled_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xbc song_off
+        PATCH_IF (~%song_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xbc ~%song_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xc0 rest_enc_off
+        PATCH_IF (~%rest_enc_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xc0 ~%rest_enc_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xc4 auto_map_off
+        PATCH_IF (~%auto_map_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xc4 ~%auto_map_off%~ - ~%actor_num%~ * 0x110
+        END
+        DELETE_BYTES ~%actor_off%~ ~%actor_num%~ * 0x110
+    END
 
-APPEND ~MASTAREA.2da~ ~ZB0042     value      ~
-UNLESS ~ZB0042~
+APPEND ~MASTAREA.2da~ ~ZB0042     value      ~ UNLESS ~ZB0042~
 
 // ------ //
 // ZB2010 //
@@ -157,94 +155,90 @@ COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/area/zb2010/zb2010.baf~
 
 COPY ~%MOD_FOLDER%/area/zb2010/zb2010.are~ ~override~
 
-APPEND ~MASTAREA.2da~ ~ZB2010     value      ~
-UNLESS ~ZB2010~
+APPEND ~MASTAREA.2da~ ~ZB2010     value      ~ UNLESS ~ZB2010~
 
 // ------ //
 // ZB8201 //
 // ------ //
 COPY_EXISTING ~OH8200.ARE~ ~override/ZB8201.ARE~
-WRITE_ASCII AREA_SCRIPT ~zbbare1~ #8
-READ_LONG   0x54 actor_off
-READ_SHORT  0x58 actor_num
-PATCH_IF (~%actor_num%~ > 0) BEGIN
-  WRITE_SHORT 0x58 0
-  READ_LONG   0x5c triggers_off
-  PATCH_IF (~%triggers_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x5c ~%triggers_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x60 spawn_off
-  PATCH_IF (~%spawn_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x60 ~%spawn_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x68 entrance_off
-  PATCH_IF (~%entrance_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x68 ~%entrance_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x70 contain_off
-  PATCH_IF (~%contain_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x70 ~%contain_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x78 item_off
-  PATCH_IF (~%item_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x78 ~%item_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x7c vert_off
-  PATCH_IF (~%vert_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x7c ~%vert_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x84 ambi_off
-  PATCH_IF (~%ambi_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x84 ~%ambi_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0x88 var_off
-  PATCH_IF (~%var_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0x88 ~%var_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xa0 explore_off
-  PATCH_IF (~%explore_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xa0 ~%explore_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xa8 door_off
-  PATCH_IF (~%door_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xa8 ~%door_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xb0 anim_off
-  PATCH_IF (~%anim_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xb0 ~%anim_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xb8 tiled_off
-  PATCH_IF (~%tiled_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xb8 ~%tiled_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xbc song_off
-  PATCH_IF (~%song_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xbc ~%song_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xc0 rest_enc_off
-  PATCH_IF (~%rest_enc_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xc0 ~%rest_enc_off%~ - ~%actor_num%~ * 0x110
-  END
-  READ_LONG   0xc4 auto_map_off
-  PATCH_IF (~%auto_map_off%~ >= ~%actor_off%~) BEGIN
-    WRITE_LONG 0xc4 ~%auto_map_off%~ - ~%actor_num%~ * 0x110
-  END
-  DELETE_BYTES ~%actor_off%~ ~%actor_num%~ * 0x110
-END
+    WRITE_ASCII AREA_SCRIPT ~zbbare1~ #8
+    READ_LONG 0x54 actor_off
+    READ_SHORT 0x58 actor_num
+    PATCH_IF (~%actor_num%~ > 0) BEGIN
+        WRITE_SHORT 0x58 0
+        READ_LONG 0x5c triggers_off
+        PATCH_IF (~%triggers_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x5c ~%triggers_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x60 spawn_off
+        PATCH_IF (~%spawn_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x60 ~%spawn_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x68 entrance_off
+        PATCH_IF (~%entrance_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x68 ~%entrance_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x70 contain_off
+        PATCH_IF (~%contain_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x70 ~%contain_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x78 item_off
+        PATCH_IF (~%item_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x78 ~%item_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x7c vert_off
+        PATCH_IF (~%vert_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x7c ~%vert_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x84 ambi_off
+        PATCH_IF (~%ambi_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x84 ~%ambi_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0x88 var_off
+        PATCH_IF (~%var_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0x88 ~%var_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xa0 explore_off
+        PATCH_IF (~%explore_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xa0 ~%explore_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xa8 door_off
+        PATCH_IF (~%door_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xa8 ~%door_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xb0 anim_off
+        PATCH_IF (~%anim_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xb0 ~%anim_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xb8 tiled_off
+        PATCH_IF (~%tiled_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xb8 ~%tiled_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xbc song_off
+        PATCH_IF (~%song_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xbc ~%song_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xc0 rest_enc_off
+        PATCH_IF (~%rest_enc_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xc0 ~%rest_enc_off%~ - ~%actor_num%~ * 0x110
+        END
+        READ_LONG 0xc4 auto_map_off
+        PATCH_IF (~%auto_map_off%~ >= ~%actor_off%~) BEGIN
+            WRITE_LONG 0xc4 ~%auto_map_off%~ - ~%actor_num%~ * 0x110
+        END
+        DELETE_BYTES ~%actor_off%~ ~%actor_num%~ * 0x110
+    END
 
-APPEND ~MASTAREA.2da~ ~ZB8201     value      ~
-UNLESS ~ZB8201~
+APPEND ~MASTAREA.2da~ ~ZB8201     value      ~ UNLESS ~ZB8201~
 
 // -------- //
 // Nephetel //
 // -------- //
 // Add neph to trademeet inn after escape
-EXTEND_BOTTOM ~AR2010.BCS~ ~%MOD_FOLDER%/area/ar2010/ar2010.baf~
-  EVALUATE_BUFFER
+EXTEND_BOTTOM ~AR2010.BCS~ ~%MOD_FOLDER%/area/ar2010/ar2010.baf~ EVALUATE_BUFFER
 
 // Add neph to COPPERCORENT
-EXTEND_BOTTOM ~AR0406.BCS~ ~%MOD_FOLDER%/area/ar0406/ar0406.baf~
-  EVALUATE_BUFFER
+EXTEND_BOTTOM ~AR0406.BCS~ ~%MOD_FOLDER%/area/ar0406/ar0406.baf~ EVALUATE_BUFFER
 
 //
 // Overwrite Pits files
@@ -253,41 +247,38 @@ COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/area/zb8x~
 
 // HUB
 COPY_EXISTING ~OH8100.ARE~ ~override/ZB8100.ARE~
-  WRITE_ASCII AREA_SCRIPT ~zbbhub~ #8
+    WRITE_ASCII AREA_SCRIPT ~zbbhub~ #8
 
 // Arena
 COPY_EXISTING ~OH8200.ARE~ ~override/ZB8200.ARE~
-  WRITE_ASCII AREA_SCRIPT ~zbbare1~ #8
+    WRITE_ASCII AREA_SCRIPT ~zbbare1~ #8
 COPY_EXISTING ~OH8300.ARE~ ~override/ZB8300.ARE~
-  WRITE_ASCII AREA_SCRIPT ~zbbare1~ #8
+    WRITE_ASCII AREA_SCRIPT ~zbbare1~ #8
 COPY_EXISTING ~OH8400.ARE~ ~override/ZB8400.ARE~
-  WRITE_ASCII AREA_SCRIPT ~zbbare1~ #8
+    WRITE_ASCII AREA_SCRIPT ~zbbare1~ #8
 
 // Update area files
-APPEND ~MASTAREA.2da~ ~ZB8100     value      ~
-UNLESS ~ZB8100~
-APPEND ~MASTAREA.2da~ ~ZB8200     value      ~
-UNLESS ~ZB8200~
-APPEND ~MASTAREA.2da~ ~ZB8300     value      ~
-UNLESS ~ZB8300~
-APPEND ~MASTAREA.2da~ ~ZB8400     value      ~
-UNLESS ~ZB8400~
+APPEND ~MASTAREA.2da~ ~ZB8100     value      ~ UNLESS ~ZB8100~
+APPEND ~MASTAREA.2da~ ~ZB8200     value      ~ UNLESS ~ZB8200~
+APPEND ~MASTAREA.2da~ ~ZB8300     value      ~ UNLESS ~ZB8300~
+APPEND ~MASTAREA.2da~ ~ZB8400     value      ~ UNLESS ~ZB8400~
 
-//-------------------------------------------------------------------------
+// -------------------------------------------------------------------------
 // Watcher's Keep -- Crypt -- Demi-Lich
 COPY_EXISTING ~ar3027.are~ ~override~
-  LPF ALTER_AREA_ACTOR STR_VAR actor_name = ~Demi-Lich~ cre_file = ~zbademi1~ END // Replace demilich with new version in wk
-
-// Add areas and supporting files
-//COPY ~%MOD_FOLDER%/area/bams/~ ~override~ // Removed from now TODO: Figure out what it is
+    LPF ALTER_AREA_ACTOR
+        STR_VAR
+            actor_name = ~Demi-Lich~
+            cre_file   = ~zbademi1~
+    END
 
 // ------ //
 // ZB0700 //
 // ------ //
-ACTION_BASH_FOR ~%MOD_FOLDER%/area/ovltis/~ ~.*\.tis$~ BEGIN
-  ACTION_IF !FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~ BEGIN
-  	COPY ~%BASH_FOR_FILESPEC%~ ~override~
-  END
+ACTION_BASH_FOR ~%MOD_FOLDER%/area/ovltis/~ ~.*\.tis$~  BEGIN
+    ACTION_IF !FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~ BEGIN
+        COPY ~%BASH_FOR_FILESPEC%~ ~override~
+    END
 END
 COMPILE ~%MOD_FOLDER%/area/zb0700/zb0700.baf~
 COPY ~%MOD_FOLDER%/area/zb0700/common/~ ~override~
@@ -306,4 +297,5 @@ COPY ~%MOD_FOLDER%/area/zb0701/~ ~override~
 ACTION_BASH_FOR ~%MOD_FOLDER%/area/zb0702/~ ~.*\.\(pvrz\|are\|tis\|wed\|bmp\)$~ BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
 END
+
 COPY ~%MOD_FOLDER%/area/zb0702/bams/~ ~override~

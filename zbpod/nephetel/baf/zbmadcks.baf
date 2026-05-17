@@ -1,0 +1,27 @@
+IF
+    Global("ZBNEPHQUEST1","GLOBAL",2)
+    See([PC])
+THEN
+    RESPONSE #100
+        SetGlobal("ZBNEPHQUEST1","GLOBAL",3)
+        MoveToObject(Player1)
+        Wait(1)
+        StartDialogNoSetInterrupt(Player1)
+END
+
+IF
+    !See([PC])
+THEN
+    RESPONSE #100
+        MoveToObject([PC])
+END
+
+IF
+    Global("ZBNEPHQUEST1","GLOBAL",4)
+    Global("ZBMADRICKBYE", "GLOBAL", 0)
+THEN
+    RESPONSE #100
+        SetGlobal("ZBMADRICKBYE", "GLOBAL", 1)
+        EscapeArea()
+        Wait(1)
+END

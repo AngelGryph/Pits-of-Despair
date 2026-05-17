@@ -147,6 +147,7 @@ INTERJECT_COPY_TRANS ZBNEPH ZBNEPHILLBEBYYOURSIDE ZBNEPHFIRSTJOINSINTERJECT2
   == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @362 /* And here I thought this group had reached its limit for talented rogues. Ah, no matter. More competition is always welcome! */
   == WILSONJ IF ~InParty("WILSON") InMyArea("WILSON") !StateCheck("WILSON",CD_STATE_NOTVALID)~ THEN @363 /* *growl* *snort* */
 END
+
 INTERJECT_COPY_TRANS ZBNEPH ZBNEPHONTOTHEROAD ZBNEPHFIRSTJOINSINTERJECT3
   == HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @356 /* We must consider ourselves fortunate to find another exotic bird to join our eccentric menagerie. */
   == EDWINJ IF ~InParty("EDWIN") InMyArea("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID)~ THEN @357 /* Eh? No, no this will not do at all. I will not tolerate spies within my company. I will be keeping an eye on you, tiefling. (Or… perhaps both eyes). */
@@ -157,4 +158,3 @@ INTERJECT_COPY_TRANS ZBNEPH ZBNEPHONTOTHEROAD ZBNEPHFIRSTJOINSINTERJECT3
   == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @362 /* And here I thought this group had reached its limit for talented rogues. Ah, no matter. More competition is always welcome! */
   == WILSONJ IF ~InParty("WILSON") InMyArea("WILSON") !StateCheck("WILSON",CD_STATE_NOTVALID)~ THEN @363 /* *growl* *snort* */
 END
-///
