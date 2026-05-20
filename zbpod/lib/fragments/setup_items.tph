@@ -461,3 +461,9 @@ COPY ~%MOD_FOLDER%/items/spiritdragonhelm~ ~override~
 COPY_EXISTING ~zbspdrg0.itm~ ~override~
     SAY NAME2 @11093
     SAY IDENTIFIED_DESC @11094
+
+    /////// Alexandrite \\\\\\\
+COPY ~%MOD_FOLDER%/items/alexandrite~ ~override~
+COPY_EXISTING ~zbalex.itm~ ~override~
+    SAY NAME2 @11095
+    SAY IDENTIFIED_DESC @11096
