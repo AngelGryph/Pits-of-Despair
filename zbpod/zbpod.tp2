@@ -113,6 +113,14 @@ UNLESS ~zbeshpeu~
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/crossmod/~
   USING ~%MOD_FOLDER%/lang/%LANGUAGE%/crossmod.tra~
 
+ACTION_BASH_FOR "%MOD_FOLDER%/crossmod/mih_mods/" "^.+\.tpa"
+BEGIN
+  WITH_SCOPE
+  BEGIN
+    INCLUDE "%BASH_FOR_FILESPEC%"
+  END
+END
+
 // Copy vvcs
 COPY ~%MOD_FOLDER%/vvc~ ~override~
 
