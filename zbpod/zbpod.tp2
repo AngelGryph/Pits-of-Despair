@@ -50,7 +50,10 @@ COPY ~%MOD_FOLDER%/spells/zbantisb.bam~ ~override/zbantisc.bam~
 
 // Patch in portrait icon
 OUTER_SET description = RESOLVE_STR_REF(@18000)
-LAUNCH_ACTION_FUNCTION cd_new_portrait_icon INT_VAR description = description STR_VAR bam_file="zbantisb" END
+LAF cd_new_portrait_icon INT_VAR description = description STR_VAR bam_file="zbantisb" RET anti_simulacrum_icon=icon END
+COPY_EXISTING ~zbpdsim.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = anti_simulacrum_icon END
+
 COPY ~%MOD_FOLDER%/movie/pod.wbm~ ~movies~ /* adding directly to movies, not override, because otherwise it doesn't work. this isn't ideal. */
 
 // sets up various script variables and detectable spells
