@@ -382,6 +382,12 @@ COPY_EXISTING ~ohbumb01.cre~ ~override~
     SAY 0x08 @15020
     SAY 0x0c @15020
 
+// Deep Queen
+    COPY ~%MOD_FOLDER%/creatures/match4umber~ ~override~
+COPY_EXISTING ~zbumbqu.cre~ ~override~
+    SAY 0x08 @15022
+    SAY 0x0c @15022
+
 // Drow Mage
 ACTION_IF FILE_EXISTS_IN_GAME ~OHBDRO03.cre~ BEGIN
     COPY_EXISTING ~OHBDRO03.cre~ ~override~

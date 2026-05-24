@@ -34,6 +34,7 @@ THEN
 		CreateCreature("ohbumb01",[1584.695],SSW)  // Umber Hulk Elder
 		CreateCreature("ohbumb01",[1644.734],SSW)  // Umber Hulk Elder
 		CreateCreature("ohbumb01",[1716.775],SSW)  // Umber Hulk Elder
+		CreateCreature("zbumbqu"",[1825.755],SSW)  // Deep Queen
 		CreateCreature("ohbumb01",[1625.657],SSW)  // Umber Hulk Elder
 		CreateCreature("ohbumb01",[1695.694],SSW)  // Umber Hulk Elder
 		CreateCreature("ohbumb01",[1753.736],SSW)  // Umber Hulk Elder
