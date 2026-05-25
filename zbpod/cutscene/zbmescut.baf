@@ -29,7 +29,7 @@ THEN
 		DisplayStringHead("zbvamp",@10)  /* And? What of the book? */
 		Wait(5)
 		DisplayStringHead("zbneph",@11)  /* Nothing. The hero-apparent from Baldur's Gate is the only gossip on anyone's lips. The nobles can't seem to make up their mind on whether this hero is a savior or a terror. Unusual… for a Bhaalspawn. */
-		Wait(7)
+		Wait(10)
 		DisplayStringHead("zbvamp",@14) /* Don’t play games with me, Nephetel. Speak plainly. */
 		Wait(4)
 		DisplayStringHead("zbneph",@15) /* Apologies, Spymaster. It is said that they are a child of the Lord of Murder, though I know not the truth to these tales. */
