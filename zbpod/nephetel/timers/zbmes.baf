@@ -3,8 +3,10 @@ IF
   GlobalGT("Chapter","GLOBAL",1)
   !Global("Chapter","GLOBAL",4)
   !Global("Chapter","GLOBAL",5)
-  AreaCheck("AR2000")
   XPGT(Player1,800000)
+  OR(2)
+    AreaType(CITY)
+    AreaCheck("AR1100") // Umar Hills
   CombatCounter(0)
   !StateCheck(Player1,CD_STATE_NOTVALID)
 THEN
@@ -22,7 +24,7 @@ THEN
   RESPONSE #100
     CreateCreatureObject("zbmes",Player1,0,0,0)
     SetGlobal("ZBPodSummonsReceived","GLOBAL",2)
-    SetGlobal("ZBPodTriggerOnTransition","AR2000",1)
+    SetGlobal("ZBPodTriggerOnTransition","MYAREA",1)
 END
 
 IF
