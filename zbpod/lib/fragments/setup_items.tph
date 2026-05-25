@@ -359,6 +359,16 @@ COPY_EXISTING ~zbviridb.itm~ ~override~
     SAY NAME2 @11032
     SAY IDENTIFIED_DESC @11033
 
+//////// Shield of the lost \\\\\\\\
+COPY ~%MOD_FOLDER%/items/shield_lost~ ~override~
+COPY_EXISTING ~zbopenp0.itm~ ~override~
+    SAY NAME2 "Shield of the Lost"
+    SAY IDENTIFIED_DESC "Shield of the Lost placeholder description"
+
+LAF cd_new_portrait_icon INT_VAR description = RESOLVE_STR_REF("Shield of the Lost") STR_VAR bam_file="zbopenp1" RET shield_lost_icon=icon END
+COPY_EXISTING ~zbopenp2.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = shield_lost_icon END
+
 /////////                \\\\\\\\
 //////// Import BG1 ITEMS \\\\\\\\
 ///////                    \\\\\\\\
