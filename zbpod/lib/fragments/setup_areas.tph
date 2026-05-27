@@ -284,6 +284,7 @@ COMPILE ~%MOD_FOLDER%/area/zb0700/zb0700.baf~
 COPY ~%MOD_FOLDER%/area/zb0700/common/~ ~override~
 COPY ~%MOD_FOLDER%/area/zb0700/ee/~ ~override~
 COPY ~%MOD_FOLDER%/area/zb0700/areabam/~ ~override~
+COPY ~%MOD_FOLDER%/area/zb0700/areawav/~ ~override~
 
 // ------ //
 // ZB0701 //
