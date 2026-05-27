@@ -1,5 +1,5 @@
 IF
-    Global("ZBNEPHQUEST1PART2","GLOBAL",1)
+    Global("ZBNEPHQUEST1","GLOBAL",8)
     AreaCheck("AR1400")
     CombatCounter(0)
     !StateCheck(Player1, CD_STATE_NOTVALID)
