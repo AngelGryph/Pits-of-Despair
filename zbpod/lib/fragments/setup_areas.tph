@@ -231,15 +231,6 @@ COPY_EXISTING ~OH8200.ARE~ ~override/ZB8201.ARE~
 
 APPEND ~MASTAREA.2da~ ~ZB8201     value      ~ UNLESS ~ZB8201~
 
-// -------- //
-// Nephetel //
-// -------- //
-// Add neph to trademeet inn after escape
-EXTEND_BOTTOM ~AR2010.BCS~ ~%MOD_FOLDER%/area/ar2010/ar2010.baf~ EVALUATE_BUFFER
-
-// Add neph to COPPERCORENT
-EXTEND_BOTTOM ~AR0406.BCS~ ~%MOD_FOLDER%/area/ar0406/ar0406.baf~ EVALUATE_BUFFER
-
 //
 // Overwrite Pits files
 //

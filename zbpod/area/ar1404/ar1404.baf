@@ -25,7 +25,7 @@ THEN
     RESPONSE #100
         SetGlobal("ZBNEPHQUEST1","GLOBAL",10)
         ClearAllActions()
-        CreateCreature("ZBNITLAS", [1160.2115], E)
+        CreateCreature("ZBNILTAS", [1160.2115], E)
         ActionOverride("ZBNEPH", FaceObject([PC]))
         SmallWait(5)
         ActionOverride("ZBNEPH", StartDialogInterrupt("ZBNEPHJ", [PC]))
