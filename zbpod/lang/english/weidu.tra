@@ -928,9 +928,9 @@ Weight: 2~
 STATISTICS:
 
 Charge abilities:
-- Summon Servant of Orcus (1/day)
+– Summon Servant of Orcus (1/day)
   The servant is an undead knight, 15th level fighter and 9th level necromancer.  It will fight for the wielder until slain or until two turns have passed.
-- Animate Dead (1/day)
+– Animate Dead (1/day)
   This casts the Animate Dead spell as a 16th level necromancer.
 
 Weight: 2~
@@ -941,6 +941,22 @@ Weight: 2~
 
 @11095 = ~Alexandrite~
 @11096 = ~A type of chrysoberyl. Different kinds of light make the colors change within this gem, making it scintillate. It is the rarest gem in the Order of Ecclesia.~
+
+@11097 = ~Eye of the Beholder~
+@11098 = ~Eye of the Beholder description placeholder
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2 bonus
+– Saving Throws: +2 bonus
+– Magic Resistance: +10%
+
+Charge abilities:
+– Anti-Magic Ray (2/day)
+  This ability emulates the effect of a beholder's central eye, stripping the target of all magic and making the target both unable to use and unable to be affected by any magic.
+
+Weight: 0~
 
 
 // Creatures
