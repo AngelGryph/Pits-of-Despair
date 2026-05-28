@@ -1,8 +1,8 @@
 BEGIN ZBNILTAS
 
 CHAIN IF ~Global("ZBNEPHQUEST1","GLOBAL",13) IsGabber(Player1)~ THEN ZBNILTAS ZBNILTAS1
-@408 /* Gah! Blast, they’re—you’re here. You’ve come here to take it from me! You’ll never take it! It’s MINE */
-== ZBNEPH @409 /* I guess that’s him. Let’s be careful, <CHARNAME>. He seems not all there. ahem We’re not here to take anything from you, friend. What is it that you have? */
+@408 /* Gah! Blast, they’re—you’re here. You’ve come here to take it from me! You’ll never take it! It’s MINE. */
+== ZBNEPHJ @409 /* I guess that’s him. Let’s be careful, <CHARNAME>. He seems not all there. ahem We’re not here to take anything from you, friend. What is it that you have? */
 == ZBNILTAS @410 /* You’re here for the shard, I know you are! They thought it was junk, but I knew it wasn’t. I just have to figure out these glyphs and no one will EVER be able to take from me again. Who are you? WHO ARE YOU? */
 DO ~SetGlobal("ZBNEPHQUEST1","GLOBAL",14)~
 END
@@ -12,22 +12,22 @@ END
   ++ @414 /* That’s not your concern. Just hand over whatever it is you’re holding and there won’t be trouble. */ EXTERN ZBNILTAS ZBNILTASR4
 
 CHAIN ZBNILTAS ZBNILTASR1
-@415 /* Talk? I—I… ungh. Niltash: Did you just call us adventurers? Diving into this hellhole hardly feels like an adventure. What I wouldn’t give for a… for a… */
+@415 /* Talk? I—I… ungh. Did you just call us adventurers? Diving into this hellhole hardly feels like an adventure. What I wouldn’t give for a… for a… */
 END
   IF ~~ THEN EXTERN ZBNILTAS ZBNILTASREND
 
 CHAIN ZBNILTAS ZBNILTASR2
-@416 /*  Not here to take from me? I— Niltash: Why would we be “passing through”, Brevrick? That was never going to work. Next time, let me do the… the… */
+@416 /*  Not here to take from me? I— Why would we be “passing through”, Brevrick? That was never going to work. Next time, let me do the… the… */
 END
   IF ~~ THEN EXTERN ZBNILTAS ZBNILTASREND
 
 CHAIN ZBNILTAS ZBNILTASR3
-@417 /* Me? I’m… I’m… Niltash: I’m the best burglar this side of the Heartlands! Trust me, if there’s anyone who can get you in there, it’s… it’s… */
+@417 /* Me? I’m… I’m… I’m the best burglar this side of the Heartlands! Trust me, if there’s anyone who can get you in there, it’s… it’s… */
 END
   IF ~~ THEN EXTERN ZBNILTAS ZBNILTASREND
 
 CHAIN ZBNILTAS ZBNILTASR4
-@418 /* No, it’s mine! It’s— Niltash: No matter how many times you ask, Vilo, you’re not touching the shard! It’s here for—for— */
+@418 /* No, it’s mine! It’s— No matter how many times you ask, Vilo, you’re not touching the shard! It’s here for—for— */
 END
   IF ~~ THEN EXTERN ZBNILTAS ZBNILTASREND
 
