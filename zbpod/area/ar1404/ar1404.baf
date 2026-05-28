@@ -8,13 +8,13 @@ IF
 THEN
     RESPONSE #100
         SetGlobal("ZBNEPHQUEST1","GLOBAL",9)
-        SetGlobalTimer("ZBNEPHQUESTTIMER1", "AR1404", FOUR_ROUNDS)
+        SetGlobalTimer("ZBNEPHQUESTTIMER1","MYAREA",FOUR_ROUNDS)
 END
 
 IF
     Global("ZBNEPHQUEST1","GLOBAL",9)
     AreaCheck("AR1404")
-    GlobalTimerExpired("ZBNEPHQUESTTIMER1", "GLOBAL")
+    GlobalTimerExpired("ZBNEPHQUESTTIMER1","MYAREA")
     CombatCounter(0)
     !StateCheck(Player1,CD_STATE_NOTVALID)
     InParty("ZBNEPH")
