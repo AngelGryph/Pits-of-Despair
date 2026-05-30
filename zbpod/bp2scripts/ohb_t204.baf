@@ -4,8 +4,8 @@ IF
 	!Dead("ohbmardi")  // Mardii
 THEN
 	RESPONSE #100
-		CreateCreatureObjectEffect("ohbeea01","SPPORTAL","ohbmardi")  // Greater Earth Elemental
-		CreateCreatureObjectEffect("ohbeea01","SPPORTAL","ohbmardi")  // Greater Earth Elemental
+		CreateCreatureObjectEffect("elemsunn","SPPORTAL","ohbmardi")  // Sunni
+		CreateCreatureObjectEffect("elemsunn","SPPORTAL","ohbmardi")  // Sunni
 END
 
 IF
@@ -14,8 +14,8 @@ IF
 	!Dead("ohbmardi")  // Mardii
 THEN
 	RESPONSE #100
-		CreateCreatureObjectEffect("ohbeai01","SPPORTAL","ohbmardi")  // Greater Air Elemental
-		CreateCreatureObjectEffect("ohbeai01","SPPORTAL","ohbmardi")  // Greater Air Elemental
+		CreateCreatureObjectEffect("elemchan","SPPORTAL","ohbmardi")  // Chan
+		CreateCreatureObjectEffect("elemchan","SPPORTAL","ohbmardi")  // Chan
 END
 
 IF
@@ -24,8 +24,8 @@ IF
 	!Dead("ohbmardi")  // Mardii
 THEN
 	RESPONSE #100
-		CreateCreatureObjectEffect("ohbefi01","SPPORTAL","ohbmardi")  // Greater Fire Elemental
-		CreateCreatureObjectEffect("ohbefi01","SPPORTAL","ohbmardi")  // Greater Fire Elemental
+		CreateCreatureObjectEffect("elemzaam","SPPORTAL","ohbmardi")  // Zaaman Rul
+		CreateCreatureObjectEffect("elemzaam","SPPORTAL","ohbmardi")  // Zaaman Rul
 END
 
 IF

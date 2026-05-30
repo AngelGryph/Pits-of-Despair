@@ -31,9 +31,9 @@ THEN
 		SmallWait(5)
 		FadeFromColor([20.0],0)
 		SetGlobal("sprite_is_deadohbmardi","global",0)
-		CreateCreature("ohbeai01",[1270.793],SSW)  // Greater Air Elemental
-		CreateCreature("ohbeea01",[1441.1047],SSW)  // Greater Earth Elemental
-		CreateCreature("ohbefi01",[1106.1034],SSW)  // Greater Fire Elemental
+		CreateCreature("elemchan",[1270.793],SSW)  // Chan
+		CreateCreature("elemsunn",[1441.1047],SSW)  // Sunni
+		CreateCreature("elemzaam",[1106.1034],SSW)  // Zaaman Rul
 		CreateCreature("ohbmardi",[1275.935],SSW)  // Mardii
 		SmallWait(25)
 		MoveViewPoint([1275.935],BD_NORMAL)
