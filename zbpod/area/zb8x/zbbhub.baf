@@ -857,7 +857,6 @@ THEN
     SetInterrupt(FALSE)
     SetGlobal("TIER","GLOBAL",4)
     SetGlobal("BLACK_PITS","GLOBAL",4)
-    AddStoreItem("OHBSDWM","DAGG20",1,1)  // Life-Stealer +4
     AddStoreItem("OHBSDWM","OHAROW50",0,1)  // Arrow +4
     AddStoreItem("OHBSDWM","OHBOLT50",0,1)  // Bolt +4
     AddStoreItem("OHBIMIM","AMUL17",10,1)  // Greenstone Amulet

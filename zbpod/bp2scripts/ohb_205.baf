@@ -30,10 +30,12 @@ THEN
 		MoveViewPoint([1273.957],INSTANT)
 		FadeFromColor([20.0],0)
 		CreateCreature("ohbdem01",[1102.767],E)  // T'alcor
+		CreateCreature("ohbdem03",[1128.788],E)  // Marilith
 		CreateCreature("ohbdem02",[967.733],E)  // Glabrezu
 		CreateCreature("ohbdem03",[918.867],E)  // Marilith
 		CreateCreature("ohbdem04",[836.892],E)  // Succubus
 		CreateCreature("ohbdev01",[1465.767],W)  // Maadrazel
+		CreateCreature("ohbdev02",[1516.799],W)  // Cornugon
 		CreateCreature("ohbdev02",[1620.733],W)  // Cornugon
 		CreateCreature("ohbdev03",[1545.867],W)  // Gelugon
 		CreateCreature("ohbdev04",[1641.892],W)  // Erinyes
