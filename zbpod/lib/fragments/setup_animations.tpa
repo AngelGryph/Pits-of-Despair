@@ -74,20 +74,22 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY ZBHAMATULA_ANIMS_Exxx BEGIN
     APPEND ~ANIMATE.IDS~ ~0x%hexNumber% %symbol%~
 END
 
-// Pit Fiend
-ACTION_DEFINE_ASSOCIATIVE_ARRAY ZBPITFIEND_ANIMS_Exxx BEGIN
-    ~pit_fiend~ => ~ZBPITFIEND~
-  END
-  ACTION_PHP_EACH ZBPITFIEND_ANIMS_Exxx AS folder => symbol BEGIN
-    ACTION_BASH_FOR ~%MOD_FOLDER%/Animations/%folder%~ ~.+\.bam~ ~%MOD_FOLDER%/Animations/%folder%~ ~.+\.bmp~ BEGIN
-      COPY ~%BASH_FOR_FILESPEC%~ ~override~
-    END
-    LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xE000 RET slot END
-    LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
-    COPY ~%MOD_FOLDER%/Animations/%folder%/Exxx.ini~ ~override/%hexNumber%.ini~
-    OUTER_SET EVAL ~slot_%folder%~ = slot   // save animation slot number for later
-    APPEND ~ANIMATE.IDS~ ~0x%hexNumber% %symbol%~
+// Pit Fiend Animations
+LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xE000 slotMax = 0xefff RET slot END
+ACTION_IF (slot <= 0) BEGIN
+  FAIL ~No free creature animation slot found.~
 END
+
+LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+APPEND ~animate.ids~ ~0x%hexNumber% MO_PIT_FIEND_NWN~ UNLESS ~MO_PIT_FIEND_NWN~
+CLEAR_IDS_MAP
+
+COPY ~%MOD_FOLDER%/animations/PIT_FIEND_NWN/exxx.ini~ ~override/%hexNumber%.ini~
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/animations/PIT_FIEND_NWN~ ~^.+\.bam$~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
 // Black Weaver
 ACTION_DEFINE_ASSOCIATIVE_ARRAY P_BLACK_WEAVER_ANIMS_Exxx BEGIN
     ~black_weaver~ => ~P_BLACK_WEAVER~
@@ -171,5 +173,21 @@ APPEND ~ANIMATE.IDS~ ~0x0104 SMASHING_WAVE~
 
 // Driders
 ACTION_BASH_FOR ~%MOD_FOLDER%/animations/driders~ ~^.+\.bam$~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
+// NWN Succubus
+LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xE000 slotMax = 0xefff RET slot END
+ACTION_IF (slot <= 0) BEGIN
+  FAIL ~No free creature animation slot found.~
+END
+
+LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+APPEND ~animate.ids~ ~0x%hexNumber% MO_SUCCUBUS_NWN~ UNLESS ~MO_SUCCUBUS_NWN~
+CLEAR_IDS_MAP
+
+COPY ~%MOD_FOLDER%/animations/succubus_nwn/exxx.ini~ ~override/%hexNumber%.ini~
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/animations/succubus_nwn~ ~^.+\.bam$~ BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
 END
