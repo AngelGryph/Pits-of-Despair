@@ -1042,16 +1042,16 @@ Yours faithfully,
 Vyatri~
 // components
 @20000 = "Install required Black Pits files for Original Games"
-@20001 = "Pits of Despair for Enhanced Edition
+@20001 = "Pits of Despair for Baldur's Gate 2: Enhanced Edition
 
-WARNING! Will break the default the Black Pits 2 standalone campaign. We are not responsible for any bugs you find or if your mod installation is compromised if you attempt to play that campaign with this mod installed."
+WARNING! Will break the default the Black Pits 2 standalone campaign. We are not responsible for any bugs you find or if your mod installation is compromised if you attempt to play the standalone campaign with this mod installed."
 @20002 = ~Improved Sounds~
 @20003 = ~Nephetel Alternate Portraits~
-@20004 = ~Original Concept Art~
+@20004 = ~Realistic~
 @20005 = ~by Llewren~
-@20006 = ~Crossmod: Weapon Oils~
+@20006 = ~Crossmod: Kaelyn's Consumables~
 // warnings
-@20050 = "Not available for your game version"
+@20050 = "Not available for your game version."
 
 //added subcomponents
 @30000 = "This component requires the installation of Pits of Despair"
