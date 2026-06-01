@@ -1,6 +1,10 @@
 // Umber Hulk Elder
 COPY ~%MOD_FOLDER%/animations/umber_hulk_elder~ ~override~
 
+// Half-Dragon
+
+COPY ~%MOD_FOLDER%/animations/halfdragon~ ~override~
+
 // Couatl
 ACTION_DEFINE_ASSOCIATIVE_ARRAY P_COUATL_ANIMS_Exxx BEGIN
     ~couatl~ => ~P_COUATL~
