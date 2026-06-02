@@ -550,6 +550,10 @@ COPY_EXISTING ~ohbgol03.cre~ ~override~
     SAY 0x08 @15025
     SAY 0x0c @15025
 
+// Leah
+    COPY ~%MOD_FOLDER%/creatures/match13leah~ ~override~
+
+
 //-------------------------------------------------------------------------
 // Planetar Animations
 COPY_EXISTING ~ohbwing.cre~ ~override~
