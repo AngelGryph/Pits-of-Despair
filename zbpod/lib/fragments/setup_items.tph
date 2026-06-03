@@ -488,8 +488,8 @@ COPY_EXISTING ~zbeotb10.itm~ ~override~
 
 APPEND "itemexcl.2da" "zbeotb10%TAB%1" UNLESS "zbeotb10"
 
-//////// Shattered Fate \\\\\\\\
-COPY ~%MOD_FOLDER%/items/shatteredfate~ ~override~
+//////// The Judge \\\\\\\\
+COPY ~%MOD_FOLDER%/items/thejudge~ ~override~
 COPY_EXISTING ~zbshft.itm~ ~override~
     SAY NAME2 @11099
     SAY IDENTIFIED_DESC @11100
