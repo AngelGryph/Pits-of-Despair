@@ -688,6 +688,7 @@ Weight: 1~
 
 
 // Imported BG1 Items
+
 @11000 = ~BG Imported Items~
 @11001 = ~Circlet~
 @11002 = ~Circlet of the Archmagi~
@@ -799,10 +800,11 @@ Weight: 1~
 STATISTICS:
 
 Equipped abilities:
+– Protects against critical hits
 – Armor Class: +1, +3 vs. crushing
 – Charisma: +2
-– Immunity to charm and stun
-– Protects against critical hits
+– Immunity to Charm and Stun
+
 
 Weight: 1~
 
@@ -979,17 +981,10 @@ Weight: 0~
 STATISTICS:
 
 Combat abilities:
-– Wrath of the Wise: Deals extra magic damage per hit, based on the wielder's Wisdom score.
-– 13-14 +2
-– 15-16 +3
-– 17-18 +4
-– 19-20 +5
-– 21-22 +6
-– 23-24 +7
-– 25 +8
+– Wrath of the Wise: Successful attacks inflict +2 magical damage at 13 Wisdom, increasing by 1 point for every two points of Wisdom thereafter, to a maximum of +8 damage at 25 Wisdom.
 
 THAC0: +3
-Damage: 1d6+3
+Damage: 1d6+4
 Damage type: Crushing
 Speed Factor: 6
 Proficiency Type: Mace

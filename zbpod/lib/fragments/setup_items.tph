@@ -359,7 +359,7 @@ COPY_EXISTING ~zbviridb.itm~ ~override~
     SAY NAME2 @11032
     SAY IDENTIFIED_DESC @11033
 
-//////// Shield of the lost \\\\\\\\
+//////// The Open Palm \\\\\\\\
 COPY ~%MOD_FOLDER%/items/theopenpalm~ ~override~
 COPY_EXISTING ~zbopenp0.itm~ ~override~
     SAY NAME2 "The Open Palm"
