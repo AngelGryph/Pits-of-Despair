@@ -362,10 +362,10 @@ COPY_EXISTING ~zbviridb.itm~ ~override~
 //////// The Open Palm \\\\\\\\
 COPY ~%MOD_FOLDER%/items/theopenpalm~ ~override~
 COPY_EXISTING ~zbopenp0.itm~ ~override~
-    SAY NAME2 "The Open Palm"
-    SAY IDENTIFIED_DESC "The Open Palm placeholder description"
+    SAY NAME2 @11103
+    SAY IDENTIFIED_DESC @11104
 
-LAF cd_new_portrait_icon INT_VAR description = RESOLVE_STR_REF("Shield of the Lost") STR_VAR bam_file="zbopenp1" RET shield_lost_icon=icon END
+LAF cd_new_portrait_icon INT_VAR description = RESOLVE_STR_REF(@11105) STR_VAR bam_file="zbopenp1" RET shield_lost_icon=icon END
 COPY_EXISTING ~zbopenp2.spl~ ~override~
     LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = shield_lost_icon END
 

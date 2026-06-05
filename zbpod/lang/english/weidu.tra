@@ -1005,6 +1005,24 @@ Equipped abilities:
 
 Weight: 1~
 
+@11103 = ~The Open Palm~
+@11104 = ~Open Palm description placeholder
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +6, an extra +1 vs. missile attacks
+– Immunity to Hold, Web, Paralyze and Stun effects
+– +0.5 Attacks per round
+– Champion Aura: +1 THAC0 and +1 Damage to all allies within a 15' radius
+Requires:
+ 10 Strength
+
+Weight: 8~
+
+@11105 = ~Champion Aura~
+
+
 
 // Creatures
 
