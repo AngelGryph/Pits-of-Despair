@@ -1,7 +1,7 @@
 
 // Items
 //
-@10000 = ~Angelfist +5~
+@10000 = ~Angelfist~
 @10001 = ~Created in the celestial forges of Elysium, Angelfist is a warhammer imbued with divine purpose. Its head is radiant silver, glowing with a soft, ethereal light that illuminates the darkest corners of the material plane. Angelic decorations and symbols adorn it, blessed by the heavens themselves. It feels warm and comforting to the touch.
 
 When wielded, Angelfist feels alive, throbbing with the fire of righteousness and justice. Each swing resonates with a heavenly chorus that intensifies when using its Heavenly Hammer ability. Upon striking a foe, it delivers not only physical might but also a searing burst of radiant energy. Enemies struck by Angelfist find themselves momentarily blinded, as if caught in the gaze of the divine.
@@ -151,10 +151,10 @@ Weight: 10~
 STATISTICS:
 
 Equipped abilities:
-– 50% Acid Resistance
+– 75% Acid Resistance
 
 Combat abilities:
-– Every hit has a 15% has a chance of releasing more acid, causing 2d8 extra acid damage or half on a successful save vs. breath
+– Every hit has a 15% has a chance of releasing more acid, causing 2d8 extra acid damage or half on a successful Save vs. Breath
 – Acidic poison: Critical hits inject poison into the bloodstream of the victim, causing 1 poison damage per second for 24 seconds if a Save vs. Death is failed, causing 6 more poison damage instantly with no save allowed
 
 THAC0: +6
@@ -345,10 +345,10 @@ Equipped abilities:
 
 Weight: 0~
 
-@10102 = ~Rogue's Luck +2~
-@10103 = ~This ring is a small, seemingly unremarkable charm fashioned from dark steel. According to hearsay, a rogue the favor of Tymora, goddess of luck, after she defended one of her temples from a band of fiends. As a gift, the goddess granted her a glimmer of divine fortune, which she sealed into this ring. The story goes that the charm saved her countless times, from dodging fire traps to avoiding fatal ambushes, making her one of the most successful rogues of her era. Only bards and thieves may wear this ring.
+@10102 = ~Strange Silver Ring~
+@10103 = ~Updgraded Strange Silver Ring placeholder
 
-Now that it's upgraded with blah blah blah, it's even better!
+Now that it's upgraded with the githyanki forge hammer, it slowly vibrates with power.
 
 Equipped abilities:
 – Luck: +2
@@ -789,7 +789,7 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +1
-– Immunity to charm and stun
+– Immunity to Charm and Stun
 
 Weight: 1~
 
@@ -937,7 +937,22 @@ Weight: 2~
 @11092 = ~Servant of Orcus~
 
 @11093 = ~Spirit Dragon Helm~
-@11094 = ~Spirit Dragon Helm description placeholder~
+@11094 = ~Spirit Dragon Helm description placeholder
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+– Wearer is immune to Charm and Domination
+– Armor Class: +1 bonus
+– Saving Throws: +1 bonus
+– Cold Resistance: +40%
+– Fire Resistance: +40%
+– Electrical Resistance: +40%
+– Acid Resistance: +40%
+– Poison Resistance: +40%
+
+Weight: 4~
 
 @11095 = ~Alexandrite~
 @11096 = ~A type of chrysoberyl. Different kinds of light make the colors change within this gem, making it scintillate. It is the rarest gem in the Order of Ecclesia.~
@@ -959,7 +974,30 @@ Charge abilities:
 Weight: 0~
 
 @11099 = ~Heart of Koryo~
-@11100 = ~Heart of Koryo description placeholder~
+@11100 = ~Heart of Koryo description placeholder
+
+STATISTICS:
+
+Combat abilities:
+– Wrath of the Wise: Deals extra magic damage per hit, based on the wielder's Wisdom score.
+– 13-14 +2
+– 15-16 +3
+– 17-18 +4
+– 19-20 +5
+– 21-22 +6
+– 23-24 +7
+– 25 +8
+
+THAC0: +3
+Damage: 1d6+3
+Damage type: Crushing
+Speed Factor: 6
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 8~
 
 @11101 = ~Amulet of Protection +3~
 @11102 = ~This amulet improves the wearer's Armor Class and Saving Throws versus all forms of attack. The magical properties of the amulet prevent it from being worn with other magical items of protection, including enchanted armor.

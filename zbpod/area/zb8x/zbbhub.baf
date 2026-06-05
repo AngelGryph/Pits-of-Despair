@@ -861,7 +861,6 @@ THEN
     SetGlobal("BLACK_PITS","GLOBAL",4)
     AddStoreItem("OHBSDWM","OHAROW50",0,1)  // Arrow +4
     AddStoreItem("OHBSDWM","OHBOLT50",0,1)  // Bolt +4
-    AddStoreItem("OHBIMIM","AMUL17",10,1)  // Greenstone Amulet
     AddStoreItem("OHBIMIM","RING08",1,1)  // Reaching Ring
     AddStoreItem("OHBSDWM","AROW06",5,1)  // Arrow of Detonation
     AddStoreItem("OHBSDWM","AROW07",10,1)  // Arrow of Dispelling
