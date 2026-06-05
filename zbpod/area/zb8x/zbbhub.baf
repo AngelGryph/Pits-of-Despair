@@ -824,6 +824,8 @@ THEN
   RESPONSE #100
     SetInterrupt(FALSE)
     SetGlobal("TIER","GLOBAL",3)
+    AddStoreItem("OHBSDWM","zbshft",1,1)  // Heart of Koryo (NEW)
+    AddStoreItem("OHBIMIM","zbamul3",1,1)  // Amulet of Protection +3 (NEW)
     AddStoreItem("OHBSDWM","HAMM06",1,1)  // Dwarven Thrower +3
     AddStoreItem("OHBSDWM","STAF12",10,1)  // Staff of Power
     AddStoreItem("OHBIMIM","RING33",1,1)  // Ring of the Ram

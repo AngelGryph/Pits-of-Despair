@@ -961,6 +961,17 @@ Weight: 0~
 @11099 = ~Heart of Koryo~
 @11100 = ~Heart of Koryo description placeholder~
 
+@11101 = ~Amulet of Protection +3~
+@11102 = ~This amulet improves the wearer's Armor Class and Saving Throws versus all forms of attack. The magical properties of the amulet prevent it from being worn with other magical items of protection, including enchanted armor.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– Saving Throws: +3
+
+Weight: 1~
+
 
 // Creatures
 

@@ -493,3 +493,11 @@ COPY ~%MOD_FOLDER%/items/koryo~ ~override~
 COPY_EXISTING ~zbshft.itm~ ~override~
     SAY NAME2 @11099
     SAY IDENTIFIED_DESC @11100
+
+//////// Amulet of Protection +3 \\\\\\\\
+COPY ~%MOD_FOLDER%/items/amuletofprot3~ ~override~
+COPY_EXISTING ~zbamul3.itm~ ~override~
+    SAY NAME2 @11101
+    SAY IDENTIFIED_DESC @11102
+
+    APPEND "itemexcl.2da" "zbamul3%TAB%1" UNLESS "zbamul3"
