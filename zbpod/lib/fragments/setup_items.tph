@@ -480,7 +480,7 @@ COPY_EXISTING ~zbalex.itm~ ~override~
     SAY IDENTIFIED_DESC @11096
 
 
-/////// Eye of the Beholder \\\\\\\
+/////// Beholder \\\\\\\
 COPY ~%MOD_FOLDER%/items/beholder~ ~override~
 COPY_EXISTING ~zbeotb10.itm~ ~override~
     SAY NAME2 @11097
