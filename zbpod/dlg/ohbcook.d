@@ -20,7 +20,7 @@ END
 
 IF ~~ THEN BEGIN 1
   SAY @361 /* Where is that peanut-sized rat? Scurried off to his hole, most like! TARTLE, YOU VERMIN, COME AND FACE ME! ME LOBSTER ARABEL WILL BE AVENGED! */
-  IF ~~ THEN DO ~AddJournalEntry(102542,INFO)
+  IF ~~ THEN DO ~AddJournalEntry(@800007,QUEST)
 Face(E)
 StartCutSceneMode()
 StartCutScene("ohbcut08")

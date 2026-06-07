@@ -22,14 +22,16 @@ CHAIN zbmes zbmessenger1
 DO ~SetGlobal("ZBPodSummonsReceived","GLOBAL",4)
   GiveItemCreate("zbrrrind",Player1,1,0,0)
   GiveItemCreate("zbpdnote",Player1,1,0,0)
-  TakePartyGold(1) ~ EXIT
+  TakePartyGold(1)
+  AddJournalEntry(@800001, QUEST)~ EXIT
 
 CHAIN zbmes zbmessenger1.5 /* the 5 gold variant */
 @5 /* How touching. Generosity like yours makes it all worth it. */
 DO ~SetGlobal("ZBPodSummonsReceived","GLOBAL",4)
   GiveItemCreate("zbrrrind",Player1,1,0,0)
   GiveItemCreate("zbpdnote",Player1,1,0,0)
-  TakePartyGold(5)~ EXIT
+  TakePartyGold(5)
+  AddJournalEntry(@800001, QUEST)~ EXIT
 
 
 CHAIN zbmes zbmessenger2
@@ -43,4 +45,5 @@ CHAIN zbmes zbmessenger3
 @10 /* Shame on me for thinking the high and mighty hero could spare a single coin. */
 DO ~SetGlobal("ZBPodSummonsReceived","GLOBAL",4)
   GiveItemCreate("zbrrrind",Player1,1,0,0)
-  GiveItemCreate("zbpdnote",Player1,1,0,0) ~ EXIT
+  GiveItemCreate("zbpdnote",Player1,1,0,0)
+  AddJournalEntry(@800001, QUEST)~ EXIT

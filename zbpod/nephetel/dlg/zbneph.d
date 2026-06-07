@@ -30,7 +30,7 @@ IF ~~ BEGIN zbneph2
   SAY @18 /* Before you whet your blade in the arena, you should consider fighting in the training matches. They’ll give you a…  taste for how things are done here. See Stirv in the kennel to get started. */
     =
   @19 /* …watch out for that crazy bastard. The man is a sadist. He performs all manner of experiments on his “puppies” with concoctions and cruel training. They manage to work together without ripping each other apart—Stirv will delight in setting them upon you instead. */
-  IF ~~ DO ~SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",9)~ EXIT
+  IF ~~ DO ~SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",9) AddJournalEntry(@800009, QUEST)~ EXIT
 END
 
 IF ~~ BEGIN zbneph3

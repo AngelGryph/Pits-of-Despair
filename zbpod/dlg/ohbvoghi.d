@@ -2,7 +2,7 @@ BEGIN ~OHBVOGHI~
 
 IF ~Global("OHB_TALKED_VOGHI","LOCALS",0) Global("ohb_finale","global",0)~ THEN BEGIN 0
   SAY @3472 /* Augh, mine head! By the Oak Father's leafy arse, I've never met a woman who could drink like that! One minute I'm singing with an ale in one hand and a wench in the other, and then I wake up here... Where in the Nine Hells am I? */
-  IF ~~ THEN GOTO ZBVOGINTRO
+  IF ~~ THEN DO ~AddJournalEntry(@800004, QUEST_DONE) AddJournalEntry(@800006, QUEST)~ GOTO ZBVOGINTRO
 END
 
 IF ~~ THEN BEGIN 1

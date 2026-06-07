@@ -17,7 +17,5 @@ THEN
 		RestorePartyLocations()
 		SetAreaScript("",OVERRIDE)
 		SetGlobal("ZBNEPH_CUTSCENE_BREAKABLE","GLOBAL",0)
-		AddJournalEntry(@1,QUEST)
-		GiveItemCreate("zbpdnote",Player1,1,0,0)
 		Continue()
 END
