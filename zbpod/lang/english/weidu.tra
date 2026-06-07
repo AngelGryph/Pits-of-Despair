@@ -965,9 +965,10 @@ Weight: 4~
 STATISTICS:
 
 Equipped abilities:
-– Armor Class: +2 bonus
-– Saving Throws: +2 bonus
+– Armor Class: +2 bonus (+4 vs Aberrations)
+– Saving Throws: +2 bonus (+4 vs Aberrations)
 – Magic Resistance: +10%
+– Aberrations are defined as: Beholders, Carrion Crawlers, Driders, Ettercaps, Mind Flayers, and Otyughs
 
 Charge abilities:
 – Anti-Magic Ray (2/day)
