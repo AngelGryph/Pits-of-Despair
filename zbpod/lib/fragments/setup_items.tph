@@ -500,3 +500,9 @@ COPY_EXISTING ~zbamul3.itm~ ~override~
     SAY IDENTIFIED_DESC @11102
 
     APPEND "itemexcl.2da" "zbamul3%TAB%1" UNLESS "zbamul3"
+
+    //////// Xykesh (Githyanki Forge Hammer) \\\\\\\\
+COPY ~%MOD_FOLDER%/items/githyankiforgehammer~ ~override~
+COPY_EXISTING ~zbgithh0.itm~ ~override~
+    SAY NAME2 @11106
+    SAY IDENTIFIED_DESC @11107

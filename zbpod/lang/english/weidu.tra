@@ -1023,7 +1023,23 @@ Weight: 8~
 
 @11105 = ~Champion Aura~
 
+@11106 = ~Xykesh~
+@11107 = ~Xykesh description placeholder... Only those who are balanced in thought and deed can wield the forge hammer.
 
+Charge abilities:
+– Globe of Blades (2/Day)
+  This casts the Globe of Blades spell as a 25th level cleric.
+
+THAC0: +4
+Damage: 2d4+4, +1d6 magic damage
+Damage type: Crushing
+Speed Factor: 0
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6~
 
 // Creatures
 
