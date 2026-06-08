@@ -1027,7 +1027,7 @@ Weight: 8~
 @11107 = ~Xykesh description placeholder... Only those who are balanced in thought and deed can wield the forge hammer.
 
 Charge abilities:
-– Globe of Blades (2/Day)
+– Globe of Blades (2/day, self only)
   This casts the Globe of Blades spell as a 25th level cleric.
 
 THAC0: +4
