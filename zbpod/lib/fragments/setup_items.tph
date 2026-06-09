@@ -513,3 +513,7 @@ COPY ~%MOD_FOLDER%/items/wingedboots~ ~override~
 COPY_EXISTING ~zbwingb0.itm~ ~override~
     SAY NAME2 @11108
     SAY IDENTIFIED_DESC @11109
+
+ADD_PROJECTILE ~%MOD_FOLDER%/pro/zbwwind0.pro~
+COPY_EXISTING "zbwwind0.spl" ~override~
+LPF ALTER_HEADER INT_VAR projectile="%zbwwind0%" END
