@@ -486,6 +486,7 @@ COPY_EXISTING ~zbeotb10.itm~ ~override~
     SAY NAME2 @11097
     SAY IDENTIFIED_DESC @11098
 
+    APPEND "itemexcl.2da" "zbeotb10%TAB%1" UNLESS "zbeotb10"
 
 //////// Heart of Koryo \\\\\\\\
 COPY ~%MOD_FOLDER%/items/koryo~ ~override~
@@ -506,3 +507,9 @@ COPY ~%MOD_FOLDER%/items/githyankiforgehammer~ ~override~
 COPY_EXISTING ~zbgithh0.itm~ ~override~
     SAY NAME2 @11106
     SAY IDENTIFIED_DESC @11107
+
+    //////// Winged Boots \\\\\\\\
+COPY ~%MOD_FOLDER%/items/wingedboots~ ~override~
+COPY_EXISTING ~zbwingb0.itm~ ~override~
+    SAY NAME2 @11108
+    SAY IDENTIFIED_DESC @11109
