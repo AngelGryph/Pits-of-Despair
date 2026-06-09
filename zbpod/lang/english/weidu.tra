@@ -593,7 +593,7 @@ Equipped abilities:
 – Finds traps automatically once per round
 
 Charge abilities:
-– Cast Knock three times per day
+– Cast Knock (3/day)
   Special: Opens most non-magical locks~
 
 @10230 = ~Unbroken~
@@ -613,8 +613,8 @@ Charge ability:
 
 Weight: 3~
 
-@10290 = ~Robe of Skin~
-@10291 = ~ROBE OF SKIN DESCRIPTION HERE
+@10290 = ~Robe of the Transcendent~
+@10291 = ~Robe of the Transcendent 
 
 STATISTICS:
 
@@ -623,7 +623,7 @@ Equipped abilities:
 – Physical Resistances: +10%
 
 Charged Abilities:
-– Dragon Fist once per day
+– Dragon Fist (1/day)
   Special: Your physical attacks will stun enemies in addition to their normal effects.
   Duration: 2 rounds
 
@@ -948,11 +948,7 @@ Equipped abilities:
 – Wearer is immune to Charm and Domination
 – Armor Class: +1 bonus
 – Saving Throws: +1 bonus
-– Cold Resistance: +40%
-– Fire Resistance: +40%
-– Electrical Resistance: +40%
-– Acid Resistance: +40%
-– Poison Resistance: +40%
+– Cold, Fire, Electrical, Acid, Poison Resistance: +40%
 
 Weight: 4~
 
@@ -1054,7 +1050,7 @@ Equipped abilities:
 Charge abilities:
 – Zone of Sweet Air (1/day)
 – Wazzer's Whirlwind (1/day)
-
+  Summons a whirlwind that deals 2d8 crushing and 2d8 slashing damage to up to eight small or medium creatures, also stunning them if they fail a Save vs. Breath with a -2 penalty.
 Weight: 1~
 
 // Creatures

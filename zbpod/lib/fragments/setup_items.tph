@@ -448,7 +448,7 @@ COPY ~%MOD_FOLDER%/items/nephy_memory_shard~ ~override~
 COPY_EXISTING ~zbmemsh0.itm~ ~override~
     // insert whatever code needed for memory shard
 
-// Robe of Skin
+// Robe of the Transcendent
 COPY ~%MOD_FOLDER%/items/robeofskin~ ~override~
 COPY_EXISTING ~zbskinrb.itm~ ~override~
   SAY NAME2 @10290
