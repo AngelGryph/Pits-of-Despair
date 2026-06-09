@@ -45,15 +45,15 @@ IF ~  Global("OHB_TALKED_VOGHI","LOCALS",1)
 Global("ohb_finale","global",0)
 ~ THEN BEGIN 6
   SAY @3490 /* Ho ho, what have we here? Come raise a flagon with me! We'll drink till we die in the arena... or the bar. The bar is more likely for me. */
-  IF ~~ THEN REPLY @3491 /* Drinking already? Isn't it a bit early for that? */ DO ~SetGlobal("OHB_TALKED_VOGHI","LOCALS",2)
+  IF ~~ THEN REPLY @3491 /* Drinking already? Isn't it a bit early for that? */ DO ~SetGlobal("OHB_TALKED_VOGHI","LOCALS",2) AddJournalEntry(@800013,QUEST)
 ~ GOTO 7
   IF ~  Gender(LastTalkedToBy,FEMALE)
-~ THEN REPLY @3492 /* Pour me a flagon, and let's get started! */ DO ~SetGlobal("OHB_TALKED_VOGHI","LOCALS",2)
+~ THEN REPLY @3492 /* Pour me a flagon, and let's get started! */ DO ~SetGlobal("OHB_TALKED_VOGHI","LOCALS",2) AddJournalEntry(@800013,QUEST)
 ~ GOTO 8
   IF ~  Gender(LastTalkedToBy,MALE)
-~ THEN REPLY @3492 /* Pour me a flagon, and let's get started! */ DO ~SetGlobal("OHB_TALKED_VOGHI","LOCALS",2)
+~ THEN REPLY @3492 /* Pour me a flagon, and let's get started! */ DO ~SetGlobal("OHB_TALKED_VOGHI","LOCALS",2) AddJournalEntry(@800013,QUEST)
 ~ GOTO 9
-  IF ~~ THEN REPLY @3493 /* All right, who taught the ape to talk and hold a flagon? */ DO ~SetGlobal("OHB_TALKED_VOGHI","LOCALS",2)
+  IF ~~ THEN REPLY @3493 /* All right, who taught the ape to talk and hold a flagon? */ DO ~SetGlobal("OHB_TALKED_VOGHI","LOCALS",2) AddJournalEntry(@800013,QUEST)
 ~ GOTO 11
 END
 

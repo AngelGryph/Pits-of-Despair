@@ -177,7 +177,8 @@ END
 
 IF ~~ THEN BEGIN 19
   SAY @565 /* As for you "performers," let this be a lesson to you. There will be no changes to the script, and the script is this: You fight. Fight well, and you live. Fight poorly, you die. It's hardly original, but it's a crowd-pleaser. */
-  IF ~~ THEN DO ~StartCutSceneMode()
+  IF ~~ THEN DO ~AddJournalEntry(@800016, QUEST)
+  StartCutSceneMode()
 SetGlobal("OHB_EVENT_102_DIALOG","MYAREA",2)
 Wait(1)
 FadeToColor([30.0],0)

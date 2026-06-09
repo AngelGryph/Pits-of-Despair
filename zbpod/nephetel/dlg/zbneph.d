@@ -30,7 +30,7 @@ IF ~~ BEGIN zbneph2
   SAY @18 /* Before you whet your blade in the arena, you should consider fighting in the training matches. They’ll give you a…  taste for how things are done here. See Stirv in the kennel to get started. */
     =
   @19 /* …watch out for that crazy bastard. The man is a sadist. He performs all manner of experiments on his “puppies” with concoctions and cruel training. They manage to work together without ripping each other apart—Stirv will delight in setting them upon you instead. */
-  IF ~~ DO ~SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",9) AddJournalEntry(@800009, QUEST)~ EXIT
+  IF ~~ DO ~SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",9) AddJournalEntry(@800009, QUEST) AddJournalEntry(@800015, QUEST)~ EXIT
 END
 
 IF ~~ BEGIN zbneph3
@@ -292,7 +292,8 @@ END
 
 IF ~~ zbnephgiveitto
   SAY @300 /* Give it to you? I’ll be the one using it, thank you very much. Don’t expect to have heard the last of Dennaton and his goons after this. They don’t tend to let up when something doesn’t go their way. Now, let’s get this show on the road! */
-  IF ~~ GOTO zbnephescapecuttrigger
+  IF ~!Global("ZB_First_Blood_Complete","GLOBAL",1)~ THEN GOTO zbnephescapecuttrigger1
+  IF ~Global("ZB_First_Blood_Complete","GLOBAL",1)~ THEN GOTO zbnephescapecuttrigger2
 END
 
 IF ~~ zbnephchoice
@@ -308,15 +309,30 @@ END
 
 IF ~Global("ZB_NEPH_INTRO_RESPONSE","GLOBAL",13)~ zbnpehreadytogo
   SAY @89 /* Ready to go? Or perhaps you’re enjoying the slaughter of the pits too much for your own good. */
-  IF ~~ THEN REPLY @90 /* I am ready to try your charm. You had best be telling the truth. */ GOTO zbnephescapecuttrigger
+  IF ~!Global("ZB_First_Blood_Complete","GLOBAL",1) ~ THEN REPLY @90 /* I am ready to try your charm. You had best be telling the truth. */ GOTO zbnephescapecuttrigger1
+  IF ~Global("ZB_First_Blood_Complete","GLOBAL",1) ~ THEN REPLY @90 /* I am ready to try your charm. You had best be telling the truth. */ GOTO zbnephescapecuttrigger2
   IF ~~ THEN REPLY @91 /* Not right now. Maybe later. */ EXIT
 END
 
-IF ~Global("ZB_NEPH_INTRO_RESPONSE","GLOBAL",13)~ zbnephescapecuttrigger
+/* close first blood quest if it wasn't completed */ 
+IF ~Global("ZB_NEPH_INTRO_RESPONSE","GLOBAL",13)~ zbnephescapecuttrigger1
   SAY @303 /* Just so you know, they will likely be able to track you magically. You’ll not have heard the last of Dennaton, but it gives you time on your side. */
   IF ~~ THEN DO ~
     SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",14)
-    SetGlobal("ZB_NEPH_ESCAPE_0","GLOBAL",4)
+	SetGlobal("ZB_NEPH_ESCAPE_0","GLOBAL",4)
+    SetGlobal("ZB_NEPH_ESCAPE_1","GLOBAL",1)
+	AddJournalEntry(@800011, QUEST_DONE)
+    StartCutSceneMode()
+    StartCutScene("zbpodes1")
+  ~ EXIT
+END
+
+/* first blood was completed, no journal entry changes required, normal block */ 
+IF ~Global("ZB_NEPH_INTRO_RESPONSE","GLOBAL",13)~ zbnephescapecuttrigger2
+  SAY @303 /* Just so you know, they will likely be able to track you magically. You’ll not have heard the last of Dennaton, but it gives you time on your side. */
+  IF ~~ THEN DO ~
+    SetGlobal("ZB_NEPH_INTRO_RESPONSE","GLOBAL",14)
+	SetGlobal("ZB_NEPH_ESCAPE_0","GLOBAL",4)
     SetGlobal("ZB_NEPH_ESCAPE_1","GLOBAL",1)
     StartCutSceneMode()
     StartCutScene("zbpodes1")
