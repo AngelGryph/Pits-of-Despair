@@ -895,6 +895,7 @@ THEN
     SetGlobal("OHB_final_restock","GLOBAL",1)
     AddStoreItem("OHBSDWM","AROW06",5,1)  // Arrow of Detonation
     AddStoreItem("OHBSDWM","AROW07",10,1)  // Arrow of Dispelling
+    AddStoreItem("OHBCONCO","zbluckp0",10,1)  // Potion of Luck (NEW)
     AddStoreItem("OHBCONCO","POTN03",10,1)  // Potion of Hill Giant Strength
     AddStoreItem("OHBCONCO","POTN12",5,1)  // Potion of Stone Giant Strength
     AddStoreItem("OHBCONCO","POTN04",4,1)  // Potion of Frost Giant Strength
