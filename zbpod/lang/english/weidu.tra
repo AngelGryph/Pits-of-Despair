@@ -120,8 +120,8 @@ Weight: 10~
 @10032 = ~Seraphic Parry: 2d10+6 piercing~
 @10033 = ~Seraphic Parry: 2d10+6 slashing~
 
-@10040 = ~Profane +4~
-@10041 = ~Profane +4 placeholder
+@10040 = ~Profane +3~
+@10041 = ~Profane +3 placeholder
 
 
 STATISTICS:
@@ -133,8 +133,8 @@ Combat abilities:
 – Every hit has a 15% has a chance of releasing more acid, causing 2d8 extra acid damage or half on a successful save vs. breath
 – Acidic poison: Critical hits inject poison into the bloodstream of the victim, causing 1 poison damage per second for 24 seconds if a Save vs. Death is failed, causing 6 more poison damage instantly with no save allowed
 
-THAC0: +4
-Damage: 2d4+4, +2 (acid), +2 (poison)
+THAC0: +3
+Damage: 2d4+3, +2 (acid), +2 (poison)
 Damage type: Slashing
 Speed Factor: 3
 Proficiency Type: Bastard Sword
@@ -144,8 +144,8 @@ Requires:
 
 Weight: 10~
 
-@10042 = ~Profane +6~
-@10043 = ~Profane +6 placeholder
+@10042 = ~Profane +5~
+@10043 = ~Profane +5 placeholder
 
 
 STATISTICS:
@@ -157,8 +157,8 @@ Combat abilities:
 – Every hit has a 15% has a chance of releasing more acid, causing 2d8 extra acid damage or half on a successful Save vs. Breath
 – Acidic poison: Critical hits inject poison into the bloodstream of the victim, causing 1 poison damage per second for 24 seconds if a Save vs. Death is failed, causing 6 more poison damage instantly with no save allowed
 
-THAC0: +6
-Damage: 2d4+6, +2 (acid), +2 (poison)
+THAC0: +5
+Damage: 2d4+5, +2 (acid), +2 (poison)
 Damage type: Slashing
 Speed Factor: 1
 Proficiency Type: Bastard Sword
@@ -624,7 +624,7 @@ Equipped abilities:
 
 Charged Abilities:
 – Dragon Fist (2/day)
-  Special: Your physical attacks will stun enemies in addition to their normal effects.
+  Special: Physical attacks will stun enemies in addition to their normal effects.
   Duration: 2 rounds
 
 Weight: 4~
@@ -635,7 +635,7 @@ Weight: 4~
 STATISTICS:
 
 Equipped abilities:
-– Armor Class: +3 vs. piercing and missile
+– Armor Class: +3 vs. piercing and missile attacks
 – Ruinous Rage: While under the effects of Barbarian Rage, the barbarian's attacks deal an additional 1d8+3 slashing damage to the primary target and nearby enemies. This effect can only trigger once per second on the same target. During this time, the barbarian also takes 1d4 slashing damage at the start of each round.
 
 Weight: 2~
@@ -1010,7 +1010,7 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: +6, an extra +1 vs. missile attacks
 – Immunity to Hold, Web, Paralyze and Stun effects
-– +0.5 Attacks per round
+– 0.5 extra attack per round
 – Champion Aura: +1 THAC0 and +1 Damage to all allies within a 15' radius
 Requires:
  10 Strength
