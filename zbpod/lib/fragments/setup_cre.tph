@@ -27,11 +27,6 @@ COPY_EXISTING ~zbcouatl.cre~ ~override~
     SAY 0x0c @15003
     WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~P_COUATL~))
 
-COPY ~%MOD_FOLDER%/creatures/stirv~ ~override~
-COPY_EXISTING ~ohbstirv.cre~ ~override~
-    SAY 0x08 @15004
-    SAY 0x0c @15004
-
 // demilich - give unique creature name and script to deconflict with other mods that may use the same character
 COPY_EXISTING ~demilich.CRE~ ~override/zbademi1.cre~
   WRITE_BYTE 0x234  30   // Level
@@ -39,6 +34,16 @@ COPY_EXISTING ~demilich.CRE~ ~override/zbademi1.cre~
   WRITE_BYTE 0x26   99   // Maximum HP
   WRITE_ASCII 0x268 ~zbademi1~ #8 // Add Default Script
   WRITE_ASCII 0x280 ~zbademi1~ #8 // Script Name
+
+
+///////////////////\\\\\\\\\\\\\\\\\\\
+// Stirv's Creature Feature Matches \\
+//////////////////\\\\\\\\\\\\\\\\\\\\
+
+COPY ~%MOD_FOLDER%/creatures/stirv~ ~override~
+COPY_EXISTING ~ohbstirv.cre~ ~override~
+    SAY 0x08 @15004
+    SAY 0x0c @15004
 
 COPY ~%MOD_FOLDER%/creatures/mutvampworg~ ~override~
 
@@ -246,7 +251,10 @@ ACTION_FOR_EACH wvrn IN
             WRITE_ASCII 0x268 ~momatk01~ #8 // Add Default Script
             WRITE_ASCII 0x280 ~mowvrn0%wvrn%~ #8 // Script Name
 END
+// End Creature Feature Matches
 
+
+// BP2 NPC
 COPY ~%MOD_FOLDER%/creatures/brodle~ ~override~
 COPY_EXISTING ~ohbbrodl.cre~ ~override~
     SAY 0x08 @15013
@@ -277,13 +285,13 @@ COPY_EXISTING ~ohbszass.cre~ ~override~
     SAY 0x08 @15017
     SAY 0x0c @15017
 
+	COPY ~%MOD_FOLDER%/creatures/thewinged~ ~override~
+COPY_EXISTING ~ohbwing.cre~ ~override~
+    SAY 0x08 @15019
+    SAY 0x0c @15019
+
+// Match 1
 COPY ~%MOD_FOLDER%/creatures/match1orcs~ ~override~
-
-
-COPY ~%MOD_FOLDER%/creatures/match2mino~ ~override~
-COPY_EXISTING ~ohbmin01.cre~ ~override~
-    SAY 0x08 @15018
-    SAY 0x0c @15018
 
 // ohb_101 Orc Warrior
 COPY_EXISTING ~OHBORC01.cre~ ~override~
@@ -320,8 +328,13 @@ ACTION_FOR_EACH orcdr IN
         END
     END
 
+// Match 2
 // minotaurs gore attack
 COPY ~%MOD_FOLDER%/creatures/match2mino~ ~override~
+COPY_EXISTING ~ohbmin01.cre~ ~override~
+    SAY 0x08 @15018
+    SAY 0x0c @15018
+
 COPY_EXISTING ~ohbmin01.cre~ ~override~
     LPF ADD_CRE_EFFECT INT_VAR opcode = 248 timing = 9 STR_VAR resource = ~ZBGOREM0~ END
 
@@ -338,12 +351,9 @@ COPY_EXISTING ~ohbgla02.cre~ ~override~
 COPY_EXISTING ~ZBGOREM1.SPL~ ~override~
     LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@18004) END // add .tra ref later
 
-	COPY ~%MOD_FOLDER%/creatures/thewinged~ ~override~
-COPY_EXISTING ~ohbwing.cre~ ~override~
-    SAY 0x08 @15019
-    SAY 0x0c @15019
-
+// Match 3
 COPY ~%MOD_FOLDER%/animations/lizard_king~ ~override~
+COPY ~%MOD_FOLDER%/creatures/match3liz~ ~override~
 
 // Lizard Chieftain
 ACTION_IF FILE_EXISTS_IN_GAME ~OHBLIZ01.cre~ BEGIN
@@ -376,6 +386,8 @@ ACTION_FOR_EACH priest IN
                 WRITE_ASCII 0x260 ~mopries1~ #8 // General Script (druid prebuff)
         END
     END
+
+// Match 4
 // Deep Umber Hulk
 COPY ~%MOD_FOLDER%/creatures/match4umber~ ~override~
 COPY_EXISTING ~ohbumb01.cre~ ~override~
@@ -383,7 +395,6 @@ COPY_EXISTING ~ohbumb01.cre~ ~override~
     SAY 0x0c @15020
 
 // Deep Queen
-    COPY ~%MOD_FOLDER%/creatures/match4umber~ ~override~
 COPY_EXISTING ~zbumbqu.cre~ ~override~
     SAY 0x08 @15022
     SAY 0x0c @15022
@@ -444,14 +455,13 @@ ACTION_FOR_EACH melee1 IN
         END
     END
 
-// ohb_104 Elder Umber Hulk fight
-COPY_EXISTING ~ohbumb01.cre~ ~override~
-    WRITE_BYTE 0x24 110  // Current HP
-    WRITE_BYTE 0x26 110  // Maximum HP
 
 ///////////////////////////////////////////////////////////////////////////
 // SECOND ROUND OF FIGHTS                                                //
 ///////////////////////////////////////////////////////////////////////////
+
+// Match 6
+COPY ~%MOD_FOLDER%/creatures/match6vampire~ ~override~
 // ohb_201 - Gaul
 COPY_EXISTING ~ohbvmp01.cre~ ~override~
     WRITE_BYTE 0x24  84  // Current HP
@@ -500,6 +510,9 @@ COPY_EXISTING ~ohbvmp03.cre~ ~override~
     ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~GLOVES~ EQUIP
     LPF ADD_CRE_EFFECT INT_VAR opcode = 176 target = 0 parameter1 = 4 parameter2 = 0 timing = 9 resist_dispel = 0 probability1 = 100 END  // movement speed bonus
 
+// Match 7
+COPY ~%MOD_FOLDER%/creatures/match7gith~ ~override~
+
 // ohb_202 - Gith Anti-Paladin
 COPY_EXISTING ~ohbgit01.cre~ ~override~
   WRITE_BYTE 0x234 16 // Level
@@ -528,11 +541,24 @@ COPY_EXISTING ~ohbgit03.cre~ ~override~
   REPLACE_CRE_ITEM ~CHAN13~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~   EQUIP // Elven Chain +1
   REPLACE_CRE_ITEM ~BELT06~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~BELT~    EQUIP // Belt of Hill Giant
 
+
+// Match 8
+COPY ~%MOD_FOLDER%/creatures/match8saughain~ ~override~
+
 // ohb_203 - Sahuagin Prince
 COPY_EXISTING ~ohbsah01.cre~ ~override~
     WRITE_BYTE 0x53   2  // 2 APR Base
     WRITE_BYTE 0x238 22  // Strength
     WRITE_BYTE 0x23c 18  // Dexterity
+
+// Match 9
+COPY ~%MOD_FOLDER%/creatures/match9mardi~ ~override~
+
+// Match 10
+COPY ~%MOD_FOLDER%/creatures/match10demons~ ~override~
+
+// Match 11
+COPY ~%MOD_FOLDER%/creatures/match11monks~ ~override~
 
 // Masterwork Clay Golem
     COPY ~%MOD_FOLDER%/creatures/match12golems~ ~override~
