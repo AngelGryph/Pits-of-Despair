@@ -614,7 +614,7 @@ Charge ability:
 Weight: 3~
 
 @10290 = ~Robe of the Transcendent~
-@10291 = ~Robe of the Transcendent 
+@10291 = ~Robe of the Transcendent description placeholder
 
 STATISTICS:
 
@@ -623,7 +623,7 @@ Equipped abilities:
 – Physical Resistances: +10%
 
 Charged Abilities:
-– Dragon Fist (1/day)
+– Dragon Fist (2/day)
   Special: Your physical attacks will stun enemies in addition to their normal effects.
   Duration: 2 rounds
 
@@ -651,8 +651,8 @@ Equipped abilities:
 
 Weight: 4~
 
-@10320 = ~Celeste +4~
-@10321 = ~Placeholder description
+@10320 = ~Celeste~
+@10321 = ~Celeste Placeholder description
 
 STATISTICS:
 
@@ -1051,6 +1051,16 @@ Charge abilities:
 – Zone of Sweet Air (1/day)
 – Wazzer's Whirlwind (1/day)
   Summons a whirlwind that deals 2d8 crushing and 2d8 slashing damage to up to eight small or medium creatures, also stunning them if they fail a Save vs. Breath with a -2 penalty.
+Weight: 1~
+
+@11110 = ~Potion of Luck~
+@11111 = ~Potion of Luck description placeholder
+
+STATISTICS:
+
+Luck: +1
+Duration: 2 turns
+
 Weight: 1~
 
 // Creatures
