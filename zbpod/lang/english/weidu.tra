@@ -1063,6 +1063,21 @@ Duration: 2 turns
 
 Weight: 1~
 
+@11112 = ~Bone Splintmail~
+@11113 = ~Bone Splintmail description placeholder
+
+STATISTICS:
+
+Equiped abilities:
+– Wearer gains +20% resistance to slashing-, piercing- and crushing damage when equipped with a two-handed sword.
+
+Armor Class: -1 (-2 vs. piercing and missile, -3 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 10~
+
+
 // Creatures
 
 @15000 = ~Deathslither~ // placeholder
