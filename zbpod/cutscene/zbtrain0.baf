@@ -4,8 +4,8 @@ THEN
   RESPONSE #100
   CutSceneId(Player1)
   Wait(2)
-  CopyGroundPilesTo("ZB8100",[2499.1390])  // TBP2 - Staging Area Map
-  SmallWait(5)
+  CopyGroundPilesTo("ZB8100",[1905.2705])  // TBP2 - Staging Area Map
+  SmallWait(25)
   DestroyGroundPiles()
   LeaveAreaLUAPanic("ZB8100","",[1890.2700],W)  // TBP2 - Staging Area Map
   LeaveAreaLUA("ZB8100","",[1890.2700],W)  // TBP2 - Staging Area Map
