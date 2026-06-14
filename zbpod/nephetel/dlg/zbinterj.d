@@ -17,13 +17,22 @@ END
 INTERJECT_COPY_TRANS ZBNEPHJ 0 ZB_NEPH_INTERJECT_1.1
   == JAHEIRAJ IF ~GlobalGT("zb_train_spawn","GLOBAL",0) InParty("JAHEIRA") InMyArea("JAHEIRA") !StateCheck("JAHEIRA",CD_STATE_NOTVALID)~ THEN @43 /* You think it's a good job to destroy nature's children? We do as the balance dictates. */
 END
-
-INTERJECT_COPY_TRANS ZBNEPHJ 1 ZB_NEPH_INTERJECT_1.2
+INTERJECT_COPY_TRANS ZBNEPHJ 1 ZB_NEPH_INTERJECT_1.2_1
   == AERIEJ IF ~InParty("AERIE") InMyArea("AERIE") !StateCheck("AERIE",CD_STATE_NOTVALID)~ THEN @44 /* It’s awful to make them fight like this... No one deserves it. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 1 ZB_NEPH_INTERJECT_1.2_2
   == ANOMENJ IF ~InParty("ANOMEN") InMyArea("ANOMEN") !StateCheck("ANOMEN",CD_STATE_NOTVALID)~ THEN @131 /* This Dennaton’s days are numbered, by Helm I swear it to be so. In the meantime, however, let us rid Faerûn of this band of scum. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 1 ZB_NEPH_INTERJECT_1.2_3
   == DORNJ IF ~InParty("DORN") InMyArea("DORN") !StateCheck("DORN",CD_STATE_NOTVALID)~ THEN @139 /* No self respecting warband would allow themselves to be taken alive. Grummsh would flay their skin from their weakling bones. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 1 ZB_NEPH_INTERJECT_1.2_4
   == RASAADJ IF ~InParty("RASAAD") InMyArea("RASAAD") !StateCheck("RASAAD",CD_STATE_NOTVALID)~ THEN @133 /* I see only prisoners here, forced to feed this cruel spectacle. May the Moonmaiden grant them peace. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 1 ZB_NEPH_INTERJECT_1.2_5
   == KORGANJ IF ~InParty("KORGAN") InMyArea("KORGAN") !StateCheck("KORGAN",CD_STATE_NOTVALID)~ THEN @132 /* A bloody slaughter it will be. An' bloody satisfying! */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 1 ZB_NEPH_INTERJECT_1.2_6
   == EDWINJ IF ~InParty("EDWIN") InMyArea("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID)~ THEN @134 /* Bah! I will not be toyed with on the level of some brute. Let us be quick with this. */
 END
 ///
@@ -36,24 +45,46 @@ INTERJECT_COPY_TRANS ZBNEPHJ 1.1 ZBPOSTMATCH1
   == MAZZYJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID) InParty("Mazzy") InMyArea("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @146 /* A true hero can see this evil for what it is. The virtuous are dishonored in seeking pleasure for killing. */
   == HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID) InParty("Mazzy") InMyArea("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @147 /* I shall leave virtue and honor to you, Tiny Hawk, for who is more deserving? */
 END
+///
 
 /// After Match 2 - After Dennaton kills part of a gladiatorial party
-INTERJECT_COPY_TRANS ZBNEPHJ 2.1 ZBPOSTMATCH2
+INTERJECT_COPY_TRANS ZBNEPHJ 2.1 ZBPOSTMATCH2_1
   == AERIEJ IF ~InParty("AERIE") InMyArea("AERIE") !StateCheck("AERIE",CD_STATE_NOTVALID)~ THEN @306 /* Such cruelty… there must be a way to put a stop to it. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 2.1 ZBPOSTMATCH2_2
   == MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @307 /* Boo disagrees with the treating of people like they are so many spare parts, and so does Minsc! Were my boot not contained so, it would most assuredly find itself in the nethers of this cruel evil. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 2.1 ZBPOSTMATCH2_3
   == EDWINJ IF ~InParty("EDWIN") InMyArea("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID)~ THEN @308 /* Interesting of you to call it slavery while you stand here without chains of your own. Whose coin buys your freedom? (Or is it that tail of hers?) */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 2.1 ZBPOSTMATCH2_4
   == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @309 /* Loyalty, obedience… sometimes there’s no real choice at all. Best to remember that. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 2.1 ZBPOSTMATCH2_5
   == DORNJ IF ~InParty("DORN") InMyArea("DORN") !StateCheck("DORN",CD_STATE_NOTVALID)~ THEN @310 /* Replacing the weak with the strong is the law of survival. If only our own band followed it so well. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 2.1 ZBPOSTMATCH2_6
   == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @311 /* Such cruel calculus is the mark of true evil. It thrives where life is traded like mere coin. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 2.1 ZBPOSTMATCH2_7
   == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @312 /* The worst of it all is how easily it is accepted. Shackles are not lighter when they’re gilded, no matter what you tell yourself. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 2.1 ZBPOSTMATCH2_8
   == JANJ IF ~InParty("JAN") InMyArea("JAN") !StateCheck("JAN",CD_STATE_NOTVALID) InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @167 /* You know, that match reminded me of the Great Bovine-Turnip War of 1343. Terrible business. The bulls ran wild and trampled the fields, turnips detonating beneath their hooves. So awful was the sound that Uncle Scratchy never wears boots outdoors anymore—something about the sound of the squishing. Personally, I’m not convinced that the bulls were trying to annex gnome territory. */
 END
+///
 
 /// Before Match 3 - Lizards
-INTERJECT_COPY_TRANS ZBNEPHJ 3 ZBNEPHPREMATCH3
+INTERJECT_COPY_TRANS ZBNEPHJ 3 ZBNEPHPREMATCH3_1
   == NEERAJ IF ~InParty("NEERA") InMyArea("NEERA") !StateCheck("NEERA",CD_STATE_NOTVALID)~ THEN @313 /* Ugh. Bugs. Why is it always bugs? */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 3 ZBNEPHPREMATCH3_2
   == KORGANJ IF ~InParty("KORGAN") InMyArea("KORGAN") !StateCheck("KORGAN",CD_STATE_NOTVALID)~ THEN @314 /* Scaled beasties blood be thicker an’ more satisfi’in when sprayed across yer armor. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 3 ZBNEPHPREMATCH3_3
   == MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @315 /* Be at ease. We will triumph over this lizard tribe with goodness and might. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 3 ZBNEPHPREMATCH3_4
   == JANJ IF ~!StateCheck("JAN", CD_STATE_NOTVALID) InMyArea("JAN")  InParty("JAN")~ THEN @68 /*  Oh, Nephetel, you’re far too harsh. I once traded my old flame Lissa’s prize turnip for a racing lizard. Let me tell you, she was not happy I did. She chased me three times around the block and back again with a rake before she finally stood down. I named the lizard Binky, and he was the world to me when I was 38. That reminds me—I’m sure I’ve still got him around here somewhere. Don’t mind the bones. */ DO ~GiveItemCreate("ZBBINK0",Player1,1,0,0)~
   == EDWINJ IF ~!StateCheck("JAN", CD_STATE_NOTVALID) InMyArea("JAN")  InParty("JAN") !StateCheck("EDWIN", CD_STATE_NOTVALID) InParty("EDWIN") InMyArea("EDWIN")~ THEN @69 /* You’ve been carrying that thing around with you the entire time? Do you have no shame? */
   == MINSCJ IF ~!StateCheck("JAN", CD_STATE_NOTVALID) InMyArea("JAN")  InParty("JAN") !StateCheck("MINSC", CD_STATE_NOTVALID) InParty("MINSC") InMyArea("MINSC")~ THEN @70 /* Oh, that is horrible! Boo shall never face such a grisly fate. When it is our time, he will have the burial of a true Rashemi berserker alongside me! */
@@ -67,17 +98,25 @@ END
 ///
 
 /// Before Match 4
-INTERJECT_COPY_TRANS ZBNEPHJ 4 ZBPREMATCH4
+INTERJECT_COPY_TRANS ZBNEPHJ 4 ZBPREMATCH4_1
   == KORGANJ IF ~InParty("KORGAN") InMyArea("KORGAN") !StateCheck("KORGAN",CD_STATE_NOTVALID)~ THEN @316 /* Aye, tha’ be a fair deal, <CHARNAME>. Best we take it fer those weak-minded guppies in our company… not namin’ names. Har! */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 4 ZBPREMATCH4_2
   == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @317 /* Clever, charging for safety when fear is the highest. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 4 ZBPREMATCH4_3
   == ANOMENJ IF ~InParty("ANOMEN") InMyArea("ANOMEN") !StateCheck("ANOMEN",CD_STATE_NOTVALID)~ THEN @318 /* I would warn against taking any kind of potion from unproven hands, <CHARNAME>. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 4 ZBPREMATCH4_4
   == NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @319 /* We ought to take the potion, <CHARNAME>. These beasts aren’t to be taken lightly. */
 END
 ///
 
 /// After Match 4
-INTERJECT_COPY_TRANS ZBNEPHJ 4.1 ZBPOSTMATCH4
+INTERJECT_COPY_TRANS ZBNEPHJ 4.1 ZBPOSTMATCH4_1
   == NEERAJ IF ~InParty("NEERA") InMyArea("NEERA") !StateCheck("NEERA",CD_STATE_NOTVALID)~ THEN @320 /* You know, one time I actually turned INTO an umber hulk. It was amazing—you could see everywhere with all those eyes. Ah oh, the digging! Dig, dig, dig. It felt like eating chocolate. So satisfying. Anyway, what were we doing? */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 4.1 ZBPOSTMATCH4_2
   == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @186 /* Torm has witnessed us triumph on our righteous path to victory. Thay is a loathsome den where evil festers and such creatures must be rooted out whenever the opportunity arises. */
   == VALYGARJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @187 /* It will do little good—the entirety of Thay should be considered if one wishes to rid evil from our world. */
   == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @188 /* Be that as it may, Valygar, we can only do what our bodies will allow us. Should the chance arise, still would I hesitate. While evil may lurk in every shadow, there is much that is sacred and worth defending—even in this place. */
@@ -85,76 +124,150 @@ END
 ///
 
 /// Before Match 5
-INTERJECT_COPY_TRANS ZBNEPHJ 7 ZBPREMATCH5.1
-  == VICONIJ IF ~InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID) InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @61 /* Hmph. I wonder what fate befell their house? Only the weak would allow themselves to be captured by surfacers. */
+INTERJECT_COPY_TRANS ZBNEPHJ 7 ZBPREMATCH5.1_1
+  == VICONIJ IF ~InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN @61 /* Hmph. I wonder what fate befell their house? Only the weak would allow themselves to be captured by surfacers. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 7 ZBPREMATCH5.1_2
   == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN@321 /*  Ah, finally! A true evil to put to the sword. Torm’s hand will guide us. */
 END
+///
 
-INTERJECT_COPY_TRANS ZBNEPHJ 8 ZBPREMATCH5.2
+/// Neph help
+INTERJECT_COPY_TRANS ZBNEPHJ 8 ZBPREMATCH5.2_1
   == KORGANJ IF ~InParty("KORGAN") InMyArea("KORGAN") !StateCheck("KORGAN",CD_STATE_NOTVALID)~ THEN @322 /* Free, ye say? I be findin’ that hard t’ believe, lassy. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 8 ZBPREMATCH5.2_2
   == JAHEIRAJ IF ~InParty("JAHEIRA") InMyArea("JAHEIRA") !StateCheck("JAHEIRA",CD_STATE_NOTVALID)~ THEN @323 /* Be cautious, <CHARNAME>, but don’t dismiss her out of hand. Another blade on our side could mean the difference between victory and death against these drow. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 8 ZBPREMATCH5.2_3
   == HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @324 /* An alluring offer, my raven! Our stage will be all the richer for such dangerous company. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 8 ZBPREMATCH5.2_4
   == NEERAJ IF ~InParty("NEERA") InMyArea("NEERA") !StateCheck("NEERA",CD_STATE_NOTVALID)~ THEN @325 /* If it helps keep the spiders off me, I’m MORE than happy to accept help. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 8 ZBPREMATCH5.2_5
   == JANJ IF ~!StateCheck("JAN", CD_STATE_NOTVALID) InMyArea("JAN")  InParty("JAN")~ THEN @326 /* My Uncle Gerhardt used to say, 'give the first turnip for free and get a customer for life.’ Of course, he stopped saying that after he got stuck with old Berrik—he stuck around for 70 years, stubborn as mold. Old Gerhardt said he was sad when he died, but we all knew he was lying. */
+END
+INTERJECT_COPY_TRANS ZBNEPHJ 8 ZBPREMATCH5.2_6
   == CERNDJ IF ~InParty("Cernd") InMyArea("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID)~ THEN @327 /* We are all beasts of a pack at the end of the day. We would do well to accept her help. */
 END
 ///
 
 /// After Match 5 ///
 // Fight
-INTERJECT_COPY_TRANS ZBNEPH zbnephfight ZBPOSTMATCH5.1
+INTERJECT_COPY_TRANS ZBNEPH zbnephfight ZBPOSTMATCH5.1_1
   == YOSHJ IF ~ !StateCheck("Yoshimo",CD_STATE_NOTVALID) InParty("Yoshimo") InMyArea("Yoshimo")~ THEN @328 /* Oh? I am most intrigued. Let’s not tarry too long, no? */
+END
+INTERJECT_COPY_TRANS ZBNEPH zbnephfight ZBPOSTMATCH5.1_2
   == NALIAJ IF ~!StateCheck("Nalia",CD_STATE_NOTVALID) InParty("Nalia") InMyArea("Nalia")~ THEN @329 /* I love sneaking around. Reminds me of simpler times. */
+END
+INTERJECT_COPY_TRANS ZBNEPH zbnephfight ZBPOSTMATCH5.1_3
   == EDWINJ IF ~!StateCheck("EDWIN", CD_STATE_NOTVALID) InParty("EDWIN") InMyArea("EDWIN")~ THEN @330 /* Eh, keep your guard up. I will not be held responsible if the tiefling girl ambushes us with the many spies she undoubtedly keeps in her back pocket (I can *feel* them watching.) */
 END
 
 // No fight
-INTERJECT_COPY_TRANS ZBNEPH zbnephnofight ZBPOSTMATCH5.2
+INTERJECT_COPY_TRANS ZBNEPH zbnephnofight ZBPOSTMATCH5.2_1
   == YOSHJ IF ~ !StateCheck("Yoshimo",CD_STATE_NOTVALID) InParty("Yoshimo") InMyArea("Yoshimo")~ THEN @328 /* Oh? I am most intrigued. Let’s not tarry too long, no? */
+END
+INTERJECT_COPY_TRANS ZBNEPH zbnephnofight ZBPOSTMATCH5.2_2
   == NALIAJ IF ~!StateCheck("Nalia",CD_STATE_NOTVALID) InParty("Nalia") InMyArea("Nalia")~ THEN @329 /* I love sneaking around. Reminds me of simpler times. */
+END
+INTERJECT_COPY_TRANS ZBNEPH zbnephnofight ZBPOSTMATCH5.2_3
   == EDWINJ IF ~!StateCheck("EDWIN", CD_STATE_NOTVALID) InParty("EDWIN") InMyArea("EDWIN")~ THEN @330 /* Eh, keep your guard up. I will not be held responsible if the tiefling girl ambushes us with the many spies she undoubtedly keeps in her back pocket (I can *feel* them watching.) */
 END
 ///
 
 /// Ring Interject ///
-INTERJECT_COPY_TRANS ZBNEPH zbnephstudyring ZBPOSTMATCH5.2
+INTERJECT_COPY_TRANS ZBNEPH zbnephstudyring ZBPOSTMATCH5.2_1
   == JAHEIRAJ IF ~InParty("JAHEIRA") InMyArea("JAHEIRA") !StateCheck("JAHEIRA",CD_STATE_NOTVALID)~ THEN @331 /* I’m wary, but this may be our best opportunity to leave this place. It will be good to see the trees once more. */
+END
+INTERJECT_COPY_TRANS ZBNEPH zbnephstudyring ZBPOSTMATCH5.2_2
   == YOSHJ IF ~!StateCheck("Yoshimo",CD_STATE_NOTVALID) InParty("Yoshimo") InMyArea("Yoshimo")~ THEN @332 /* Hmm, a valuable proposition. We’d do well to seize this opportunity. */
+END
+INTERJECT_COPY_TRANS ZBNEPH zbnephstudyring ZBPOSTMATCH5.2_3
   == AERIEJ IF ~InParty("AERIE") InMyArea("AERIE") !StateCheck("AERIE",CD_STATE_NOTVALID)~ THEN @333 /* Oh, thank Baervan. We’ll finally be free of this place! */
+END
+INTERJECT_COPY_TRANS ZBNEPH zbnephstudyring ZBPOSTMATCH5.2_4
   == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @334 /* The thought of stranding some drunken wizard here is a good one, I admit, even if this ring feels wrong. Take it and let’s be done with it. */
+END
+INTERJECT_COPY_TRANS ZBNEPH zbnephstudyring ZBPOSTMATCH5.2_5
   == DORNJ IF ~InParty("DORN") InMyArea("DORN") !StateCheck("DORN",CD_STATE_NOTVALID)~ THEN @335 /* Perhaps we should simply kill her and take the ring for ourselves. */
 END
 ///
 
 /// Neph Join Interjections ///
-INTERJECT_COPY_TRANS ZBNEPH ZBNEPHCOWLEDWIZARDS ZBNEPHFIRSTJOINSINTERJECT1
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHCOWLEDWIZARDS ZBNEPHFIRSTJOINSINTERJECT1_1
   == HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @356 /* We must consider ourselves fortunate to find another exotic bird to join our eccentric menagerie. */
-  == EDWINJ IF ~InParty("EDWIN") InMyArea("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID)~ THEN @357 /* Eh? No, no this will not do at all. I will not tolerate spies within my company. I will be keeping an eye on you, tiefling. (Or… perhaps both eyes). */
-  == ANOMENJ IF ~InParty("ANOMEN") InMyArea("ANOMEN") !StateCheck("ANOMEN",CD_STATE_NOTVALID)~ THEN @358 /* Taking in every fantastical stray you find is going to end poorly for you, <CHARNAME>. */
-  == MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @359 /* Huzzah! Boo was worried you would not be coming with us. I think he likes you. */
-  == AERIEJ IF ~InParty("AERIE") InMyArea("AERIE") !StateCheck("AERIE",CD_STATE_NOTVALID)~ THEN @360 /* W-welcome. I hope you like c-crazy adventures, that’s the only kind we seem to go on. */
-  == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @361 /* I’ll be keeping a close eye on you, planeling. */
-  == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @362 /* And here I thought this group had reached its limit for talented rogues. Ah, no matter. More competition is always welcome! */
-  == WILSONJ IF ~InParty("WILSON") InMyArea("WILSON") !StateCheck("WILSON",CD_STATE_NOTVALID)~ THEN @363 /* *growl* *snort* */
 END
-INTERJECT_COPY_TRANS ZBNEPH ZBNEPHILLBEBYYOURSIDE ZBNEPHFIRSTJOINSINTERJECT2
-  == HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @356 /* We must consider ourselves fortunate to find another exotic bird to join our eccentric menagerie. */
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHCOWLEDWIZARDS ZBNEPHFIRSTJOINSINTERJECT1_2
   == EDWINJ IF ~InParty("EDWIN") InMyArea("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID)~ THEN @357 /* Eh? No, no this will not do at all. I will not tolerate spies within my company. I will be keeping an eye on you, tiefling. (Or… perhaps both eyes). */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHCOWLEDWIZARDS ZBNEPHFIRSTJOINSINTERJECT1_3
   == ANOMENJ IF ~InParty("ANOMEN") InMyArea("ANOMEN") !StateCheck("ANOMEN",CD_STATE_NOTVALID)~ THEN @358 /* Taking in every fantastical stray you find is going to end poorly for you, <CHARNAME>. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHCOWLEDWIZARDS ZBNEPHFIRSTJOINSINTERJECT1_4
   == MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @359 /* Huzzah! Boo was worried you would not be coming with us. I think he likes you. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHCOWLEDWIZARDS ZBNEPHFIRSTJOINSINTERJECT1_5
   == AERIEJ IF ~InParty("AERIE") InMyArea("AERIE") !StateCheck("AERIE",CD_STATE_NOTVALID)~ THEN @360 /* W-welcome. I hope you like c-crazy adventures, that’s the only kind we seem to go on. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHCOWLEDWIZARDS ZBNEPHFIRSTJOINSINTERJECT1_6
   == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @361 /* I’ll be keeping a close eye on you, planeling. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHCOWLEDWIZARDS ZBNEPHFIRSTJOINSINTERJECT1_7
   == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @362 /* And here I thought this group had reached its limit for talented rogues. Ah, no matter. More competition is always welcome! */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHCOWLEDWIZARDS ZBNEPHFIRSTJOINSINTERJECT1_8
   == WILSONJ IF ~InParty("WILSON") InMyArea("WILSON") !StateCheck("WILSON",CD_STATE_NOTVALID)~ THEN @363 /* *growl* *snort* */
 END
 
-INTERJECT_COPY_TRANS ZBNEPH ZBNEPHONTOTHEROAD ZBNEPHFIRSTJOINSINTERJECT3
+
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHILLBEBYYOURSIDE ZBNEPHFIRSTJOINSINTERJECT2_1
   == HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @356 /* We must consider ourselves fortunate to find another exotic bird to join our eccentric menagerie. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHILLBEBYYOURSIDE ZBNEPHFIRSTJOINSINTERJECT2_2
   == EDWINJ IF ~InParty("EDWIN") InMyArea("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID)~ THEN @357 /* Eh? No, no this will not do at all. I will not tolerate spies within my company. I will be keeping an eye on you, tiefling. (Or… perhaps both eyes). */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHILLBEBYYOURSIDE ZBNEPHFIRSTJOINSINTERJECT2_3
   == ANOMENJ IF ~InParty("ANOMEN") InMyArea("ANOMEN") !StateCheck("ANOMEN",CD_STATE_NOTVALID)~ THEN @358 /* Taking in every fantastical stray you find is going to end poorly for you, <CHARNAME>. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHILLBEBYYOURSIDE ZBNEPHFIRSTJOINSINTERJECT2_4
   == MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @359 /* Huzzah! Boo was worried you would not be coming with us. I think he likes you. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHILLBEBYYOURSIDE ZBNEPHFIRSTJOINSINTERJECT2_5
   == AERIEJ IF ~InParty("AERIE") InMyArea("AERIE") !StateCheck("AERIE",CD_STATE_NOTVALID)~ THEN @360 /* W-welcome. I hope you like c-crazy adventures, that’s the only kind we seem to go on. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHILLBEBYYOURSIDE ZBNEPHFIRSTJOINSINTERJECT2_6
   == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @361 /* I’ll be keeping a close eye on you, planeling. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHILLBEBYYOURSIDE ZBNEPHFIRSTJOINSINTERJECT2_7
   == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @362 /* And here I thought this group had reached its limit for talented rogues. Ah, no matter. More competition is always welcome! */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHILLBEBYYOURSIDE ZBNEPHFIRSTJOINSINTERJECT2_8
+  == WILSONJ IF ~InParty("WILSON") InMyArea("WILSON") !StateCheck("WILSON",CD_STATE_NOTVALID)~ THEN @363 /* *growl* *snort* */
+END
+
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHONTOTHEROAD ZBNEPHFIRSTJOINSINTERJECT3_1
+  == HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @356 /* We must consider ourselves fortunate to find another exotic bird to join our eccentric menagerie. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHONTOTHEROAD ZBNEPHFIRSTJOINSINTERJECT3_2
+  == EDWINJ IF ~InParty("EDWIN") InMyArea("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID)~ THEN @357 /* Eh? No, no this will not do at all. I will not tolerate spies within my company. I will be keeping an eye on you, tiefling. (Or… perhaps both eyes). */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHONTOTHEROAD ZBNEPHFIRSTJOINSINTERJECT3_3
+  == ANOMENJ IF ~InParty("ANOMEN") InMyArea("ANOMEN") !StateCheck("ANOMEN",CD_STATE_NOTVALID)~ THEN @358 /* Taking in every fantastical stray you find is going to end poorly for you, <CHARNAME>. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHONTOTHEROAD ZBNEPHFIRSTJOINSINTERJECT3_4
+  == MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @359 /* Huzzah! Boo was worried you would not be coming with us. I think he likes you. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHONTOTHEROAD ZBNEPHFIRSTJOINSINTERJECT3_5
+  == AERIEJ IF ~InParty("AERIE") InMyArea("AERIE") !StateCheck("AERIE",CD_STATE_NOTVALID)~ THEN @360 /* W-welcome. I hope you like c-crazy adventures, that’s the only kind we seem to go on. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHONTOTHEROAD ZBNEPHFIRSTJOINSINTERJECT3_6
+  == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @361 /* I’ll be keeping a close eye on you, planeling. */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHONTOTHEROAD ZBNEPHFIRSTJOINSINTERJECT3_7
+  == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @362 /* And here I thought this group had reached its limit for talented rogues. Ah, no matter. More competition is always welcome! */
+END
+INTERJECT_COPY_TRANS ZBNEPH ZBNEPHONTOTHEROAD ZBNEPHFIRSTJOINSINTERJECT3_8
   == WILSONJ IF ~InParty("WILSON") InMyArea("WILSON") !StateCheck("WILSON",CD_STATE_NOTVALID)~ THEN @363 /* *growl* *snort* */
 END
