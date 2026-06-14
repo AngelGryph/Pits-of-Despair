@@ -1083,6 +1083,15 @@ STATISTICS:
   Summons a whirlwind that deals 2d8 crushing and 2d8 slashing damage to up to eight small or medium creatures, also stunning them if they fail a Save vs. Breath with a -2 penalty.
 Weight: 1~
 
+@11116 = ~Potion of Water~
+@11117 = ~Potion of Water description placeholder
+
+STATISTICS:
+
+None
+
+Weight: 1~
+
 
 // Creatures
 
