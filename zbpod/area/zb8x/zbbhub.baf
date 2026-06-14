@@ -623,7 +623,7 @@ THEN
   SetCutSceneLite(TRUE)
   SetGlobal("OHB_START_BATTLE","GLOBAL",1)
   SetGlobal("OHB_104","GLOBAL",1)
-  SetGlobal("OHB_ARENA","GLOBAL",3)
+  SetGlobal("OHB_ARENA","GLOBAL",1)
 END
 
 /// After match 4
@@ -711,7 +711,7 @@ IF
 THEN
   RESPONSE #100
     StartCutSceneMode()
-    StartCutScene("ohbaren2")
+    StartCutScene("zbbaren1")
 END
 
 IF
@@ -721,7 +721,7 @@ IF
 THEN
   RESPONSE #100
     StartCutSceneMode()
-    StartCutScene("ohbaren3")
+    StartCutScene("zbbaren2")
 END
 
 IF
@@ -731,7 +731,7 @@ IF
 THEN
   RESPONSE #100
     StartCutSceneMode()
-    StartCutScene("ohbaren4")
+    StartCutScene("zbbaren3")
 END
 
 IF
