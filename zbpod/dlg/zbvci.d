@@ -48,79 +48,13 @@ INTERJECT_COPY_TRANS OHBJOKER 26 ZBDORMAMUS_REMARK_6
   == NEERAJ IF ~InParty("NEERA") InMyArea("NEERA") !StateCheck("NEERA",CD_STATE_NOTVALID)~ THEN @3880 /* Nuh-uh. No way. I've had enough mysterious forces trying to capture me for one lifetime, thank you very much. */
 END
 
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGEXIT ZBPODINTRO2_1
-  == HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @3905 /* Where do we find ourselves now, I wonder? Being thrown into the unknown on a whim—it almost reminds me of my beloved Sigil. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGEXIT ZBPODINTRO2_2
-  == MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @3906 /* I do not see any bars trapping us, so I will count our blessings where we can get them. May Arvoreen watch over us. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGEXIT ZBPODINTRO2_3
-  == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @3907 /* I am concerned as to our captor’s true identity. It is not many that can command a planetar into doing their bidding. Why they’d want a man like Voghiln is beyond me. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGEXIT ZBPODINTRO2_4
-  == NEERAJ IF ~InParty("NEERA") InMyArea("NEERA") !StateCheck("NEERA",CD_STATE_NOTVALID)~ THEN @3908 /* Alright, it’s not just me, right? My magic is all gone. I’d *really* like to get out of here. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGEXIT ZBPODINTRO2_5
-  == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @3909 /* This isn’t good, <CHARNAME>. I… I can’t access my magic. Let’s be careful, alright? */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGEXIT ZBPODINTRO2_6
-  == EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @3910 /* My spells! They are being… restricted. Bah, no matter! Nothing can contain Edwin Odesseiron for long. (I cannot say the same for the rest of these monkeys, however…) */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGEXIT ZBPODINTRO2_7
-  == MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @3911 /* To have been captured so easily… it puts a berserker’s heart to shame! Eh? What is that, Boo? …Ah, as wise as ever my miniature furry friend—it is THEIR mistake for inviting Minsc and friends into their lair! */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGEXIT ZBPODINTRO2_8
-  == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @3912 /* Be careful not to work yourself into a battlerage just yet, Minsc. We must be cautious in this place—we have no idea how powerful our enemy is, nor their true intent. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGEXIT ZBPODINTRO2_9
-  == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @3913 /* Well, if that man has survived as long as he has in this snake’s den, I suspect we’ll fare better. Let us find the villains that did this and put an end to them. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGEXIT ZBPODINTRO2_10
-  == CERNDJ IF ~InParty("Cernd") InMyArea("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID)~ THEN @3914 /* Nature cringes from this prison of steel and stone. Let us find our way out, or better yet, sunder this abhorrent place. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGEXIT ZBPODINTRO2_11
-  == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @3915 /* It’s from one drama to another with you, isn’t it? Ah, well. They say variety is the spice of life, after all. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGEXIT ZBPODINTRO2_12
-  == IMOEN2J IF ~InParty("Imoen") InMyArea("Imoen") !StateCheck("Imoen",CD_STATE_NOTVALID)~ THEN @3916 /* Heh. Seems we're trapped all over again. This is starting to feel a little personal now. Let's break out of here fast, alright? */
-END
-
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGGOODEXIT ZBPODINTRO2_1
-  == HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @3905 /* Where do we find ourselves now, I wonder? Being thrown into the unknown on a whim—it almost reminds me of my beloved Sigil. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGGOODEXIT ZBPODINTRO2_2
-  == MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @3906 /* I do not see any bars trapping us, so I will count our blessings where we can get them. May Arvoreen watch over us. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGGOODEXIT ZBPODINTRO2_3
-  == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @3907 /* I am concerned as to our captor’s true identity. It is not many that can command a planetar into doing their bidding. Why they’d want a man like Voghiln is beyond me. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGGOODEXIT ZBPODINTRO2_4
-  == NEERAJ IF ~InParty("NEERA") InMyArea("NEERA") !StateCheck("NEERA",CD_STATE_NOTVALID)~ THEN @3908 /* Alright, it’s not just me, right? My magic is all gone. I’d *really* like to get out of here. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGGOODEXIT ZBPODINTRO2_5
-  == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @3909 /* This isn’t good, <CHARNAME>. I… I can’t access my magic. Let’s be careful, alright? */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGGOODEXIT ZBPODINTRO2_6
-  == EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @3910 /* My spells! They are being… restricted. Bah, no matter! Nothing can contain Edwin Odesseiron for long. (I cannot say the same for the rest of these monkeys, however…) */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGGOODEXIT ZBPODINTRO2_7
-  == MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @3911 /* To have been captured so easily… it puts a berserker’s heart to shame! Eh? What is that, Boo? …Ah, as wise as ever my miniature furry friend—it is THEIR mistake for inviting Minsc and friends into their lair! */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGGOODEXIT ZBPODINTRO2_8
-  == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @3912 /* Be careful not to work yourself into a battlerage just yet, Minsc. We must be cautious in this place—we have no idea how powerful our enemy is, nor their true intent. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGGOODEXIT ZBPODINTRO2_9
-  == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @3913 /* Well, if that man has survived as long as he has in this snake’s den, I suspect we’ll fare better. Let us find the villains that did this and put an end to them. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGGOODEXIT ZBPODINTRO2_10
-  == CERNDJ IF ~InParty("Cernd") InMyArea("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID)~ THEN @3914 /* Nature cringes from this prison of steel and stone. Let us find our way out, or better yet, sunder this abhorrent place. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGGOODEXIT ZBPODINTRO2_11
-  == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @3915 /* It’s from one drama to another with you, isn’t it? Ah, well. They say variety is the spice of life, after all. */
-END
-INTERJECT_COPY_TRANS OHBVOGHI ZBVOGGOODEXIT ZBPODINTRO2_12
-  == IMOEN2J IF ~InParty("Imoen") InMyArea("Imoen") !StateCheck("Imoen",CD_STATE_NOTVALID)~ THEN @3916 /* Heh. Seems we're trapped all over again. This is starting to feel a little personal now. Let's break out of here fast, alright? */
-END
+// ---------------------------------------
+// ---------------------------------------
+// ---------------------------------------
+// Feast
+// ---------------------------------------
+// ---------------------------------------
+// ---------------------------------------
 
 INTERJECT_COPY_TRANS OHBTARTL 75 ZBSFEASTJAHEIRA
   == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @3716 /* For one so small of stature, his ego seems disproportionately sized. */
