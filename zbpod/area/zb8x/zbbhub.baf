@@ -835,6 +835,7 @@ THEN
     AddStoreItem("OHBSDWM","AROW06",5,1)  // Arrow of Detonation
     AddStoreItem("OHBSDWM","AROW07",10,1)  // Arrow of Dispelling
     AddStoreItem("OHBCONCO","zbluckp0",6,1)  // Potion of Luck (NEW)
+    AddStoreItem("OHBCONCO","zbfoatw",3,1)  // Flask of a Thousand Winds (NEW)
     AddStoreItem("OHBCONCO","POTN03",10,1)  // Potion of Hill Giant Strength
     AddStoreItem("OHBCONCO","POTN12",5,1)  // Potion of Stone Giant Strength
     AddStoreItem("OHBCONCO","POTN04",4,1)  // Potion of Frost Giant Strength
@@ -867,6 +868,7 @@ THEN
     AddStoreItem("OHBSDWM","AROW06",5,1)  // Arrow of Detonation
     AddStoreItem("OHBSDWM","AROW07",10,1)  // Arrow of Dispelling
     AddStoreItem("OHBCONCO","zbluckp0",8,1)  // Potion of Luck (NEW)
+    AddStoreItem("OHBCONCO","zbfoatw",3,1)  // Flask of a Thousand Winds (NEW)
     AddStoreItem("OHBCONCO","POTN03",10,1)  // Potion of Hill Giant Strength
     AddStoreItem("OHBCONCO","POTN12",5,1)  // Potion of Stone Giant Strength
     AddStoreItem("OHBCONCO","POTN04",4,1)  // Potion of Frost Giant Strength
@@ -896,6 +898,7 @@ THEN
     AddStoreItem("OHBSDWM","AROW06",5,1)  // Arrow of Detonation
     AddStoreItem("OHBSDWM","AROW07",10,1)  // Arrow of Dispelling
     AddStoreItem("OHBCONCO","zbluckp0",10,1)  // Potion of Luck (NEW)
+    AddStoreItem("OHBCONCO","zbfoatw",3,1)  // Flask of a Thousand Winds (NEW)
     AddStoreItem("OHBCONCO","POTN03",10,1)  // Potion of Hill Giant Strength
     AddStoreItem("OHBCONCO","POTN12",5,1)  // Potion of Stone Giant Strength
     AddStoreItem("OHBCONCO","POTN04",4,1)  // Potion of Frost Giant Strength

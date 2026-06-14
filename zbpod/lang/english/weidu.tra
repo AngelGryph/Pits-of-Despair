@@ -1048,10 +1048,7 @@ Equipped abilities:
 – Movement rate increased by 5
 
 Charge abilities:
-– Zone of Sweet Air (1/day)
-– Wazzer's Whirlwind (1/day)
-  Summons a whirlwind that deals 2d8 crushing and 2d8 slashing damage to up to eight small or medium creatures, also stunning them if they fail a Save vs. Breath with a -2 penalty.
-Weight: 1~
+– Zone of Sweet Air (1/day)~
 
 @11110 = ~Potion of Luck~
 @11111 = ~Potion of Luck description placeholder
@@ -1076,6 +1073,15 @@ Requires:
  8 Strength
 
 Weight: 10~
+
+@11114 = ~Flask of a Thousand Winds~
+@11115 = ~Flask of a Thousand Winds Description
+
+STATISTICS:
+
+– Whirlwind
+  Summons a whirlwind that deals 2d8 crushing and 2d8 slashing damage to up to eight small or medium creatures, also stunning them if they fail a Save vs. Breath with a -2 penalty.
+Weight: 1~
 
 
 // Creatures
