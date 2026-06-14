@@ -44,7 +44,7 @@ END
 /// Before Match 4 - Elder Umber Hulks
 IF ~Global("ZB_NEPH_INTERJECT_4","GLOBAL",2)~ THEN BEGIN 4
   SAY @45 /* Umber hulks are extremely dangerous and fast to boot, and their elders more so. They can easily overpower those that gaze into their eyes. Luckily for you, I happen to have a potion that’ll defend you from any adverse effects. It’s all yours for a meager 300 gold. */
-  IF ~~ THEN REPLY @46 /* I'll take it! */ DO ~TakePartyGold(700) GiveItemCreate("POTN21",Player1,1,0,0) SetGlobal("ZB_NEPH_INTERJECT_4","GLOBAL",3)~ EXIT
+  IF ~~ THEN REPLY @46 /* I'll take it! */ DO ~TakePartyGold(300) GiveItemCreate("POTN21",Player1,1,0,0) SetGlobal("ZB_NEPH_INTERJECT_4","GLOBAL",3)~ EXIT
   IF ~~ THEN REPLY @47 /* Keep your potion, my eyes are on the prize. */ DO ~SetGlobal("ZB_NEPH_INTERJECT_4","GLOBAL",3)~ GOTO 6
 END
 
