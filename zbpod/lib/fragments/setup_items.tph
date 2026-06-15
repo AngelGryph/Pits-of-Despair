@@ -562,6 +562,18 @@ COPY_EXISTING ~zbwater0.itm~ ~override~
     SAY NAME2 @11116
     SAY IDENTIFIED_DESC @11117
 
+    //////// The Swarm \\\\\\\\
+COPY ~%MOD_FOLDER%/items/theswarm~ ~override~
+COPY_EXISTING ~zbswarm0.itm~ ~override~
+    SAY NAME2 @11118
+    SAY IDENTIFIED_DESC @11119
+
+    //////// Silent as Stone \\\\\\\\
+COPY ~%MOD_FOLDER%/items/silentasstone~ ~override~
+COPY_EXISTING ~zbsboot0.itm~ ~override~
+    SAY NAME2 @11120
+    SAY IDENTIFIED_DESC @11121
+
 // Post production, keep at end of file, do not add new items after this. \\
 
 COPY_EXISTING_REGEXP "^.*\.itm$" "override"

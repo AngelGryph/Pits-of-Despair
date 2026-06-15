@@ -575,12 +575,13 @@ Weight: 11~
 
 
 @10210 = ~Binky~
-@10211 = ~This is the skeleton of a racing lizard that Jan received by trading for Lissa's prize turnip.
+@10211 = ~This is the skeleton of a beloved racing lizard that Jan once received by trading for Lissa's prize turnip.
 
 STATISTICS:
 
 Equipped abilities:
 – Luck: +1
+– Thieving skills: +5%
 
 Weight: 1~
 
@@ -1060,8 +1061,8 @@ Duration: 2 turns
 
 Weight: 1~
 
-@11112 = ~Bone Splintmail~
-@11113 = ~Bone Splintmail description placeholder
+@11112 = ~Wrathbone Armor~
+@11113 = ~Wrathbone Armor description placeholder
 
 STATISTICS:
 
@@ -1081,6 +1082,7 @@ STATISTICS:
 
 – Whirlwind
   Summons a whirlwind that deals 2d8 crushing and 2d8 slashing damage to up to eight small or medium creatures, also stunning them if they fail a Save vs. Breath with a -2 penalty.
+
 Weight: 1~
 
 @11116 = ~Potion of Water~
@@ -1091,6 +1093,31 @@ STATISTICS:
 None
 
 Weight: 1~
+
+@11118 = ~The Swarm~
+@11119 = ~The Swarm Description
+
+STATISTICS:
+
+Charge Abilities:
+– Insect Plague
+  Damage: 1 every 2 seconds
+  Special: Spreads to up to 6 creatures, causes 100% spell failure, Save vs. Breath Weapon or panic for 1 round
+  Range: 60 ft.
+  Area of Effect: 15-ft. radius
+  Duration: 6 rounds
+
+Requires:
+ 10 Wisdom
+
+Weight: 1~
+
+@11120 = ~Silent as Stone~
+@11121 = ~Silent as Stone Description
+
+STATISTICS:
+
+Weight: 4~
 
 
 // Creatures
