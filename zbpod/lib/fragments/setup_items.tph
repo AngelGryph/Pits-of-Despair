@@ -574,6 +574,12 @@ COPY_EXISTING ~zbsboot0.itm~ ~override~
     SAY NAME2 @11120
     SAY IDENTIFIED_DESC @11121
 
+    //////// Ring of Mercurial Speed \\\\\\\\
+COPY ~%MOD_FOLDER%/items/ringofmercurialspeed~ ~override~
+COPY_EXISTING ~zbroms0.itm~ ~override~
+    SAY NAME2 @11122
+    SAY IDENTIFIED_DESC @11123
+
 // Post production, keep at end of file, do not add new items after this. \\
 
 COPY_EXISTING_REGEXP "^.*\.itm$" "override"

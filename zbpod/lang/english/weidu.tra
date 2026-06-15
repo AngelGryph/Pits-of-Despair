@@ -647,7 +647,7 @@ Weight: 2~
 STATISTICS:
 
 Equipped abilities:
-– 1 extra attack per round
+– Extra 1 attack per round
 – Doubles movement rate
 
 Weight: 4~
@@ -1011,7 +1011,7 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: +6, an extra +1 vs. missile attacks
 – Immunity to Hold, Web, Paralyze and Stun effects
-– 0.5 extra attack per round
+– Extra 1/2 attack per round
 – Champion Aura: +1 THAC0 and +1 Damage to all allies within a 15' radius
 Requires:
  10 Strength
@@ -1119,6 +1119,16 @@ STATISTICS:
 
 Weight: 4~
 
+@11122 = ~Ring of Mercurial Speed~
+@11123 = ~Ring of Mercurial Speed description placeholder
+
+STATISTICS:
+
+Equiped abilities:
+– Extra 1/2 attack per round
+– Save vs. Breath: +2
+
+Weight: 1~
 
 // Creatures
 
