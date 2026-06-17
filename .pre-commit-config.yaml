@@ -1,16 +1,10 @@
 default_install_hook_types: [pre-commit]
 repos:
-- repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v6.0.0
-  hooks:
-    - id: check-merge-conflict
-      stages: [pre-commit]
-
 - repo: local
   hooks:
     - id: check-weidu
       stages: [pre-commit]
-      name: check-weidu
+      name: check weidu
       description: check if weidu files are parsable
       entry: .github/scripts/check-weidu.sh
       language: system
@@ -21,7 +15,8 @@ repos:
       description: Infinity Engine File Check
       entry: .github/scripts/check-ie.sh
       language: system
-      pass_filenames: false
+      pass_filenames: true
+      files: ".*[bam|baf|cre|d|itm|spl|sto|wav|vvc]"
     - id: case-check
       stages: [pre-commit]
       name: check case conflict
@@ -36,3 +31,10 @@ repos:
       entry: .github/scripts/check-git.sh
       language: system
       pass_filenames: false
+    - id: check-merge-conflict
+      stages: [pre-commit]
+      name:  check merge conflict
+      description: check if merge conflict
+      entry: .github/scripts/check-merge-conflict.sh
+      language: system
+      pass_filenames: true

@@ -33,8 +33,8 @@ function forbidSubmodules() {
 }
 
 function main() {
-  gitDirty
   gitCheck
+  gitDirty
   forbidSubmodules
 }
 
