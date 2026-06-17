@@ -1099,7 +1099,7 @@ Weight: 1~
 
 STATISTICS:
 
-Charge Abilities:
+Charge abilities:
 – Insect Plague
   Damage: 1 piercing damage every 2 seconds
   Special: Spreads to up to 6 creatures, causes 100% spell failure, Save vs. Breath Weapon or panic for 1 round
@@ -1129,6 +1129,32 @@ Equiped abilities:
 – Save vs. Breath: +2
 
 Weight: 1~
+
+@11124 = ~Mastadon~
+@11125 = ~Mastadon description placeholder
+
+STATISTICS:
+
+Equipped Abilities:
+– Barbarians gain +1 Constitution
+
+Combat Abilities:
+– Knock Prone: 25% chance per hit to cause Sleep for 1 round
+
+Charge Abilities:
+– Trumpet (2/day)
+      Grants all allies within a 15-ft. radius +1 THAC0 and +1 damage for 1 turn
+
+THAC0: +3
+Damage: 1d12+3, +2 cold damage
+Damage type: Slashing
+Speed Factor: 0
+Proficiency Type: Axe
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 14~
 
 // Creatures
 
