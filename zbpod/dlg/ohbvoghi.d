@@ -670,7 +670,7 @@ CHAIN OHBVOGHI ZBVOGBADEXIT
   == CERNDJ IF ~InParty("Cernd") InMyArea("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID)~ THEN @3914 /* Nature cringes from this prison of steel and stone. Let us find our way out, or better yet, sunder this abhorrent place. */
   == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @3915 /* It’s from one drama to another with you, isn’t it? Ah, well. They say variety is the spice of life, after all. */
   == IMOEN2J IF ~InParty("Imoen") InMyArea("Imoen") !StateCheck("Imoen",CD_STATE_NOTVALID)~ THEN @3916 /* Heh. Seems we're trapped all over again. This is starting to feel a little personal now. Let's break out of here fast, alright? */
-END
+EXIT
 
 CHAIN OHBVOGHI ZBVOGEXIT
   @3899 /* Aye. Well, if you find out where the food, ale, and women are, <CHARNAME>, come back and tell Voghiln!  */
@@ -686,7 +686,7 @@ CHAIN OHBVOGHI ZBVOGEXIT
   == CERNDJ IF ~InParty("Cernd") InMyArea("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID)~ THEN @3914 /* Nature cringes from this prison of steel and stone. Let us find our way out, or better yet, sunder this abhorrent place. */
   == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @3915 /* It’s from one drama to another with you, isn’t it? Ah, well. They say variety is the spice of life, after all. */
   == IMOEN2J IF ~InParty("Imoen") InMyArea("Imoen") !StateCheck("Imoen",CD_STATE_NOTVALID)~ THEN @3916 /* Heh. Seems we're trapped all over again. This is starting to feel a little personal now. Let's break out of here fast, alright? */
-END
+EXIT
 
 CHAIN OHBVOGHI ZBVOGGOODEXIT
   @3903 /* If it comes to a fight, though, you can rely on Voghiln! Now, I am going to go on a grand quest… to find a kitchen. */
@@ -702,4 +702,4 @@ CHAIN OHBVOGHI ZBVOGGOODEXIT
   == CERNDJ IF ~InParty("Cernd") InMyArea("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID)~ THEN @3914 /* Nature cringes from this prison of steel and stone. Let us find our way out, or better yet, sunder this abhorrent place. */
   == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @3915 /* It’s from one drama to another with you, isn’t it? Ah, well. They say variety is the spice of life, after all. */
   == IMOEN2J IF ~InParty("Imoen") InMyArea("Imoen") !StateCheck("Imoen",CD_STATE_NOTVALID)~ THEN @3916 /* Heh. Seems we're trapped all over again. This is starting to feel a little personal now. Let's break out of here fast, alright? */
-END
+EXIT
