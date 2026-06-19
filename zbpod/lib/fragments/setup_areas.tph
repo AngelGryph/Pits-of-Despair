@@ -291,3 +291,15 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/area/zb0702/~ ~.*\.\(pvrz\|are\|tis\|wed\|bmp\)$~ 
 END
 
 COPY ~%MOD_FOLDER%/area/zb0702/bams/~ ~override~
+
+// ------ //
+// ZB0703 //
+// ------ //
+
+COPY ~%MOD_FOLDER%/area/zb0703/~ ~override~
+
+// ------ //
+// ZB0704 //
+// ------ //
+
+COPY ~%MOD_FOLDER%/area/zb0704/~ ~override~
