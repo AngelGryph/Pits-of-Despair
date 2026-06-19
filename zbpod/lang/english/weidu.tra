@@ -1142,11 +1142,11 @@ Combat Abilities:
 – 25% chance on hit to cause unconsciousness for 1 round
   (Save vs. Death at -1 penalty negates)
 Charge Abilities:
-– Trumpet (2/day)
-      Grants all allies within a 15-ft. radius +1 THAC0 and +1 damage for 1 turn
+– Trumpet (1/day)
+      Grants all allies within a 15-ft. radius +1 AC and +1 to Saving Throws for 5 rounds.
 
 THAC0: +3
-Damage: 1d12+3, +2 cold damage
+Damage: 1d10+3, +2 cold damage
 Damage type: Slashing
 Speed Factor: 0
 Proficiency Type: Axe
