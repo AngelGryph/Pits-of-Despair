@@ -1157,6 +1157,11 @@ Requires:
 Weight: 14~
 
 @11126 =~Trumpet~
+@11127 = ~Nephetel's Memory Shard~
+@11128 = ~Nephetel's Memory Shard placeholder description
+
+Weight: 1~
+@11129 = ~Interact~
 
 
 // Creatures

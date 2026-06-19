@@ -103,19 +103,13 @@ COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dlg/ohbbello.d~
                         ~%MOD_FOLDER%/dlg/ohbpol.d~
                         ~%MOD_FOLDER%/dlg/zbcelest.d~
                         ~%MOD_FOLDER%/dlg/zbeshpeu.d~
+                        ~%MOD_FOLDER%/dlg/zbmemsh0.d~
                         ~%MOD_FOLDER%/dlg/zbvci.d~
                         ~%MOD_FOLDER%/dlg/zbvyan.d~
   USING ~%MOD_FOLDER%/lang/%LANGUAGE%/dialogs.tra~
 
 // Nephetel
 INCLUDE ~%MOD_FOLDER%/nephetel/neph.tpa~
-
-/* make eshpel conversable */
-OUTER_SET label = RESOLVE_STR_REF(~Converse~)
-
-APPEND ~ITEMDIAL.2da~
-~zbeshpeu %label% zbeshpeu~
-UNLESS ~zbeshpeu~
 
 // Crossmod
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/crossmod/~

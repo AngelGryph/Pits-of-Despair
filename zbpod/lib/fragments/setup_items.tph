@@ -126,7 +126,7 @@ COPY_EXISTING ~zbcelest.itm~ ~override~
     SAY NAME2 @10320
     SAY IDENTIFIED_DESC @10321
 
-APPEND "itemdial.2da" "zbcelest        5689   zbcelest"
+APPEND "itemdial.2da" "zbcelest 5689 zbcelest"
 
 //////// Angel Wings \\\\\\\\
 COPY ~%MOD_FOLDER%/items/angelwings~ ~override~
@@ -205,8 +205,6 @@ COPY ~%MOD_FOLDER%/items/nephy_ring~ ~override~
 COPY_EXISTING ~zbpdrnga.itm~ ~override~
     SAY NAME2 @10100
     SAY IDENTIFIED_DESC @10101
-
-//////// Nephy's Strange Silver Ring \\\\\\\\
 COPY_EXISTING ~zbpdrngb.itm~ ~override~
     SAY NAME2 @10102
     SAY IDENTIFIED_DESC @10103
@@ -254,6 +252,8 @@ COPY_EXISTING ~zbeshpeu.itm~ ~override~
     SAY NAME2 @10092
     SAY IDENTIFIED_DESC @10094
     LPF ALTER_EFFECT INT_VAR match_opcode = 265 parameter1 = guard END
+
+APPEND ~itemdial.2da~ ~zbeshpeu 5689 zbeshpeu~ UNLESS ~zbeshpeu~
 
 
 //////// Mastadon \\\\\\\\
@@ -464,7 +464,10 @@ COPY ~%MOD_FOLDER%/items/stirvwrangler~ ~override~
 
 COPY ~%MOD_FOLDER%/items/nephy_memory_shard~ ~override~
 COPY_EXISTING ~zbmemsh0.itm~ ~override~
-    // insert whatever code needed for memory shard
+    SAY NAME2 @11127
+    SAY IDENTIFIED_DESC @11128
+OUTER_SET label = RESOLVE_STR_REF(@11129)
+APPEND "itemdial.2da" "zbmemsh0 %label% zbmemsh0" UNLESS "zbmemsh0"
 
 // Robe of the Transcendent
 COPY ~%MOD_FOLDER%/items/robeofskin~ ~override~
