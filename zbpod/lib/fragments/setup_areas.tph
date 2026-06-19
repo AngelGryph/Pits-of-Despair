@@ -292,14 +292,16 @@ END
 
 COPY ~%MOD_FOLDER%/area/zb0702/bams/~ ~override~
 
-// ------ //
-// ZB0703 //
-// ------ //
+ACTION_BASH_FOR ~%MOD_FOLDER%/area/zb0703/~ ~.*\.\(are\|wed\|bmp\|bam\)$~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+ACTION_BASH_FOR ~%MOD_FOLDER%/area/zb0703/ee~ ~.*\.\(pvrz\|tis\)$~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
 
-COPY ~%MOD_FOLDER%/area/zb0703/~ ~override~
-
-// ------ //
-// ZB0704 //
-// ------ //
-
-COPY ~%MOD_FOLDER%/area/zb0704/~ ~override~
+ACTION_BASH_FOR ~%MOD_FOLDER%/area/zb0704/~ ~.*\.\(are\|wed\|bmp\|bam\)$~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+ACTION_BASH_FOR ~%MOD_FOLDER%/area/zb0704/ee~ ~.*\.\(pvrz\|tis\)$~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
